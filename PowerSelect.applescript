@@ -7,9 +7,11 @@ property mainWindow : missing value
 property ComboBoxHistory : missing value
 property searchTextHistoryObj : missing value
 property DefaultValueManager : missing value
+property _searchComboBox : missing value
+property _candidateTable : missing value
 
 on initialize()
-	InsertionContainer's respect_icon_view(true)
+	--InsertionContainer's respect_icon_view(true)
 end initialize
 
 property _ : initialize()
@@ -160,21 +162,7 @@ on GetFilterResult()
 	end script
 	
 	--log "start to set filter script obj"
-	(*
-	tell application "Finder"
-		try
-			set theLocation to insertion location
-			set selectionClass to class of theLocation
-			if selectionClass is not in {folder, disk} then
-				set theLocation to folder of theLocation
-			end if
-		on error
-			set theMessage to localized string "InvalidLocation"
-			set namekindList of ErrorMsgObj to {{|name|:"Selected Location is invalid.", |kind|:""}}
-			return ErrorMsgObj
-		end try
-	end tell
-	*)
+	
 	set theLocation to do() of InsertionContainer
 	if theLocation is missing value then
 		set theMessage to localized string "InvalidLocation"
@@ -223,10 +211,13 @@ on clicked theObject
 		
 		addValue(keyText) of searchTextHistoryObj
 	else if theName is "CancelButton" then
+		(*
 		tell mainWindow
 			tell drawer "CandidateDrawer" to close drawer
 		end tell
-		quit
+		*)
+		close mainWindow
+		--quit
 	else if theName is "SelectButton" then
 		set selectNumList to selected rows of table view "CandidateTable" of scroll view "CandidateTable" of drawer "CandidateDrawer" of mainWindow
 		if (selectItem(selectNumList) of FilterAction) then
@@ -272,13 +263,16 @@ on awake from nib theObject
 			make new data column at the end of the data columns with properties {name:"name"}
 			make new data column at the end of the data columns with properties {name:"kind"}
 		end tell
+		
 	else if theName is "SearchText" then
 		set searchTextHistoryObj to makeObj("SearchTextHistory", {}) of ComboBoxHistory
 		setComboBox(theObject) of searchTextHistoryObj
 		
 		registControl(a reference to contents of contents of theObject, theName, "") of DefaultValueManager
+		set _searchComboBox to theObject
 	else if theName is "ModePopup" then
 		registControl(a reference to contents of contents of theObject, theName, 0) of DefaultValueManager
+		
 	end if
 end awake from nib
 
@@ -310,7 +304,9 @@ on will resize theObject proposed size proposedSize
 end will resize
 
 on setupDrawer(theDrawer)
+	log "start setupDrawer"
 	tell theDrawer
+		call method "setNextKeyView:" of scroll view "CandidateTable" with parameter _searchComboBox
 		set theRowHeight to row height of table view "CandidateTable" of scroll view "CandidateTable"
 		set tableHeight to theRowHeight * ((length of namekindList of FilterAction) + 1)
 		
@@ -347,19 +343,11 @@ on opened theObject
 	
 	if theName is "CandidateDrawer" then
 		setupDrawer(theObject)
-	else if theName is "MainWindow" then
-		tell theObject
-			set first responder to combo box "SearchText"
-		end tell
 	end if
 end opened
 
 on will quit theObject
-	try -- if drawer is not opend, error occur.
-		tell mainWindow
-			tell drawer "CandidateDrawer" to close drawer
-		end tell
-	end try
+	--log "will quit"
 	writeDefaults() of searchTextHistoryObj
 	writeAllDefaults() of DefaultValueManager
 end will quit
@@ -374,7 +362,13 @@ on should select row theObject row theRow
 end should select row
 
 on should close theObject -- "MainWindow" Only
+	try -- if drawer is not opend, error occur.
+		tell mainWindow
+			tell drawer "CandidateDrawer" to close drawer
+		end tell
+	end try
 	hide theObject
-	quit
+	--quit
+	call method "terminate:"
 	return false
 end should close

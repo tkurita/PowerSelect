@@ -14,7 +14,7 @@
 			files = (
 				2C2371D9097F28A800693050 /* PowerSelect.applescript in AppleScript */,
 				2C2371DA097F28A800693050 /* DefaultValueManager.applescript in AppleScript */,
-				2C2371DB097F28A800693050 /* ComboBoxHistory.applescript in AppleScript */,
+				2C145A010BD5B1D900CE5554 /* ComboBoxHistory.applescript in AppleScript */,
 			);
 			isSharedContext = 0;
 			runOnlyForDeploymentPostprocessing = 0;
@@ -22,9 +22,9 @@
 /* End PBXAppleScriptBuildPhase section */
 
 /* Begin PBXBuildFile section */
+		2C145A010BD5B1D900CE5554 /* ComboBoxHistory.applescript in AppleScript */ = {isa = PBXBuildFile; fileRef = 2C145A000BD5B1D900CE5554 /* ComboBoxHistory.applescript */; settings = {ATTRIBUTES = (Debug, ); }; };
 		2C2371D9097F28A800693050 /* PowerSelect.applescript in AppleScript */ = {isa = PBXBuildFile; fileRef = DA206CF3015C4E8B03C91932 /* PowerSelect.applescript */; settings = {ATTRIBUTES = (Debug, ); }; };
 		2C2371DA097F28A800693050 /* DefaultValueManager.applescript in AppleScript */ = {isa = PBXBuildFile; fileRef = 2C9B3146067879DF00ED69CB /* DefaultValueManager.applescript */; settings = {ATTRIBUTES = (Debug, ); }; };
-		2C2371DB097F28A800693050 /* ComboBoxHistory.applescript in AppleScript */ = {isa = PBXBuildFile; fileRef = 2C9B314806787A8200ED69CB /* ComboBoxHistory.applescript */; settings = {ATTRIBUTES = (Debug, ); }; };
 		2C2371DD097F28A800693050 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
 		2C2371E0097F28A800693050 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		2C2371E2097F28A800693050 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -39,11 +39,11 @@
 		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2C145A000BD5B1D900CE5554 /* ComboBoxHistory.applescript */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.applescript; path = ComboBoxHistory.applescript; sourceTree = "<group>"; };
 		2C2371EA097F28A800693050 /* Info-PowerSelect.plist */ = {isa = PBXFileReference; explicitFileType = text.plist; fileEncoding = 4; path = "Info-PowerSelect.plist"; sourceTree = "<group>"; };
 		2C2371EB097F28A900693050 /* PowerSelect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerSelect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4A6D9E097F6BAC00D4AF6B /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; lineEnding = 0; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2C9B3146067879DF00ED69CB /* DefaultValueManager.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = DefaultValueManager.applescript; sourceTree = "<group>"; };
-		2C9B314806787A8200ED69CB /* ComboBoxHistory.applescript */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.applescript; path = ComboBoxHistory.applescript; sourceTree = "<group>"; };
 		2CFF0AB20BCFD8CF00374FBA /* FolderIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FolderIcon.png; sourceTree = "<group>"; };
 		2CFF0AD60BCFDF4C00374FBA /* History.rd */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = text; name = History.rd; path = ../History.rd; sourceTree = SOURCE_ROOT; };
 		DA206CF1015C4E2903C91932 /* AppleScriptKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptKit.framework; path = /System/Library/Frameworks/AppleScriptKit.framework; sourceTree = "<absolute>"; };
@@ -68,7 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				DA206CF3015C4E8B03C91932 /* PowerSelect.applescript */,
-				2C9B314806787A8200ED69CB /* ComboBoxHistory.applescript */,
+				2C145A000BD5B1D900CE5554 /* ComboBoxHistory.applescript */,
 				2C9B3146067879DF00ED69CB /* DefaultValueManager.applescript */,
 			);
 			name = Scripts;
