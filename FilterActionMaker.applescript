@@ -144,11 +144,6 @@ script FilterActionBase
 		repeat with theNum in numList
 			set end of target_items to item theNum of my _itemList
 		end repeat
-		(*
-		tell application "Finder"
-			select target_items
-		end tell
-		*)
 		select_in_Finder(target_items)
 		return true
 	end selectItem
@@ -156,11 +151,6 @@ script FilterActionBase
 	on selectAll()
 		--log itemList
 		select_in_Finder(my _itemList)
-		(*
-		tell application "Finder"
-			select my _itemList
-		end tell
-		*)
 	end selectAll
 	
 	on GetItemList()

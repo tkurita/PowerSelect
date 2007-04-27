@@ -204,9 +204,9 @@ on setupDrawer(theDrawer)
 		set content size to {drawerWidth, drawerHeight}
 		
 		if _filterAction's is_found() then
-			set enabled of button "SelectAllButton" to false
-		else
 			set enabled of button "SelectAllButton" to true
+		else
+			set enabled of button "SelectAllButton" to false
 		end if
 		set enabled of button "SelectButton" to false
 	end tell
