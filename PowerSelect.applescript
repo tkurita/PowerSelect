@@ -1,25 +1,19 @@
+(*== Script Modules *)
 property InsertionContainer : load("InsertionContainer") of application (get "PowerSelectLib")
 property FilterActionMaker : missing value
 property DefaultValueManager : missing value
 
-property CandidateDataSource : missing value
-property mainWindow : missing value
-property ComboBoxHistory : missing value
-property searchTextHistoryObj : missing value
-
 (*== GUI items *)
 property _searchComboBox : missing value
 property _candidateTable : missing value
+property mainWindow : missing value
+property CandidateDataSource : missing value
 
 (*== parameters *)
 property keyText : missing value
 property _filterAction : missing value
-
-on initialize()
-	--InsertionContainer's respect_icon_view(true)
-end initialize
-
-property _ : initialize()
+property ComboBoxHistory : missing value
+property searchTextHistoryObj : missing value
 
 on GetFilterResult(a_mode)
 	--log "start to set filter script obj"
@@ -243,6 +237,6 @@ on should close theObject -- "MainWindow" Only
 	end try
 	hide theObject
 	--quit
-	call method "terminate:"
+	--call method "terminate:"
 	return false
 end should close

@@ -30,6 +30,8 @@
 		2C2371E0097F28A800693050 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		2C2371E2097F28A800693050 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		2C2371E3097F28A800693050 /* AppleScriptKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA206CF1015C4E2903C91932 /* AppleScriptKit.framework */; };
+		2C3DB6710BE1C51A00FD7D6E /* AppController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C3DB66F0BE1C51900FD7D6E /* AppController.h */; };
+		2C3DB6720BE1C51A00FD7D6E /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3DB6700BE1C51900FD7D6E /* AppController.m */; };
 		2C4A6D9F097F6BAC00D4AF6B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C4A6D9D097F6BAB00D4AF6B /* Localizable.strings */; };
 		2CEB3C720BE10A92000B33AD /* FilterActionMaker.applescript in AppleScript */ = {isa = PBXBuildFile; fileRef = 2CEB3C710BE10A92000B33AD /* FilterActionMaker.applescript */; settings = {ATTRIBUTES = (Debug, ); }; };
 		2CFF0AB30BCFD8CF00374FBA /* FolderIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CFF0AB20BCFD8CF00374FBA /* FolderIcon.png */; };
@@ -44,6 +46,8 @@
 		2C145A000BD5B1D900CE5554 /* ComboBoxHistory.applescript */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.applescript; path = ComboBoxHistory.applescript; sourceTree = "<group>"; };
 		2C2371EA097F28A800693050 /* Info-PowerSelect.plist */ = {isa = PBXFileReference; explicitFileType = text.plist; fileEncoding = 4; path = "Info-PowerSelect.plist"; sourceTree = "<group>"; };
 		2C2371EB097F28A900693050 /* PowerSelect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerSelect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C3DB66F0BE1C51900FD7D6E /* AppController.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		2C3DB6700BE1C51900FD7D6E /* AppController.m */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
 		2C4A6D9E097F6BAC00D4AF6B /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; lineEnding = 0; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2C9B3146067879DF00ED69CB /* DefaultValueManager.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = DefaultValueManager.applescript; sourceTree = "<group>"; };
 		2CEB3C710BE10A92000B33AD /* FilterActionMaker.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = FilterActionMaker.applescript; sourceTree = "<group>"; wrapsLines = 1; };
@@ -121,6 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				29B97316FDCFA39411CA2CEA /* main.m */,
+				2C3DB66F0BE1C51900FD7D6E /* AppController.h */,
+				2C3DB6700BE1C51900FD7D6E /* AppController.m */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -153,6 +159,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C3DB6710BE1C51A00FD7D6E /* AppController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C2371E0097F28A800693050 /* main.m in Sources */,
+				2C3DB6720BE1C51A00FD7D6E /* AppController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
