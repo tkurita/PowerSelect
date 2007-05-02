@@ -1,5 +1,8 @@
 global keyText
 global InsertionContainer
+global CandidateDataSource
+global mainWindow
+global appController
 
 on select_in_Finder(target_items)
 	--log "start select_in_Finder"
@@ -8,7 +11,7 @@ on select_in_Finder(target_items)
 			tell application "Finder"
 				select target_items
 			end tell
-			return
+			return true
 		end if
 	end tell
 	
@@ -17,7 +20,7 @@ on select_in_Finder(target_items)
 			tell application "Finder"
 				select target_items
 			end tell
-			return
+			return true
 		end if
 	end using terms from
 	
@@ -81,6 +84,8 @@ on select_in_Finder(target_items)
 			set value of scroll bar 1 to scroll_ratio
 		end tell
 	end tell
+	
+	return true
 end select_in_Finder
 
 script FilterActionBase
@@ -89,17 +94,12 @@ script FilterActionBase
 		script FilterActionBaseCore
 			property _container : a_location
 			property _itemList : missing value
-			property _attributeList : {}
 		end script
 	end make_for_location
 	
 	on count_items()
-		return length of my _attributeList
+		return length of my _itemList
 	end count_items
-	
-	on attribute_list()
-		return my _attributeList
-	end attribute_list
 	
 	on all_items()
 		return my _itemList
@@ -110,43 +110,29 @@ script FilterActionBase
 	end target_container
 	
 	on is_found()
-		return (my _itemList is not missing value)
+		return (my _itemList is not {})
 	end is_found
 	
-	on isFound()
-		return (my _itemList is not missing value)
-	end isFound
+	on setup_pathes()
+		set path_list to {}
+		repeat with an_item in my _itemList
+			set end of path_list to POSIX path of (an_item as alias)
+		end repeat
+		call method "setSearchResult:" of appController with parameter path_list
+		--return path_list
+	end setup_pathes
 	
-	on GetNameAndKindList()
-		--log "start GetNameAndKindList"
-		if my _itemList is {} then
-			set a_message to localized string "NoItemsFound"
-			set my _attributeList to {{|name|:a_message, |kind|:""}}
-			set my _itemList to missing value
-		else
-			repeat with ith from 1 to length of my _itemList
-				--log ith
-				set theItem to item ith of my _itemList
-				tell application "Finder"
-					set end of my _attributeList to {|name|:name of theItem, |kind|:kind of theItem}
-				end tell
-			end repeat
-		end if
-		--log "end GetNameAndKindList"
-	end GetNameAndKindList
-	
-	on selectItem(numList)
-		if my _itemList is missing value then
+	on select_table_selection()
+		if not is_found() then
 			return false
 		end if
-		
+		set path_list to call method "tableSelection"
 		set target_items to {}
-		repeat with theNum in numList
-			set end of target_items to item theNum of my _itemList
+		repeat with a_path in path_list
+			set end of target_items to (POSIX file a_path)
 		end repeat
-		select_in_Finder(target_items)
-		return true
-	end selectItem
+		return select_in_Finder(target_items)
+	end select_table_selection
 	
 	on selectAll()
 		--log itemList
@@ -155,7 +141,6 @@ script FilterActionBase
 	
 	on GetItemList()
 		set my _itemList to doFilterAction()
-		GetNameAndKindList()
 	end GetItemList
 	
 	on doFilterAction()

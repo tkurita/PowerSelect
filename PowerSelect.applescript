@@ -7,7 +7,7 @@ property DefaultValueManager : missing value
 property _searchComboBox : missing value
 property _candidateTable : missing value
 property mainWindow : missing value
-property CandidateDataSource : missing value
+property appController : missing value
 
 (*== parameters *)
 property keyText : missing value
@@ -21,21 +21,23 @@ on GetFilterResult(a_mode)
 	set a_location to do() of InsertionContainer
 	if a_location is missing value then
 		set a_message to localized string "InvalidLocation"
+		
 		script ErrorMsgObj
-			property _attributeList : {{|name|:a_message, |kind|:""}}
-			property _itemList : missing value
-			
 			on count_items()
-				return length of my _attributeList
+				return 0
 			end count_items
 			
-			on attribute_list()
-				return my _attributeList
-			end attribute_list
-			
 			on is_found()
-				return (my _itemList is not missing value)
+				return false
 			end is_found
+			
+			on target_container()
+				return a_message
+			end target_container
+			
+			on setup_pathes()
+				call method "clearSearchResult"
+			end setup_pathes
 		end script
 		
 		return ErrorMsgObj
@@ -43,7 +45,6 @@ on GetFilterResult(a_mode)
 	
 	set filter_action to do(a_location, a_mode) of FilterActionMaker
 	GetItemList() of filter_action
-	
 	return filter_action
 end GetFilterResult
 
@@ -70,13 +71,11 @@ on clicked theObject
 		
 		set theDrawer to drawer "CandidateDrawer" of mainWindow
 		
+		set contents of text field "TargetLocationLabel" of theDrawer to target_container() of my _filterAction
+		my _filterAction's setup_pathes()
 		if state of theDrawer is drawer closed then
-			append CandidateDataSource with (my _filterAction's attribute_list())
-			set contents of text field "TargetLocationLabel" of theDrawer to target_container() of my _filterAction
 			tell theDrawer to open drawer
 		else
-			delete (every data row of CandidateDataSource)
-			append CandidateDataSource with (my _filterAction's attribute_list())
 			setupDrawer(theDrawer)
 		end if
 		
@@ -85,8 +84,8 @@ on clicked theObject
 		close mainWindow
 		--quit
 	else if theName is "SelectButton" then
-		set selectNumList to selected rows of table view "CandidateTable" of scroll view "CandidateTable" of drawer "CandidateDrawer" of mainWindow
-		if (selectItem(selectNumList) of my _filterAction) then
+		--set selectNumList to selected rows of table view "CandidateTable" of scroll view "CandidateTable" of drawer "CandidateDrawer" of mainWindow
+		if (select_table_selection() of my _filterAction) then
 			quit
 		end if
 	else if theName is "SelectAllButton" then
@@ -123,14 +122,7 @@ end will open
 on awake from nib theObject
 	set theName to name of theObject
 	
-	if theName is "CandidateDataSource" then
-		set CandidateDataSource to theObject
-		tell theObject
-			make new data column at the end of the data columns with properties {name:"name"}
-			make new data column at the end of the data columns with properties {name:"kind"}
-		end tell
-		
-	else if theName is "SearchText" then
+	if theName is "SearchText" then
 		set searchTextHistoryObj to makeObj("SearchTextHistory", {}) of ComboBoxHistory
 		setComboBox(theObject) of searchTextHistoryObj
 		
@@ -153,15 +145,12 @@ on will close theObject
 			--log "minimum height:" & drawerHeight
 			set content size to {drawerWidth, drawerHeight}
 		end tell
-		delete (every data row of CandidateDataSource)
 	end if
 	--log "end will close"
 end will close
 
 on double clicked theObject
-	set selectNum to selected rows of theObject
-	--log selectNum
-	if (selectItem(selectNum) of _filterAction) then
+	if (select_table_selection() of _filterAction) then
 		quit
 	end if
 end double clicked
@@ -176,7 +165,7 @@ on setupDrawer(theDrawer)
 	tell theDrawer
 		call method "setNextKeyView:" of scroll view "CandidateTable" with parameter _searchComboBox
 		set theRowHeight to row height of table view "CandidateTable" of scroll view "CandidateTable"
-		set tableHeight to theRowHeight * ((count_items() of my _filterAction) + 1)
+		set tableHeight to theRowHeight * ((call method "countResultRows" of appController) + 1)
 		
 		--set theRowHeight to theRowHeight + 4
 		set theViewRect to visible document rect of scroll view "CandidateTable"
@@ -236,7 +225,9 @@ on should close theObject -- "MainWindow" Only
 		end tell
 	end try
 	hide theObject
-	--quit
-	--call method "terminate:"
 	return false
 end should close
+
+on will finish launching theObject
+	set appController to call method "delegate"
+end will finish launching

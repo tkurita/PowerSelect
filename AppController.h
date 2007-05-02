@@ -4,5 +4,8 @@
 
 @interface AppController : NSObject
 {
+    IBOutlet id searchResult;
+	IBOutlet id searchResultController;
+
 }
 @end
