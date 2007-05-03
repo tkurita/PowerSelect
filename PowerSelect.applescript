@@ -8,6 +8,7 @@ property _searchComboBox : missing value
 property _candidateTable : missing value
 property mainWindow : missing value
 property appController : missing value
+property _targetLocationLabel : missing value
 
 (*== parameters *)
 property keyText : missing value
@@ -59,7 +60,6 @@ on clicked theObject
 		--log "filter mode:" & filterMode
 		
 		set my _filterAction to GetFilterResult(a_mode)
-		--log "success GetFilterResult"
 		
 		tell my _filterAction
 			if (is_found()) and (length of all_items() is 1) then
@@ -71,7 +71,7 @@ on clicked theObject
 		
 		set theDrawer to drawer "CandidateDrawer" of mainWindow
 		
-		set contents of text field "TargetLocationLabel" of theDrawer to target_container() of my _filterAction
+		set contents of contents of my _targetLocationLabel to target_container() of my _filterAction
 		my _filterAction's setup_pathes()
 		if state of theDrawer is drawer closed then
 			tell theDrawer to open drawer
@@ -91,6 +91,7 @@ on clicked theObject
 	else if theName is "SelectAllButton" then
 		selectAll() of _filterAction
 		quit
+		
 	end if
 	
 end clicked
@@ -131,6 +132,9 @@ on awake from nib theObject
 		
 	else if theName is "ModePopup" then
 		registControl(a reference to contents of contents of theObject, theName, 0) of DefaultValueManager
+		
+	else if theName is "TargetLocationLabel" then
+		set my _targetLocationLabel to theObject
 		
 	end if
 end awake from nib
@@ -231,3 +235,17 @@ end should close
 on will finish launching theObject
 	set appController to call method "delegate"
 end will finish launching
+
+on mouse up theObject event theEvent
+	set a_name to name of theObject
+	if a_name is "LocationBox" then
+		if click count of theEvent > 1 then
+			set a_location to target_container() of my _filterAction
+			tell application "Finder"
+				try
+					open a_location
+				end try
+			end tell
+		end if
+	end if
+end mouse up
