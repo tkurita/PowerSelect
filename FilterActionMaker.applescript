@@ -1,6 +1,5 @@
 global keyText
 global InsertionContainer
-global CandidateDataSource
 global mainWindow
 global appController
 
@@ -88,71 +87,68 @@ on select_in_Finder(target_items)
 	return true
 end select_in_Finder
 
-script FilterActionBase
-	
-	on make_for_location(a_location)
-		script FilterActionBaseCore
-			property _container : a_location
-			property _itemList : missing value
-		end script
-	end make_for_location
-	
-	on count_items()
-		return length of my _itemList
-	end count_items
-	
-	on all_items()
-		return my _itemList
-	end all_items
-	
-	on target_container()
-		return my _container
-	end target_container
-	
-	on is_found()
-		return (my _itemList is not {})
-	end is_found
-	
-	on setup_pathes()
-		set path_list to {}
-		repeat with an_item in my _itemList
-			set end of path_list to POSIX path of (an_item as alias)
-		end repeat
-		call method "setSearchResult:" of appController with parameter path_list
-		--return path_list
-	end setup_pathes
-	
-	on select_table_selection()
-		if not is_found() then
-			return false
-		end if
-		set path_list to call method "tableSelection"
-		set target_items to {}
-		repeat with a_path in path_list
-			set end of target_items to (POSIX file a_path)
-		end repeat
-		return select_in_Finder(target_items)
-	end select_table_selection
-	
-	on selectAll()
-		--log itemList
-		select_in_Finder(my _itemList)
-	end selectAll
-	
-	on GetItemList()
-		set my _itemList to doFilterAction()
-	end GetItemList
-	
-	on doFilterAction()
-		return {}
-	end doFilterAction
-end script
 
+on make_for_location(a_location)
+	script FilterActionBaseCore
+		property _container : a_location
+		property _itemList : missing value
+	end script
+end make_for_location
+
+on count_items()
+	return length of my _itemList
+end count_items
+
+on all_items()
+	return my _itemList
+end all_items
+
+on target_container()
+	return my _container
+end target_container
+
+on is_found()
+	return (my _itemList is not {})
+end is_found
+
+on setup_pathes()
+	set path_list to {}
+	repeat with an_item in my _itemList
+		set end of path_list to POSIX path of (an_item as alias)
+	end repeat
+	call method "setSearchResult:" of appController with parameter path_list
+	--return path_list
+end setup_pathes
+
+on select_table_selection()
+	if not is_found() then
+		return false
+	end if
+	set path_list to call method "tableSelection"
+	set target_items to {}
+	repeat with a_path in path_list
+		set end of target_items to (POSIX file a_path)
+	end repeat
+	return select_in_Finder(target_items)
+end select_table_selection
+
+on selectAll()
+	--log itemList
+	select_in_Finder(my _itemList)
+end selectAll
+
+on GetItemList()
+	set my _itemList to doFilterAction()
+end GetItemList
+
+on doFilterAction()
+	return {}
+end doFilterAction
 
 on do(a_location, a_mode)
 	--log "start do in FilterActionMaker"
 	--log a_location
-	set filter_action_base to make_for_location(a_location) of FilterActionBase
+	set filter_action_base to make_for_location(a_location)
 	
 	if a_mode is 1 then
 		script ContainFilter
