@@ -6,7 +6,7 @@ global appController
 on select_in_Finder(target_items)
 	--log "start select_in_Finder"
 	tell InsertionContainer
-		if (not is_in_window()) or (not is_determined_by_selection()) or (is_closed_folder()) then
+		if (not is_location_in_window()) or (not is_determined_by_selection()) or (is_closed_folder()) then
 			tell application "Finder"
 				select target_items
 			end tell
@@ -23,12 +23,22 @@ on select_in_Finder(target_items)
 		end if
 	end using terms from
 	
+	set a_window to target_window() of InsertionContainer
 	tell application "Finder"
+		try
+			set toolbar_visible to toolbar visible of a_window
+		on error
+			-- when target_window is closerd
+			select target_items
+			return true
+		end try
+		
+		set w_index to index of a_window
 		set selection to target_items
-		set toolbar_visible to toolbar visible of Finder window 1
 	end tell
 	
-	tell application "System Events" to tell (application process "Finder"'s window 1 whose description is "standard window")
+	--tell application "System Events" to tell (application process "Finder"'s window 1 whose description is "standard window")
+	tell application "System Events" to tell (application process "Finder"'s window w_index)
 		if toolbar_visible then
 			set t to splitter group 1
 		else
