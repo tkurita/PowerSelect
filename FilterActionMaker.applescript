@@ -57,12 +57,11 @@ on select_in_Finder(target_items)
 				set item_h to item 2 of (get size of first row)
 				if class of item 1 of pos_list is list then
 					set pos_list to item 1 of pos_list
-					set item_h to (item 2 of last item of pos_list) + item_h
+					set item_h to (item 2 of pos_list) + item_h
 				end if
 				set item_pos_t to ((item 2 of pos_list) - content_pos_v)
 				set item_pos_b to item_pos_t + item_h
 			end tell
-			
 			set scroll_properties to properties of it
 			set sbar_h to item 2 of (get size of scroll bar 2)
 			set scroll_size_v to ((item 2 of size of scroll_properties) - header_h - sbar_h) -- header をのぞいたサイズ
@@ -79,7 +78,6 @@ on select_in_Finder(target_items)
 		- current_t : 現在表示している outline の領域 top
 		- current_b : 現在表示している outline の領域 bottom
 		*)
-			
 			if hidden_v is 0 then return
 			if (current_t is less than or equal to item_pos_t) and (item_pos_b is less than or equal to current_b) then return
 			if (item_h > scroll_size_v) or (item_pos_b > current_b) then
@@ -93,7 +91,7 @@ on select_in_Finder(target_items)
 			set value of scroll bar 1 to scroll_ratio
 		end tell
 	end tell
-	
+	--log "end of select_in_Finder"
 	return true
 end select_in_Finder
 
