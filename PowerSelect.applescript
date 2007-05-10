@@ -16,6 +16,12 @@ property _filterAction : missing value
 property ComboBoxHistory : missing value
 property searchTextHistoryObj : missing value
 
+on initialize()
+	InsertionContainer's set_allow_closed_folder(false)
+end initialize
+
+property _init : initialize()
+
 on GetFilterResult(a_mode)
 	--log "start to set filter script obj"
 	
