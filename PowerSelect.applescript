@@ -1,5 +1,5 @@
 (*== Script Modules *)
-property InsertionContainer : load("InsertionContainer") of application (get "PowerSelectLib")
+property InsertionLocator : load("InsertionLocator") of application (get "PowerSelectLib")
 property FilterActionMaker : missing value
 property DefaultValueManager : missing value
 
@@ -17,7 +17,7 @@ property ComboBoxHistory : missing value
 property searchTextHistoryObj : missing value
 
 on initialize()
-	InsertionContainer's set_allow_closed_folder(false)
+	InsertionLocator's set_allow_closed_folder(false)
 end initialize
 
 property _init : initialize()
@@ -25,7 +25,7 @@ property _init : initialize()
 on GetFilterResult(a_mode)
 	--log "start to set filter script obj"
 	
-	set a_location to do() of InsertionContainer
+	set a_location to do() of InsertionLocator
 	if a_location is missing value then
 		set a_message to localized string "InvalidLocation"
 		

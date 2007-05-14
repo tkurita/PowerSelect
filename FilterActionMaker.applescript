@@ -1,11 +1,11 @@
 global keyText
-global InsertionContainer
+global InsertionLocator
 global mainWindow
 global appController
 
 on select_in_Finder(target_items)
 	--log "start select_in_Finder"
-	tell InsertionContainer
+	tell InsertionLocator
 		if (not is_location_in_window()) or (not is_determined_by_selection()) or (is_closed_folder()) then
 			tell application "Finder"
 				select target_items
@@ -15,7 +15,7 @@ on select_in_Finder(target_items)
 	end tell
 	
 	using terms from application "Finder"
-		if view_type() of InsertionContainer is not list view then
+		if view_type() of InsertionLocator is not list view then
 			tell application "Finder"
 				select target_items
 			end tell
@@ -23,7 +23,7 @@ on select_in_Finder(target_items)
 		end if
 	end using terms from
 	
-	set a_window to target_window() of InsertionContainer
+	set a_window to target_window() of InsertionLocator
 	tell application "Finder"
 		try
 			set toolbar_visible to toolbar visible of a_window
