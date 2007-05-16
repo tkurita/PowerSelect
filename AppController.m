@@ -1,4 +1,5 @@
 #import "AppController.h"
+#import "DonationReminder/DonationReminder.h"
 
 @implementation AppController
 
@@ -30,6 +31,16 @@
 		[NSApp terminate:self];
 		return;
     }
+	
+	NSString *defaultsPlistPath = [[NSBundle mainBundle] pathForResource:@"UserDefaults" ofType:@"plist"];
+	NSDictionary *defautlsDict = [NSDictionary dictionaryWithContentsOfFile:defaultsPlistPath];
+	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+	[userDefaults registerDefaults:defautlsDict];
+}
+
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+{
+	[DonationReminder remindDonation];
 }
 
 - (int)countResultRows
@@ -75,6 +86,11 @@ bail:
 - (NSArray *)tableSelection
 {
 	return [searchResultController valueForKeyPath:@"selectedObjects.path"];
+}
+
+- (IBAction)makeDonation:(id)sender
+{
+	[DonationReminder goToDonation];
 }
 
 @end

@@ -8,4 +8,7 @@
 	IBOutlet id searchResultController;
 
 }
+
+- (IBAction)makeDonation:(id)sender;
+
 @end
