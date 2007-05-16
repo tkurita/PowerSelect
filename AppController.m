@@ -46,7 +46,6 @@
 - (void)setSearchResult:(NSArray *)an_array
 {
 	NSMutableArray *result_array = [NSMutableArray array];
-	NSEnumerator *enumerator = [an_array objectEnumerator];
 	
 	if ([an_array count] < 1) {
 		NSString *message = NSLocalizedString(@"NoItemsFound",@"");
@@ -55,6 +54,7 @@
 		goto bail;
 	}
 	
+	NSEnumerator *enumerator = [an_array objectEnumerator];
 	NSString *a_path;
 	NSWorkspace *workspace = [NSWorkspace sharedWorkspace];
 	NSFileManager *file_manager = [NSFileManager defaultManager];

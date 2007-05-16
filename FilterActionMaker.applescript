@@ -140,18 +140,17 @@ on select_table_selection()
 	return select_in_Finder(target_items)
 end select_table_selection
 
-on selectAll()
-	--log itemList
+on select_all()
 	select_in_Finder(my _itemList)
-end selectAll
+end select_all
 
-on GetItemList()
-	set my _itemList to doFilterAction()
-end GetItemList
+on store_search_result()
+	set my _itemList to do_search()
+end store_search_result
 
-on doFilterAction()
+on do_search()
 	return {}
-end doFilterAction
+end do_search
 
 on do(a_location, a_mode)
 	--log "start do in FilterActionMaker"
@@ -161,72 +160,70 @@ on do(a_location, a_mode)
 	if a_mode is 1 then
 		script ContainFilter
 			property parent : filter_action_base
-			on doFilterAction()
+			on do_search()
 				tell application "Finder"
 					return every item of my _container whose name contains keyText
 				end tell
-			end doFilterAction
+			end do_search
 		end script
 		
 	else if a_mode is 2 then
 		script NotContainFilter
 			property parent : filter_action_base
-			on doFilterAction()
+			on do_search()
 				tell application "Finder"
 					return every item of my _container whose name does not contain keyText
 				end tell
-			end doFilterAction
+			end do_search
 		end script
 		
 	else if a_mode is 4 then
 		script StartWithFilter
 			property parent : filter_action_base
-			on doFilterAction()
+			on do_search()
 				tell application "Finder"
 					return every item of my _container whose name starts with keyText
 				end tell
-			end doFilterAction
+			end do_search
 		end script
 		
 	else if a_mode is 5 then
 		script NotStartWithFilter
 			property parent : filter_action_base
-			on doFilterAction()
+			on do_search()
 				tell application "Finder"
 					return every item of my _container whose name does not start with keyText
 				end tell
-			end doFilterAction
+			end do_search
 		end script
 		
 	else if a_mode is 7 then
 		script EndWithFilter
 			property parent : filter_action_base
-			on doFilterAction()
+			on do_search()
 				tell application "Finder"
 					return every item of my _container whose name ends with keyText
 				end tell
-			end doFilterAction
+			end do_search
 		end script
 		
 	else if a_mode is 8 then
 		script NotEndWithFilter
 			property parent : filter_action_base
-			on doFilterAction()
+			on do_search()
 				tell application "Finder"
 					return every item of my _container whose name does not end with keyText
 				end tell
-			end doFilterAction
+			end do_search
 		end script
 		
 	else
 		script InvalidFilter
-			on GetNameAndKindList()
-				my GetItemList()
-			end GetNameAndKindList
-			on GetItemList()
-				set theMessage to localized string "InternalError"
-				error theMessage number -128
-			end GetItemList
+			on do_search()
+				set a_message to localized string "InternalError"
+				error a_message number -128
+			end do_search
+			
 		end script
 	end if
 	

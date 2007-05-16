@@ -22,7 +22,7 @@ end initialize
 
 property _init : initialize()
 
-on GetFilterResult(a_mode)
+on perform_search(a_mode)
 	--log "start to set filter script obj"
 	
 	set a_location to do() of InsertionLocator
@@ -51,9 +51,9 @@ on GetFilterResult(a_mode)
 	end if
 	
 	set filter_action to do(a_location, a_mode) of FilterActionMaker
-	GetItemList() of filter_action
+	store_search_result() of filter_action
 	return filter_action
-end GetFilterResult
+end perform_search
 
 on clicked theObject
 	set theName to name of theObject
@@ -65,11 +65,10 @@ on clicked theObject
 		end tell
 		--log "filter mode:" & filterMode
 		
-		set my _filterAction to GetFilterResult(a_mode)
-		
+		set my _filterAction to perform_search(a_mode)
 		tell my _filterAction
-			if (is_found()) and (length of all_items() is 1) then
-				selectAll() of my _filterAction
+			if (is_found()) and (count_items() is 1) then
+				select_all() of my _filterAction
 				quit
 				return
 			end if
@@ -82,7 +81,7 @@ on clicked theObject
 		if state of theDrawer is drawer closed then
 			tell theDrawer to open drawer
 		else
-			setupDrawer(theDrawer)
+			setup_drawer(theDrawer)
 		end if
 		
 		addValue(keyText) of searchTextHistoryObj
@@ -95,7 +94,7 @@ on clicked theObject
 			quit
 		end if
 	else if theName is "SelectAllButton" then
-		selectAll() of _filterAction
+		select_all() of _filterAction
 		quit
 		
 	end if
@@ -170,8 +169,8 @@ on will resize theObject proposed size proposedSize
 	return content size of theObject
 end will resize
 
-on setupDrawer(theDrawer)
-	--log "start setupDrawer"
+on setup_drawer(theDrawer)
+	--log "start setup_drawer"
 	tell theDrawer
 		call method "setNextKeyView:" of scroll view "CandidateTable" with parameter _searchComboBox
 		set theRowHeight to row height of table view "CandidateTable" of scroll view "CandidateTable"
@@ -203,13 +202,13 @@ on setupDrawer(theDrawer)
 		end if
 		set enabled of button "SelectButton" to false
 	end tell
-end setupDrawer
+end setup_drawer
 
 on opened theObject
 	set theName to name of theObject
 	
 	if theName is "CandidateDrawer" then
-		setupDrawer(theObject)
+		setup_drawer(theObject)
 	end if
 end opened
 
