@@ -6,6 +6,9 @@ global appController
 on select_in_Finder(target_items)
 	--log "start select_in_Finder"
 	tell InsertionLocator
+		--log is_location_in_window()
+		--log is_determined_by_selection()
+		--log is_closed_folder()
 		if (not is_location_in_window()) or (not is_determined_by_selection()) or (is_closed_folder()) then
 			tell application "Finder"
 				select target_items
@@ -13,7 +16,6 @@ on select_in_Finder(target_items)
 			return true
 		end if
 	end tell
-	
 	using terms from application "Finder"
 		if view_type() of InsertionLocator is not list view then
 			tell application "Finder"
@@ -22,13 +24,12 @@ on select_in_Finder(target_items)
 			return true
 		end if
 	end using terms from
-	
 	set a_window to target_window() of InsertionLocator
 	tell application "Finder"
 		try
 			set toolbar_visible to toolbar visible of a_window
 		on error
-			-- when target_window is closerd
+			--log "target_window is closerd"
 			select target_items
 			return true
 		end try
@@ -36,7 +37,6 @@ on select_in_Finder(target_items)
 		set w_index to index of a_window
 		set selection to target_items
 	end tell
-	
 	--tell application "System Events" to tell (application process "Finder"'s window 1 whose description is "standard window")
 	tell application "System Events" to tell (application process "Finder"'s window w_index)
 		if toolbar_visible then
@@ -44,7 +44,6 @@ on select_in_Finder(target_items)
 		else
 			set t to it
 		end if
-		
 		tell scroll area -1 of t
 			tell outline 1
 				set outline_properties to properties of it
@@ -78,8 +77,10 @@ on select_in_Finder(target_items)
 		- current_t : 現在表示している outline の領域 top
 		- current_b : 現在表示している outline の領域 bottom
 		*)
-			if hidden_v is 0 then return
-			if (current_t is less than or equal to item_pos_t) and (item_pos_b is less than or equal to current_b) then return
+			if hidden_v is 0 then return true
+			if (current_t is less than or equal to item_pos_t) and (item_pos_b is less than or equal to current_b) then
+				return true
+			end if
 			if (item_h > scroll_size_v) or (item_pos_b > current_b) then
 				-- align with last item
 				set scroll_ratio to (item_pos_t + (item_h - scroll_size_v)) / hidden_v
@@ -91,7 +92,7 @@ on select_in_Finder(target_items)
 			set value of scroll bar 1 to scroll_ratio
 		end tell
 	end tell
-	--log "end of select_in_Finder"
+	-- log "end of select_in_Finder"
 	return true
 end select_in_Finder
 
