@@ -453,7 +453,7 @@
 				2C2371B9097F25A400693050 /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Release;
 		};
 		2C2371E5097F28A800693050 /* Build configuration list for PBXNativeTarget "PowerSelect" */ = {
 			isa = XCConfigurationList;
@@ -464,7 +464,7 @@
 				2C2371E9097F28A800693050 /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
