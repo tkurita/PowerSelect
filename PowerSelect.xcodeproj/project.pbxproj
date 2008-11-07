@@ -218,9 +218,11 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 2C2371B5097F25A400693050 /* Build configuration list for PBXProject "PowerSelect" */;
+			compatibilityVersion = "Xcode 2.4";
 			hasScannedForEncodings = 1;
 			mainGroup = 29B97314FDCFA39411CA2CEA /* Application */;
 			projectDirPath = "";
+			projectRoot = "";
 			targets = (
 				2C2371D6097F28A800693050 /* PowerSelect */,
 			);
