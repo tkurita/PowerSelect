@@ -9,6 +9,7 @@ property _candidateTable : missing value
 property mainWindow : missing value
 property appController : missing value
 property _targetLocationLabel : missing value
+property _indicator : missing value
 
 (*== parameters *)
 property keyText : missing value
@@ -55,10 +56,21 @@ on perform_search(a_mode)
 	return filter_action
 end perform_search
 
+on start_indicator()
+	set visible of _indicator to true
+	start _indicator
+end start_indicator
+
+on stop_indicator()
+	stop _indicator
+	set visible of _indicator to false
+end stop_indicator
+
 on clicked theObject
 	set theName to name of theObject
 	
 	if theName is "SearchButton" then
+		start_indicator()
 		tell mainWindow
 			set keyText to contents of combo box "SearchText"
 			set a_mode to (contents of popup button "ModePopup") + 1
@@ -85,6 +97,7 @@ on clicked theObject
 		end if
 		
 		addValue(keyText) of searchTextHistoryObj
+		stop_indicator()
 	else if theName is "CancelButton" then
 		close mainWindow
 		--quit
@@ -141,6 +154,8 @@ on awake from nib theObject
 	else if theName is "TargetLocationLabel" then
 		set my _targetLocationLabel to theObject
 		
+	else if theName is "Indicator" then
+		set my _indicator to theObject
 	end if
 end awake from nib
 
