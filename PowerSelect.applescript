@@ -148,9 +148,6 @@ on awake from nib theObject
 		registControl(a reference to contents of contents of theObject, theName, "") of DefaultValueManager
 		set _searchComboBox to theObject
 		
-	else if theName is "ModePopup" then
-		registControl(a reference to contents of contents of theObject, theName, 0) of DefaultValueManager
-		
 	else if theName is "TargetLocationLabel" then
 		set my _targetLocationLabel to theObject
 		
