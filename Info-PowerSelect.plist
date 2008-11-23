@@ -9,9 +9,7 @@
 	<key>CFBundleGetInfoString</key>
 	<string>2.1.3 copyright 1998-2008, Tetsuro KURITA</string>
 	<key>CFBundleHelpBookFolder</key>
-	<string>PowerSelect Help</string>
-	<key>CFBundleHelpBookName</key>
-	<string>PowerSelect ヘルプ</string>
+	<string>PowerSelectHelp</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>

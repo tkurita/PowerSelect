@@ -196,6 +196,8 @@
 		<dict>
 			<key>ChosenToolbarItems</key>
 			<array>
+				<string>XCToolbarPerspectiveControl</string>
+				<string>NSToolbarSeparatorItem</string>
 				<string>active-target-popup</string>
 				<string>active-buildstyle-popup</string>
 				<string>action</string>
@@ -220,6 +222,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -261,6 +265,7 @@
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>29B97318FDCFA39411CA2CEA</string>
+								<string>2C5453A50ED9532B0098D94A</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>1058C7A0FEA54F0111CA2CBB</string>
 								<string>1058C7A2FEA54F0111CA2CBB</string>
@@ -271,8 +276,9 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>3</integer>
-									<integer>2</integer>
+									<integer>18</integer>
+									<integer>17</integer>
+									<integer>7</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -309,14 +315,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>PowerSelect.applescript</string>
+								<string>InfoPlist.strings</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -324,20 +328,21 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>PowerSelect.applescript</string>
+										<string>InfoPlist.strings</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>2C5453410ED8F6090098D94A</string>
+										<string>2C5453CC0ED956EA0098D94A</string>
 										<key>history</key>
 										<array>
 											<string>2C717DD70BFB18AA00A8929B</string>
-											<string>2C82DA850CFC23E500BC6AF7</string>
 											<string>2CCCF3130EC20B65007FCADA</string>
 											<string>2CBD53300EC2A3ED00A14256</string>
-											<string>2C54532B0ED8F4920098D94A</string>
 											<string>2C54533D0ED8F6090098D94A</string>
-											<string>2C54533E0ED8F6090098D94A</string>
+											<string>2C5453AF0ED953780098D94A</string>
+											<string>2C5453B10ED953780098D94A</string>
+											<string>2C5453C00ED955630098D94A</string>
+											<string>2C5453C10ED955630098D94A</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -351,6 +356,13 @@
 											<string>2C54532C0ED8F4920098D94A</string>
 											<string>2C54533F0ED8F6090098D94A</string>
 											<string>2C5453400ED8F6090098D94A</string>
+											<string>2C5453B30ED953780098D94A</string>
+											<string>2C5453B40ED953780098D94A</string>
+											<string>2C5453B50ED953780098D94A</string>
+											<string>2C5453B60ED953780098D94A</string>
+											<string>2C5453B70ED953780098D94A</string>
+											<string>2C5453C20ED955630098D94A</string>
+											<string>2C5453C30ED955630098D94A</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -545,8 +557,8 @@
 	<key>WindowOrderList</key>
 	<array>
 		<string>2C2371AC097F25A400693050</string>
-		<string>/Users/tkurita/Dev/Projects/PowerSelect/trunk/PowerSelect.xcodeproj</string>
 		<string>1C0AD2B3069F1EA900FABCE6</string>
+		<string>/Users/tkurita/Dev/Projects/PowerSelect/trunk/PowerSelect.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>135 195 1091 731 0 0 1440 938 </string>
