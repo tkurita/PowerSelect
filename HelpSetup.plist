@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>IsLocalized</key>
@@ -8,5 +8,7 @@
 	<string>/Users/tkurita/Factories/Websites/scriptfactory/web-content/Softwares/FinderHelpers/PowerSelect/manual</string>
 	<key>ManualPage</key>
 	<string>index.html</string>
+	<key>AppleIcon</key>
+	<string>PowerSelect16.png</string>
 </dict>
 </plist>
