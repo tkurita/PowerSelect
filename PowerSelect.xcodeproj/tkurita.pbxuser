@@ -1,7 +1,7 @@
 // !$*UTF8*$!
 {
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
-		activeBuildConfigurationName = Debug;
+		activeBuildConfigurationName = Release;
 		activeExecutable = 2C2371EC097F28A900693050 /* PowerSelect */;
 		activeTarget = 2C2371D6097F28A800693050 /* PowerSelect */;
 		addToTargets = (
@@ -666,6 +666,11 @@
 			2CF038C010A2547A007707C2 /* PBXTextBookmark */ = 2CF038C010A2547A007707C2 /* PBXTextBookmark */;
 			2CF038C110A2547A007707C2 /* PBXTextBookmark */ = 2CF038C110A2547A007707C2 /* PBXTextBookmark */;
 			2CF038C210A2547A007707C2 /* PBXTextBookmark */ = 2CF038C210A2547A007707C2 /* PBXTextBookmark */;
+			2CF0392A10A25658007707C2 /* PBXTextBookmark */ = 2CF0392A10A25658007707C2 /* PBXTextBookmark */;
+			2CF0392B10A25658007707C2 /* PBXTextBookmark */ = 2CF0392B10A25658007707C2 /* PBXTextBookmark */;
+			2CF0392C10A25658007707C2 /* PBXTextBookmark */ = 2CF0392C10A25658007707C2 /* PBXTextBookmark */;
+			2CF0392D10A25658007707C2 /* PBXTextBookmark */ = 2CF0392D10A25658007707C2 /* PBXTextBookmark */;
+			2CF0392E10A25658007707C2 /* PBXTextBookmark */ = 2CF0392E10A25658007707C2 /* PBXTextBookmark */;
 			2CF21DC91039A62700974C81 = 2CF21DC91039A62700974C81 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 2CE5B935067839E1006E3003 /* Source Control */;
@@ -834,14 +839,6 @@
 		name = "/Users/tkurita/Dev/Projects/PowerSelect/PowerSelect/trunk/Info-PowerSelect.plist";
 		rLen = 0;
 		rLoc = 2147483647;
-	};
-	2C5453430ED950B20098D94A /* Credits.html */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {841, 760}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRect = "{{0, 0}, {841, 760}}";
-			sepNavWindowFrame = "{{15, 100}, {880, 833}}";
-		};
 	};
 	2C5453A10ED953190098D94A /* English */ = {
 		uiCtxt = {
@@ -1768,6 +1765,63 @@
 		vrLen = 494;
 		vrLoc = 0;
 	};
+	2CF038F210A25517007707C2 /* Credits.rtf */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {761, 463}}";
+			sepNavSelRange = "{157, 0}";
+			sepNavVisRect = "{{0, 0}, {761, 463}}";
+		};
+	};
+	2CF0392A10A25658007707C2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2CF0385B10A24DB7007707C2 /* CheckGUIScripting.applescript */;
+		name = "CheckGUIScripting.applescript: 26";
+		rLen = 0;
+		rLoc = 494;
+		rType = 0;
+		vrLen = 494;
+		vrLoc = 0;
+	};
+	2CF0392B10A25658007707C2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2CF038F210A25517007707C2 /* Credits.rtf */;
+		name = "Credits.rtf: 9";
+		rLen = 0;
+		rLoc = 157;
+		rType = 0;
+		vrLen = 983;
+		vrLoc = 0;
+	};
+	2CF0392C10A25658007707C2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2CF0385B10A24DB7007707C2 /* CheckGUIScripting.applescript */;
+		name = "CheckGUIScripting.applescript: 26";
+		rLen = 0;
+		rLoc = 494;
+		rType = 0;
+		vrLen = 494;
+		vrLoc = 0;
+	};
+	2CF0392D10A25658007707C2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2CF038F210A25517007707C2 /* Credits.rtf */;
+		name = "Credits.rtf: 9";
+		rLen = 0;
+		rLoc = 157;
+		rType = 0;
+		vrLen = 983;
+		vrLoc = 0;
+	};
+	2CF0392E10A25658007707C2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2CF038F210A25517007707C2 /* Credits.rtf */;
+		name = "Credits.rtf: 9";
+		rLen = 0;
+		rLoc = 157;
+		rType = 0;
+		vrLen = 983;
+		vrLoc = 0;
+	};
 	2CF21DC91039A62700974C81 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = DA206CF3015C4E8B03C91932 /* PowerSelect.applescript */;
@@ -1789,9 +1843,9 @@
 	};
 	DA206CF3015C4E8B03C91932 /* PowerSelect.applescript */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {904, 4186}}";
-			sepNavSelRange = "{4108, 0}";
-			sepNavVisRange = "{4105, 884}";
+			sepNavIntBoundsRect = "{{0, 0}, {1044, 4015}}";
+			sepNavSelRange = "{7723, 0}";
+			sepNavVisRange = "{0, 476}";
 			sepNavVisRect = "{{0, 0}, {761, 654}}";
 			sepNavWindowFrame = "{{198, 77}, {661, 742}}";
 		};
