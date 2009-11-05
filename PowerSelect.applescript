@@ -1,7 +1,16 @@
 (*== Script Modules *)
-property InsertionLocator : load("InsertionLocator") of application (get "PowerSelectLib")
+property loader : proxy() of application (get "PowerSelectLib")
+--property loader : proxy_with({autocollect:true}) of application (get "PowerSelectLib")
+
+on load(a_name)
+	return loader's load(a_name)
+end load
+
+property InsertionLocator : load("InsertionLocator")
+property GUIScriptingChecker : load("GUIScriptingChecker")
 property FilterActionMaker : missing value
 property DefaultValueManager : missing value
+property CheckGUIScripting : missing value
 
 (*== GUI items *)
 property _searchComboBox : missing value
@@ -122,6 +131,7 @@ on import_script(scriptName)
 end import_script
 
 on will open theObject
+	--log "will open"
 	set theName to name of theObject
 	
 	if theName is "MainWindow" then
@@ -130,7 +140,11 @@ on will open theObject
 		set ComboBoxHistory to import_script("ComboBoxHistory")
 		set DefaultValueManager to import_script("DefaultValueManager")
 		set FilterActionMaker to import_script("FilterActionMaker")
-		
+		set CheckGUIScripting to import_script("CheckGUIScripting")
+		if not (run CheckGUIScripting) then
+			quit
+			return
+		end if
 		set windowPosition to registControl(a reference to position of theObject, "WindowPosition", {0, 0}) of DefaultValueManager
 		if currentValue of windowPosition is {0, 0} then
 			center theObject
@@ -139,6 +153,7 @@ on will open theObject
 end will open
 
 on awake from nib theObject
+	--log "start awake from nib"
 	set theName to name of theObject
 	
 	if theName is "SearchText" then
@@ -250,6 +265,7 @@ on should close theObject -- "MainWindow" Only
 end should close
 
 on will finish launching theObject
+	log "will finish launching"
 	set appController to call method "delegate"
 end will finish launching
 

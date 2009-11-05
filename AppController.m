@@ -14,6 +14,7 @@
 	NSLog(@"start applicationWillFinishLaunching");
 #endif	
 	/* checking checking UI Elements Scripting ... */
+	/*
 	if (!AXAPIEnabled()) {
 		[NSApp activateIgnoringOtherApps:YES];
 		int ret = NSRunAlertPanel(NSLocalizedString(@"disableUIScripting", ""), @"", 
@@ -31,7 +32,7 @@
 		[NSApp terminate:self];
 		return;
     }
-	
+	*/
 	NSString *defaultsPlistPath = [[NSBundle mainBundle] pathForResource:@"UserDefaults" ofType:@"plist"];
 	NSDictionary *defautlsDict = [NSDictionary dictionaryWithContentsOfFile:defaultsPlistPath];
 	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
