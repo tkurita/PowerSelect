@@ -2,9 +2,18 @@ global keyText
 global InsertionLocator
 global mainWindow
 global appController
+global XList
 
 on select_in_Finder(target_items)
 	--log "start select_in_Finder"
+	set x_list to XList's make_with(target_items)
+	script to_fileref
+		on do(an_item)
+			return POSIX file an_item
+		end do
+	end script
+	
+	set target_items to x_list's map_as_list(to_fileref)
 	tell InsertionLocator
 		--log is_location_in_window()
 		--log is_determined_by_selection()
@@ -138,9 +147,7 @@ end is_found
 
 on setup_pathes()
 	set path_list to {}
-	repeat with an_item in my _itemList
-		set end of path_list to POSIX path of (an_item as alias)
-	end repeat
+	set path_list to my _itemList
 	call method "setSearchResult:" of appController with parameter path_list
 	--return path_list
 end setup_pathes
@@ -178,9 +185,7 @@ on do(a_location, a_mode)
 		script ContainFilter
 			property parent : filter_action_base
 			on do_search()
-				tell application "Finder"
-					return every item of my _container whose name contains keyText
-				end tell
+				return call method "searchAtDirectory:withString:withMethod:" of appController with parameters {my _container, keyText, "nameContain:"}
 			end do_search
 		end script
 		
@@ -188,9 +193,7 @@ on do(a_location, a_mode)
 		script NotContainFilter
 			property parent : filter_action_base
 			on do_search()
-				tell application "Finder"
-					return every item of my _container whose name does not contain keyText
-				end tell
+				return call method "searchAtDirectory:withString:withMethod:" of appController with parameters {my _container, keyText, "nameNotContain:"}
 			end do_search
 		end script
 		
@@ -198,9 +201,7 @@ on do(a_location, a_mode)
 		script StartWithFilter
 			property parent : filter_action_base
 			on do_search()
-				tell application "Finder"
-					return every item of my _container whose name starts with keyText
-				end tell
+				return call method "searchAtDirectory:withString:withMethod:" of appController with parameters {my _container, keyText, "nameHasPrefix:"}
 			end do_search
 		end script
 		
@@ -208,9 +209,7 @@ on do(a_location, a_mode)
 		script NotStartWithFilter
 			property parent : filter_action_base
 			on do_search()
-				tell application "Finder"
-					return every item of my _container whose name does not start with keyText
-				end tell
+				return call method "searchAtDirectory:withString:withMethod:" of appController with parameters {my _container, keyText, "nameNotHasPrefix:"}
 			end do_search
 		end script
 		
@@ -218,9 +217,7 @@ on do(a_location, a_mode)
 		script EndWithFilter
 			property parent : filter_action_base
 			on do_search()
-				tell application "Finder"
-					return every item of my _container whose name ends with keyText
-				end tell
+				return call method "searchAtDirectory:withString:withMethod:" of appController with parameters {my _container, keyText, "nameHasSuffix:"}
 			end do_search
 		end script
 		
@@ -228,9 +225,7 @@ on do(a_location, a_mode)
 		script NotEndWithFilter
 			property parent : filter_action_base
 			on do_search()
-				tell application "Finder"
-					return every item of my _container whose name does not end with keyText
-				end tell
+				return call method "searchAtDirectory:withString:withMethod:" of appController with parameters {my _container, keyText, "nameNotHasSuffix:"}
 			end do_search
 		end script
 		

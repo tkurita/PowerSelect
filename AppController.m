@@ -1,5 +1,40 @@
 #import "AppController.h"
 #import "DonationReminder/DonationReminder.h"
+#import "CocoaLib/StringExtra.h"
+
+#define CMPARE_OPTIONS NSCaseInsensitiveSearch
+@implementation NSString (PowerSelectExtra)
+
+- (BOOL)nameContain:(NSString *)containedText
+{
+	return [self contain:containedText options:CMPARE_OPTIONS];
+}
+
+- (BOOL)nameNotContain:(NSString *)containedText
+{
+	return ![self contain:containedText options:CMPARE_OPTIONS];
+}
+
+- (BOOL)nameHasPrefix:(NSString *)text
+{
+	return [self hasPrefix:text options:CMPARE_OPTIONS];
+}
+
+- (BOOL)nameNotHasPrefix:(NSString *)text
+{
+	return ![self hasPrefix:text options:CMPARE_OPTIONS];
+}
+
+- (BOOL)nameHasSuffix:(NSString *)text
+{
+	return [self hasSuffix:text options:CMPARE_OPTIONS];
+}
+
+- (BOOL)nameNotHasSuffix:(NSString *)text
+{
+	return ![self hasSuffix:text options:CMPARE_OPTIONS];
+}
+@end
 
 @implementation AppController
 
@@ -96,19 +131,19 @@ bail:
 
 #pragma mark search directory
 
-- (NSArray *)searchAtDirectory:(NSString*)path withText:(NSString*)subText withMethod:(NSString *)methodName
+- (NSArray *)searchAtDirectory:(NSString*)path withString:(NSString*)subText withMethod:(NSString *)methodName
 {
 	NSFileManager *file_manager = [NSFileManager defaultManager];
 	NSDirectoryEnumerator *enumerator = [file_manager enumeratorAtPath:path];
-	NSString *item_path;
+	NSString *item_name;
 	NSMutableArray *results = [NSMutableArray arrayWithCapacity:1];
 	SEL selector = NSSelectorFromString(methodName);
-	while (item_path = [enumerator nextObject]) {
+	while (item_name = [enumerator nextObject]) {
+		BOOL matched = (BOOL)[item_name performSelector:selector withObject:subText];
+		if (matched) {
+			[results addObject:[path stringByAppendingPathComponent:item_name]];
+		}
 		[enumerator skipDescendents];
-		NSString *item_name = [item_path lastPathComponent];
-		if ([item_name performSelector:selector withObject:subText]) {
-			[results addObject:item_path];
-		}	
 	}
 	
 	return results;

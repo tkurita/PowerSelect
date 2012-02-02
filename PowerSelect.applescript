@@ -1,13 +1,9 @@
 (*== Script Modules *)
-property loader : proxy() of application (get "PowerSelectLib")
---property loader : proxy_with({autocollect:true}) of application (get "PowerSelectLib")
+property InsertionLocator : module
+property GUIScriptingChecker : module
+property XList : module
+property loader : boot (module loader of application (get "PowerSelectLib")) for me
 
-on load(a_name)
-	return loader's load(a_name)
-end load
-
-property InsertionLocator : load("InsertionLocator")
-property GUIScriptingChecker : load("GUIScriptingChecker")
 property FilterActionMaker : missing value
 property DefaultValueManager : missing value
 property CheckGUIScripting : missing value
@@ -265,7 +261,7 @@ on should close theObject -- "MainWindow" Only
 end should close
 
 on will finish launching theObject
-	log "will finish launching"
+	-- log "will finish launching"
 	set appController to call method "delegate"
 end will finish launching
 
