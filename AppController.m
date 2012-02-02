@@ -94,4 +94,24 @@ bail:
 	[DonationReminder goToDonation];
 }
 
+#pragma mark search directory
+
+- (NSArray *)searchAtDirectory:(NSString*)path withText:(NSString*)subText withMethod:(NSString *)methodName
+{
+	NSFileManager *file_manager = [NSFileManager defaultManager];
+	NSDirectoryEnumerator *enumerator = [file_manager enumeratorAtPath:path];
+	NSString *item_path;
+	NSMutableArray *results = [NSMutableArray arrayWithCapacity:1];
+	SEL selector = NSSelectorFromString(methodName);
+	while (item_path = [enumerator nextObject]) {
+		[enumerator skipDescendents];
+		NSString *item_name = [item_path lastPathComponent];
+		if ([item_name performSelector:selector withObject:subText]) {
+			[results addObject:item_path];
+		}	
+	}
+	
+	return results;
+}
+
 @end
