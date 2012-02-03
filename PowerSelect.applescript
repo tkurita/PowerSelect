@@ -85,7 +85,7 @@ on clicked theObject
 		set my _filterAction to perform_search(a_mode)
 		tell my _filterAction
 			if (is_found()) and (count_items() is 1) then
-				select_all() of my _filterAction
+				my _filterAction's select_all()
 				quit
 				return
 			end if
@@ -108,11 +108,11 @@ on clicked theObject
 		--quit
 	else if theName is "SelectButton" then
 		--set selectNumList to selected rows of table view "CandidateTable" of scroll view "CandidateTable" of drawer "CandidateDrawer" of mainWindow
-		if (select_table_selection() of my _filterAction) then
+		if (my _filterAction's select_table_selection()) then
 			quit
 		end if
 	else if theName is "SelectAllButton" then
-		select_all() of _filterAction
+		my _filterAction's select_all()
 		quit
 		
 	end if

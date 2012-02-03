@@ -5,15 +5,13 @@ global appController
 global XList
 
 on select_in_Finder(target_items)
-	--log "start select_in_Finder"
-	set x_list to XList's make_with(target_items)
 	script to_fileref
 		on do(an_item)
 			return POSIX file an_item
 		end do
 	end script
 	
-	set target_items to x_list's map_as_list(to_fileref)
+	set target_items to target_items's map_as_list(to_fileref)
 	tell InsertionLocator
 		--log is_location_in_window()
 		--log is_determined_by_selection()
@@ -130,11 +128,11 @@ on make_for_location(a_location)
 end make_for_location
 
 on count_items()
-	return length of my _itemList
+	return my _itemList's item_counts()
 end count_items
 
 on all_items()
-	return my _itemList
+	return my _itemList's list_ref()
 end all_items
 
 on target_container()
@@ -142,12 +140,12 @@ on target_container()
 end target_container
 
 on is_found()
-	return (my _itemList is not {})
+	return (my _itemList's item_counts() is not 0)
 end is_found
 
 on setup_pathes()
 	set path_list to {}
-	set path_list to my _itemList
+	set path_list to my _itemList's list_ref()
 	call method "setSearchResult:" of appController with parameter path_list
 	--return path_list
 end setup_pathes
@@ -157,10 +155,7 @@ on select_table_selection()
 		return false
 	end if
 	set path_list to call method "tableSelection"
-	set target_items to {}
-	repeat with a_path in path_list
-		set end of target_items to (POSIX file a_path)
-	end repeat
+	set target_items to XList's make_with(path_list)
 	return select_in_Finder(target_items)
 end select_table_selection
 
@@ -169,7 +164,7 @@ on select_all()
 end select_all
 
 on store_search_result()
-	set my _itemList to do_search()
+	set my _itemList to XList's make_with(do_search())
 end store_search_result
 
 on do_search()
