@@ -736,6 +736,7 @@
 			2C91CFB714DBEC9D00588379 /* PBXTextBookmark */ = 2C91CFB714DBEC9D00588379 /* PBXTextBookmark */;
 			2C91CFB814DBEC9D00588379 /* PBXTextBookmark */ = 2C91CFB814DBEC9D00588379 /* PBXTextBookmark */;
 			2C91CFB914DBECA100588379 /* PBXTextBookmark */ = 2C91CFB914DBECA100588379 /* PBXTextBookmark */;
+			2C91CFBE14DBEE5A00588379 /* PBXTextBookmark */ = 2C91CFBE14DBEE5A00588379 /* PBXTextBookmark */;
 			2CAEA5CF0BED81BF00B2555E = 2CAEA5CF0BED81BF00B2555E /* PBXTextBookmark */;
 			2CB5352C10A3B08D0076627A = 2CB5352C10A3B08D0076627A /* PlistBookmark */;
 			2CC01CE20F1B2340003DF3C8 = 2CC01CE20F1B2340003DF3C8 /* PlistBookmark */;
@@ -903,7 +904,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {859, 1989}}";
 			sepNavSelRange = "{3888, 0}";
-			sepNavVisRange = "{3563, 901}";
+			sepNavVisRange = "{1816, 766}";
 			sepNavVisRect = "{{0, 0}, {761, 497}}";
 			sepNavWindowFrame = "{{15, 71}, {756, 756}}";
 		};
@@ -2476,6 +2477,16 @@
 		rType = 0;
 		vrLen = 901;
 		vrLoc = 3563;
+	};
+	2C91CFBE14DBEE5A00588379 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2C3DB6700BE1C51900FD7D6E /* AppController.m */;
+		name = "AppController.m: 135";
+		rLen = 0;
+		rLoc = 3888;
+		rType = 0;
+		vrLen = 766;
+		vrLoc = 1816;
 	};
 	2C9227980BE06CBA00F055A3 /* PowerSelect.applescript:1 */ = {
 		isa = PBXFileBreakpoint;
