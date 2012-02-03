@@ -1,0 +1,10 @@
+"NoItemsFound" = "条件にあった項目が見つかりません。";
+"InternalError" = "内部エラー。作者に連絡を取ってください。";
+"InvalidLocation" = "選択されている場所が不適当です。";
+"Cancel" = "キャンセル";
+"disableUIScripting" = "GUI スクリプティングが使用可能になっていません。\rシステム環境設定をを起動して、「補助装置にアクセスできるようにする」を ON にしてください。";
+"Launch System Preferences" = "システム環境設定を起動";
+"this software" = "PowerSelect";
+"Enable GUI Scripting" = "GUI スクリプティングを使用可能にする";
+"GUI Scripting is not enabled." = "GUI スクリプティングが使用可能になっていません。";
+"Enable GUI Scripting ?" = "GUI スクリプティングを試用可能にしますか ? (システム環境設定の\"補助装置にアクセスできるようにする\"が ON になります。)";

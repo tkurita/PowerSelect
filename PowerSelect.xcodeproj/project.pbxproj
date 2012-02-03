@@ -81,6 +81,9 @@
 		2C814FBC0BFACF8C00814390 /* UserDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 2147483649; lastKnownFileType = text.plist.xml; path = UserDefaults.plist; sourceTree = "<group>"; };
 		2C91CE0A14DACCC500588379 /* StringExtra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringExtra.h; sourceTree = "<group>"; };
 		2C91CE0B14DACCC500588379 /* StringExtra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringExtra.m; sourceTree = "<group>"; };
+		2C91CF6F14DB906E00588379 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Japanese; path = Japanese.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		2C91CF7814DB990100588379 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Japanese; path = Japanese.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C91CF7914DB991E00588379 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Japanese; path = Japanese.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2C9B3146067879DF00ED69CB /* DefaultValueManager.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = DefaultValueManager.applescript; sourceTree = "<group>"; };
 		2CB0C9F40F1A17640091C640 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = ../Sparkle.framework; sourceTree = SOURCE_ROOT; };
 		2CC01CD60F1B006A003DF3C8 /* PowerSelect.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = PowerSelect.icns; sourceTree = "<group>"; };
@@ -226,6 +229,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C2371E5097F28A800693050 /* Build configuration list for PBXNativeTarget "PowerSelect" */;
 			buildPhases = (
+				2C91CF6114DAF58400588379 /* ShellScript */,
 				2C2371D7097F28A800693050 /* Headers */,
 				2C2371D8097F28A800693050 /* AppleScript */,
 				2C2371DC097F28A800693050 /* Resources */,
@@ -300,6 +304,21 @@
 			shellPath = /bin/sh;
 			shellScript = "if [ \"$BUILD_STYLE\" = 'Deployment' ]; then\nhelpdir=\"$BUILT_PRODUCTS_DIR/$TARGET_NAME.app/Contents/Resources/$TARGET_NAME Help\"\nmkdir -p \"$helpdir\"\nsitetear_path='/usr/local/bin/sitetear'\nmanual_folder='/Users/tkurita/Factories/Websites/scriptfactory folder/scriptfactory/ScriptGallery/FinderScripts/PowerSelect/manual'\nmanual_page=\"index.html\" \nmanual_path=\"$manual_folder/$manual_page\"\nperl \"$sitetear_path\" \"$manual_path\" \"$helpdir/$manual_page\"\nopen -a 'Help Indexer' \"$helpdir\"\nfi\n";
 		};
+		2C91CF6114DAF58400588379 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/English.lproj/MainMenu.nib",
+			);
+			outputPaths = (
+				"$(SRCROOT)/Japanese.lproj/MainMenu.nib",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Extract English strings (use this to check if you added new strings to your nibs)\n#ibtool --generate-strings-file Resources/English.lproj/MainWindow.strings Resources/#English.lproj/MainWindow.xib\n# Generate Localized interface\n\nfunction generate_localized_interface\n{\nbase_lang=$1\ntarget_lang=$2\ntarget_nib=$3\n\nnib_basename=`basename ${target_nib} .nib` \nibtool --strings-file ${target_lang}.lproj/${nib_basename}.strings --write ${target_lang}.lproj/${target_nib} ${base_lang}.lproj/${target_nib}\nrm -rf ${target_lang}.lproj/${target_nib}/.svn\n}\n\ngenerate_localized_interface English Japanese MainMenu.nib\n\n\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -320,6 +339,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				29B97319FDCFA39411CA2CEA /* English */,
+				2C91CF6F14DB906E00588379 /* Japanese */,
 			);
 			name = MainMenu.nib;
 			sourceTree = "<group>";
@@ -328,6 +348,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				2C4A6D9E097F6BAC00D4AF6B /* English */,
+				2C91CF7814DB990100588379 /* Japanese */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -336,6 +357,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				2C5453A10ED953190098D94A /* English */,
+				2C91CF7914DB991E00588379 /* Japanese */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
