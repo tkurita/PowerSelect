@@ -15,11 +15,11 @@
 
 @interface NSString (PowerSelectExtra) 
 
-- (BOOL)nameContain:(NSString *)containedText;
-- (BOOL)nameNotContain:(NSString *)containedText; 
-- (BOOL)nameHasPrefix:(NSString *)text;
-- (BOOL)nameNotHasPrefix:(NSString *)text;
-- (BOOL)nameHasSuffix:(NSString *)text;
-- (BOOL)nameNotHasSuffix:(NSString *)text;
+- (NSNumber *)nameContain:(NSString *)containedText;
+- (NSNumber *)nameNotContain:(NSString *)containedText; 
+- (NSNumber *)nameHasPrefix:(NSString *)text;
+- (NSNumber *)nameNotHasPrefix:(NSString *)text;
+- (NSNumber *)nameHasSuffix:(NSString *)text;
+- (NSNumber *)nameNotHasSuffix:(NSString *)text;
 
 @end

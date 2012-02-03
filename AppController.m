@@ -5,34 +5,34 @@
 #define CMPARE_OPTIONS NSCaseInsensitiveSearch
 @implementation NSString (PowerSelectExtra)
 
-- (BOOL)nameContain:(NSString *)containedText
+- (NSNumber *)nameContain:(NSString *)containedText
 {
-	return [self contain:containedText options:CMPARE_OPTIONS];
+	return [NSNumber numberWithBool:[self contain:containedText options:CMPARE_OPTIONS]];
 }
 
-- (BOOL)nameNotContain:(NSString *)containedText
+- (NSNumber *)nameNotContain:(NSString *)containedText
 {
-	return ![self contain:containedText options:CMPARE_OPTIONS];
+	return [NSNumber numberWithBool:![self contain:containedText options:CMPARE_OPTIONS]];
 }
 
-- (BOOL)nameHasPrefix:(NSString *)text
+- (NSNumber *)nameHasPrefix:(NSString *)text
 {
-	return [self hasPrefix:text options:CMPARE_OPTIONS];
+	return [NSNumber numberWithBool:[self hasPrefix:text options:CMPARE_OPTIONS]];
 }
 
-- (BOOL)nameNotHasPrefix:(NSString *)text
+- (NSNumber *)nameNotHasPrefix:(NSString *)text
 {
-	return ![self hasPrefix:text options:CMPARE_OPTIONS];
+	return [NSNumber numberWithBool:![self hasPrefix:text options:CMPARE_OPTIONS]];
 }
 
-- (BOOL)nameHasSuffix:(NSString *)text
+- (NSNumber *)nameHasSuffix:(NSString *)text
 {
-	return [self hasSuffix:text options:CMPARE_OPTIONS];
+	return [NSNumber numberWithBool:[self hasSuffix:text options:CMPARE_OPTIONS]];
 }
 
-- (BOOL)nameNotHasSuffix:(NSString *)text
+- (NSNumber *)nameNotHasSuffix:(NSString *)text
 {
-	return ![self hasSuffix:text options:CMPARE_OPTIONS];
+	return [NSNumber numberWithBool:![self hasSuffix:text options:CMPARE_OPTIONS]];
 }
 @end
 
@@ -139,7 +139,7 @@ bail:
 	NSMutableArray *results = [NSMutableArray arrayWithCapacity:1];
 	SEL selector = NSSelectorFromString(methodName);
 	while (item_name = [enumerator nextObject]) {
-		BOOL matched = (BOOL)[item_name performSelector:selector withObject:subText];
+		BOOL matched = [(NSNumber *)[item_name performSelector:selector withObject:subText] boolValue];
 		if (matched) {
 			[results addObject:[path stringByAppendingPathComponent:item_name]];
 		}
