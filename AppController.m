@@ -1,6 +1,7 @@
 #import "AppController.h"
 #import "DonationReminder/DonationReminder.h"
 #import "CocoaLib/StringExtra.h"
+#import "CocoaLib/PathExtra.h"
 
 #define CMPARE_OPTIONS NSCaseInsensitiveSearch
 @implementation NSString (PowerSelectExtra)
@@ -141,7 +142,8 @@ bail:
 	while (item_name = [enumerator nextObject]) {
 		BOOL matched = [(NSNumber *)[item_name performSelector:selector withObject:subText] boolValue];
 		if (matched) {
-			[results addObject:[path stringByAppendingPathComponent:item_name]];
+			NSString *matched_item = [path stringByAppendingPathComponent:item_name];
+			if ([matched_item isVisible]) [results addObject:matched_item];
 		}
 		[enumerator skipDescendents];
 	}

@@ -33,6 +33,8 @@
 		2C2371E3097F28A800693050 /* AppleScriptKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA206CF1015C4E2903C91932 /* AppleScriptKit.framework */; };
 		2C3DB6710BE1C51A00FD7D6E /* AppController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C3DB66F0BE1C51900FD7D6E /* AppController.h */; };
 		2C3DB6720BE1C51A00FD7D6E /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3DB6700BE1C51900FD7D6E /* AppController.m */; };
+		2C4186C714DFF74E008F3F5E /* PathExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4186C514DFF74E008F3F5E /* PathExtra.m */; };
+		2C4186DE14DFFC0B008F3F5E /* NSURL+NDCarbonUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4186DC14DFFC0B008F3F5E /* NSURL+NDCarbonUtilities.m */; };
 		2C4A6D9F097F6BAC00D4AF6B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C4A6D9D097F6BAB00D4AF6B /* Localizable.strings */; };
 		2C5453A60ED9532B0098D94A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C5453A50ED9532B0098D94A /* InfoPlist.strings */; };
 		2C717DA90BFB079400A8929B /* HelpSetup.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C717DA80BFB079400A8929B /* HelpSetup.plist */; };
@@ -74,6 +76,10 @@
 		2C2371EB097F28A900693050 /* PowerSelect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerSelect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C3DB66F0BE1C51900FD7D6E /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 2147483649; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		2C3DB6700BE1C51900FD7D6E /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 2147483649; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		2C4186C414DFF74E008F3F5E /* PathExtra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathExtra.h; sourceTree = "<group>"; };
+		2C4186C514DFF74E008F3F5E /* PathExtra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathExtra.m; sourceTree = "<group>"; };
+		2C4186DB14DFFC0B008F3F5E /* NSURL+NDCarbonUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+NDCarbonUtilities.h"; sourceTree = "<group>"; };
+		2C4186DC14DFFC0B008F3F5E /* NSURL+NDCarbonUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+NDCarbonUtilities.m"; sourceTree = "<group>"; };
 		2C4A6D9E097F6BAC00D4AF6B /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; lineEnding = 0; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2C5453A10ED953190098D94A /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2C717DA80BFB079400A8929B /* HelpSetup.plist */ = {isa = PBXFileReference; explicitFileType = text.plist; fileEncoding = 4; path = HelpSetup.plist; sourceTree = "<group>"; };
@@ -205,7 +211,11 @@
 		2C91CDFD14DACCC500588379 /* CocoaLib */ = {
 			isa = PBXGroup;
 			children = (
+				2C4186DB14DFFC0B008F3F5E /* NSURL+NDCarbonUtilities.h */,
+				2C4186DC14DFFC0B008F3F5E /* NSURL+NDCarbonUtilities.m */,
 				2C91CE0A14DACCC500588379 /* StringExtra.h */,
+				2C4186C414DFF74E008F3F5E /* PathExtra.h */,
+				2C4186C514DFF74E008F3F5E /* PathExtra.m */,
 				2C91CE0B14DACCC500588379 /* StringExtra.m */,
 			);
 			path = CocoaLib;
@@ -329,6 +339,8 @@
 				2C2371E0097F28A800693050 /* main.m in Sources */,
 				2C3DB6720BE1C51A00FD7D6E /* AppController.m in Sources */,
 				2C91CE1B14DACCC500588379 /* StringExtra.m in Sources */,
+				2C4186C714DFF74E008F3F5E /* PathExtra.m in Sources */,
+				2C4186DE14DFFC0B008F3F5E /* NSURL+NDCarbonUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,7 +420,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
@@ -447,7 +459,7 @@
 					i386,
 				);
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
@@ -481,7 +493,7 @@
 		2C2371E8097F28A800693050 /* SD Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
@@ -511,7 +523,7 @@
 		2C2371E9097F28A800693050 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
