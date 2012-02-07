@@ -152,7 +152,7 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 350223534;
+			PBXPerProjectTemplateStateSaveDate = 350297324;
 			PBXPrepackagedSmartGroups_v2 = (
 				{
 					PBXTransientLocationAtTop = bottom;
@@ -588,23 +588,15 @@
 				Frame = "{{0, 0}, {745, 422}}";
 				RubberWindowFrame = "311 275 745 464 0 0 1280 832 ";
 			};
-			PBXWorkspaceStateSaveDate = 350223534;
+			PBXWorkspaceStateSaveDate = 350297324;
 		};
 		perUserProjectItems = {
-			2C4186BE14DFF36B008F3F5E = 2C4186BE14DFF36B008F3F5E /* PBXBookmark */;
-			2C4186BF14DFF36B008F3F5E = 2C4186BF14DFF36B008F3F5E /* PBXTextBookmark */;
 			2C4186C814DFF7CC008F3F5E = 2C4186C814DFF7CC008F3F5E /* PBXTextBookmark */;
 			2C4186C914DFF7CC008F3F5E = 2C4186C914DFF7CC008F3F5E /* PBXTextBookmark */;
-			2C4186CA14DFF7CC008F3F5E = 2C4186CA14DFF7CC008F3F5E /* PBXTextBookmark */;
-			2C4186CB14DFF7CC008F3F5E = 2C4186CB14DFF7CC008F3F5E /* PBXTextBookmark */;
-			2C4186D314DFFBFD008F3F5E = 2C4186D314DFFBFD008F3F5E /* PBXTextBookmark */;
-			2C4186D414DFFBFD008F3F5E = 2C4186D414DFFBFD008F3F5E /* PBXTextBookmark */;
-			2C4186E114DFFC20008F3F5E = 2C4186E114DFFC20008F3F5E /* PBXTextBookmark */;
 			2C4186E214DFFC39008F3F5E = 2C4186E214DFFC39008F3F5E /* PBXTextBookmark */;
 			2C4186E314DFFC39008F3F5E = 2C4186E314DFFC39008F3F5E /* PBXTextBookmark */;
 			2C4186E414DFFC39008F3F5E = 2C4186E414DFFC39008F3F5E /* PBXTextBookmark */;
 			2C4186E514DFFC39008F3F5E = 2C4186E514DFFC39008F3F5E /* PBXBookmark */;
-			2C4186E614DFFC39008F3F5E = 2C4186E614DFFC39008F3F5E /* PBXTextBookmark */;
 			2C91CDCE14DA9A6800588379 = 2C91CDCE14DA9A6800588379 /* PlistBookmark */;
 			2C91D00C14DC1CC200588379 = 2C91D00C14DC1CC200588379 /* PBXBookmark */;
 			2CEB3C710BE10A92000B33AD = 2CEB3C710BE10A92000B33AD /* FilterActionMaker.applescript */;
@@ -746,20 +738,6 @@
 			sepNavWindowFrame = "{{15, 71}, {756, 756}}";
 		};
 	};
-	2C4186BE14DFF36B008F3F5E /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = 2C3DB6700BE1C51900FD7D6E /* AppController.m */;
-	};
-	2C4186BF14DFF36B008F3F5E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 2C3DB6700BE1C51900FD7D6E /* AppController.m */;
-		name = "AppController.m: 135";
-		rLen = 0;
-		rLoc = 3919;
-		rType = 0;
-		vrLen = 1641;
-		vrLoc = 2823;
-	};
 	2C4186C414DFF74E008F3F5E /* PathExtra.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {831, 650}}";
@@ -794,44 +772,6 @@
 		vrLen = 1092;
 		vrLoc = 0;
 	};
-	2C4186CA14DFF7CC008F3F5E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 2C3DB6700BE1C51900FD7D6E /* AppController.m */;
-		name = "AppController.m: 135";
-		rLen = 0;
-		rLoc = 3919;
-		rType = 0;
-		vrLen = 1641;
-		vrLoc = 2823;
-	};
-	2C4186CB14DFF7CC008F3F5E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 2C3DB6700BE1C51900FD7D6E /* AppController.m */;
-		name = "AppController.m: 146";
-		rLen = 0;
-		rLoc = 4467;
-		rType = 0;
-		vrLen = 1709;
-		vrLoc = 2852;
-	};
-	2C4186D314DFFBFD008F3F5E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		comments = "NSURL+NDCarbonUtilities.h: No such file or directory";
-		fRef = 2C4186C514DFF74E008F3F5E /* PathExtra.m */;
-		rLen = 1;
-		rLoc = 1;
-		rType = 1;
-	};
-	2C4186D414DFFBFD008F3F5E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 2C4186C514DFF74E008F3F5E /* PathExtra.m */;
-		name = "PathExtra.m: 2";
-		rLen = 0;
-		rLoc = 22;
-		rType = 0;
-		vrLen = 418;
-		vrLoc = 0;
-	};
 	2C4186DB14DFFC0B008F3F5E /* NSURL+NDCarbonUtilities.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {992, 2379}}";
@@ -845,16 +785,6 @@
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 1066}";
 		};
-	};
-	2C4186E114DFFC20008F3F5E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 2C4186C514DFF74E008F3F5E /* PathExtra.m */;
-		name = "PathExtra.m: 2";
-		rLen = 0;
-		rLoc = 22;
-		rType = 0;
-		vrLen = 418;
-		vrLoc = 0;
 	};
 	2C4186E214DFFC39008F3F5E /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -889,16 +819,6 @@
 	2C4186E514DFFC39008F3F5E /* PBXBookmark */ = {
 		isa = PBXBookmark;
 		fRef = 2C4186DB14DFFC0B008F3F5E /* NSURL+NDCarbonUtilities.h */;
-	};
-	2C4186E614DFFC39008F3F5E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 2C4186DB14DFFC0B008F3F5E /* NSURL+NDCarbonUtilities.h */;
-		name = "NSURL+NDCarbonUtilities.h: 23";
-		rLen = 0;
-		rLoc = 804;
-		rType = 0;
-		vrLen = 1908;
-		vrLoc = 0;
 	};
 	2C4A6D9E097F6BAC00D4AF6B /* English */ = {
 		uiCtxt = {

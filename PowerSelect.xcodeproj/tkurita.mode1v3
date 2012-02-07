@@ -235,8 +235,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -285,8 +283,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>25</integer>
-									<integer>24</integer>
+									<integer>14</integer>
+									<integer>8</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -328,7 +326,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>NSURL+NDCarbonUtilities.h</string>
+								<string>Info-PowerSelect.plist</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -336,10 +334,13 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>NSURL+NDCarbonUtilities.h</string>
+										<string>Info-PowerSelect.plist</string>
+										<key>_historyCapacity</key>
+										<integer>0</integer>
+										<key>bookmark</key>
+										<string>2CCB36EB14E11CEB00E84FB9</string>
 										<key>history</key>
 										<array>
-											<string>2C91CDCE14DA9A6800588379</string>
 											<string>2C91D00C14DC1CC200588379</string>
 											<string>2C4186C814DFF7CC008F3F5E</string>
 											<string>2C4186C914DFF7CC008F3F5E</string>
@@ -347,6 +348,7 @@
 											<string>2C4186E314DFFC39008F3F5E</string>
 											<string>2C4186E414DFFC39008F3F5E</string>
 											<string>2C4186E514DFFC39008F3F5E</string>
+											<string>2C91CDCE14DA9A6800588379</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -404,9 +406,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>2C4186FD14DFFCBB008F3F5E</string>
+				<string>2CCB36EC14E11CEB00E84FB9</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>2C4186FE14DFFCBB008F3F5E</string>
+				<string>2CCB36ED14E11CEB00E84FB9</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -540,7 +542,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>2CC01CE70F1B2340003DF3C8</string>
 		<string>/Users/tkurita/Dev/Projects/PowerSelect/PowerSelect/trunk/PowerSelect.xcodeproj</string>
 	</array>
@@ -622,7 +623,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>2CC01CE70F1B2340003DF3C8</string>
-				<string>2C4186FF14DFFCBB008F3F5E</string>
+				<string>2CCB36EE14E11CEB00E84FB9</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
