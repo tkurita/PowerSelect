@@ -591,6 +591,8 @@
 			PBXWorkspaceStateSaveDate = 366973221;
 		};
 		perUserProjectItems = {
+			2C1451D515DF97B500481DE3 /* PBXBookmark */ = 2C1451D515DF97B500481DE3 /* PBXBookmark */;
+			2C1451D615DF97B500481DE3 /* PlistBookmark */ = 2C1451D615DF97B500481DE3 /* PlistBookmark */;
 			2C1E223315DBBDBF00ABF04D = 2C1E223315DBBDBF00ABF04D /* PlistBookmark */;
 			2C1E223415DBBDBF00ABF04D = 2C1E223415DBBDBF00ABF04D /* PBXTextBookmark */;
 			2C260AFE14E122870060F267 = 2C260AFE14E122870060F267 /* PlistBookmark */;
@@ -615,6 +617,21 @@
 			sepNavVisRange = "{0, 217}";
 			sepNavVisRect = "{{0, 0}, {606, 390}}";
 		};
+	};
+	2C1451D515DF97B500481DE3 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 2C2371EA097F28A800693050 /* Info-PowerSelect.plist */;
+	};
+	2C1451D615DF97B500481DE3 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 2C2371EA097F28A800693050 /* Info-PowerSelect.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/tkurita/Dev/Projects/PowerSelect/PowerSelect/trunk/Info-PowerSelect.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
 	};
 	2C145A000BD5B1D900CE5554 /* ComboBoxHistory.applescript */ = {
 		uiCtxt = {
