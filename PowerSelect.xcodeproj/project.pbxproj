@@ -24,6 +24,7 @@
 /* End PBXAppleScriptBuildPhase section */
 
 /* Begin PBXBuildFile section */
+		2C14517615DF8F9E00481DE3 /* MainMenu.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C14517415DF8F9E00481DE3 /* MainMenu.strings */; };
 		2C145A010BD5B1D900CE5554 /* ComboBoxHistory.applescript in AppleScript */ = {isa = PBXBuildFile; fileRef = 2C145A000BD5B1D900CE5554 /* ComboBoxHistory.applescript */; settings = {ATTRIBUTES = (Debug, ); }; };
 		2C2371D9097F28A800693050 /* PowerSelect.applescript in AppleScript */ = {isa = PBXBuildFile; fileRef = DA206CF3015C4E8B03C91932 /* PowerSelect.applescript */; settings = {ATTRIBUTES = (Debug, ); }; };
 		2C2371DA097F28A800693050 /* DefaultValueManager.applescript in AppleScript */ = {isa = PBXBuildFile; fileRef = 2C9B3146067879DF00ED69CB /* DefaultValueManager.applescript */; settings = {ATTRIBUTES = (Debug, ); }; };
@@ -71,6 +72,7 @@
 		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2C14517515DF8F9E00481DE3 /* Japanese */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Japanese; path = Japanese.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		2C145A000BD5B1D900CE5554 /* ComboBoxHistory.applescript */ = {isa = PBXFileReference; fileEncoding = 2147483649; lastKnownFileType = sourcecode.applescript; path = ComboBoxHistory.applescript; sourceTree = "<group>"; };
 		2C2371EA097F28A800693050 /* Info-PowerSelect.plist */ = {isa = PBXFileReference; explicitFileType = text.plist; fileEncoding = 4; path = "Info-PowerSelect.plist"; sourceTree = "<group>"; };
 		2C2371EB097F28A900693050 /* PowerSelect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerSelect.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,6 +193,7 @@
 				2CFF0AB20BCFD8CF00374FBA /* FolderIcon.png */,
 				2C814FBC0BFACF8C00814390 /* UserDefaults.plist */,
 				2C2371EA097F28A800693050 /* Info-PowerSelect.plist */,
+				2C14517415DF8F9E00481DE3 /* MainMenu.strings */,
 				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
 				DA206CF4015C4E8B03C91932 /* AppleScriptKit.asdictionary */,
 				2C4A6D9D097F6BAB00D4AF6B /* Localizable.strings */,
@@ -245,8 +248,8 @@
 				2C2371DC097F28A800693050 /* Resources */,
 				2C2371DF097F28A800693050 /* Sources */,
 				2C2371E1097F28A800693050 /* Frameworks */,
-				2C2371E4097F28A800693050 /* ShellScript */,
 				2C814FA50BFACD2B00814390 /* CopyFiles */,
+				2C2371E4097F28A800693050 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -295,6 +298,7 @@
 				2C5453A60ED9532B0098D94A /* InfoPlist.strings in Resources */,
 				2CC01CD70F1B006A003DF3C8 /* PowerSelect.icns in Resources */,
 				2CF038F310A25517007707C2 /* Credits.rtf in Resources */,
+				2C14517615DF8F9E00481DE3 /* MainMenu.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +358,14 @@
 				2C91CF6F14DB906E00588379 /* Japanese */,
 			);
 			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		2C14517415DF8F9E00481DE3 /* MainMenu.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C14517515DF8F9E00481DE3 /* Japanese */,
+			);
+			name = MainMenu.strings;
 			sourceTree = "<group>";
 		};
 		2C4A6D9D097F6BAB00D4AF6B /* Localizable.strings */ = {
@@ -420,7 +432,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
@@ -455,11 +467,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = (
+					ppc64,
+					x86_64,
 					ppc,
 					i386,
 				);
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
@@ -493,7 +507,7 @@
 		2C2371E8097F28A800693050 /* SD Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
@@ -523,7 +537,7 @@
 		2C2371E9097F28A800693050 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
