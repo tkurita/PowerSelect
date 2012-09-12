@@ -2,6 +2,7 @@
 #import "DonationReminder/DonationReminder.h"
 #import "CocoaLib/StringExtra.h"
 #import "CocoaLib/PathExtra.h"
+#import <OSAKit/OSAScript.h>
 
 #define CMPARE_OPTIONS NSCaseInsensitiveSearch
 @implementation NSString (PowerSelectExtra)
@@ -44,11 +45,53 @@
 	return YES;
 }
 
+
+void showError(NSDictionary *err_info)
+{
+	NSLog(@"Error : %@", [err_info description]);
+	NSLog(@"%@", err_info);
+	[NSApp activateIgnoringOtherApps:YES];
+	NSRunAlertPanel(nil, [err_info objectForKey:OSAScriptErrorMessage], 
+					@"OK", nil, nil);	
+}
+
+BOOL checkGUIScripting()
+{
+	NSDictionary *err_info = nil;
+	NSString *path = [[NSBundle mainBundle] pathForResource:@"CheckGUIScripting"
+													 ofType:@"scpt" inDirectory:@"Scripts"];
+	
+	OSAScript *scpt = [[OSAScript alloc] initWithContentsOfURL:
+					   [NSURL fileURLWithPath:path] error:&err_info];
+	
+	if (err_info) {
+		showError(err_info);
+		if (scpt) [scpt release];
+		return NO;
+	}
+	
+	NSAppleEventDescriptor *result_desc = [scpt executeAndReturnError:&err_info];
+	if (err_info) {
+		showError(err_info);
+		if (scpt) [scpt release];
+	}
+	DescType result_type = [result_desc descriptorType];
+	
+	return result_type == 'true';
+}
+
 - (void)applicationWillFinishLaunching:(NSNotification *)aNotification
 {
 #if useLog
 	NSLog(@"start applicationWillFinishLaunching");
 #endif	
+	
+	if (!checkGUIScripting()) {
+		[NSApp terminate:self];
+		return;
+	}
+		
+		
 	/* checking checking UI Elements Scripting ... */
 	/*
 	if (!AXAPIEnabled()) {

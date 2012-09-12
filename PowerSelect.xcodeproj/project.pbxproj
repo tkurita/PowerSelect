@@ -32,7 +32,6 @@
 		2C2371E0097F28A800693050 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		2C2371E2097F28A800693050 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		2C2371E3097F28A800693050 /* AppleScriptKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA206CF1015C4E2903C91932 /* AppleScriptKit.framework */; };
-		2C3DB6710BE1C51A00FD7D6E /* AppController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C3DB66F0BE1C51900FD7D6E /* AppController.h */; };
 		2C3DB6720BE1C51A00FD7D6E /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3DB6700BE1C51900FD7D6E /* AppController.m */; };
 		2C4186C714DFF74E008F3F5E /* PathExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4186C514DFF74E008F3F5E /* PathExtra.m */; };
 		2C4186DE14DFFC0B008F3F5E /* NSURL+NDCarbonUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4186DC14DFFC0B008F3F5E /* NSURL+NDCarbonUtilities.m */; };
@@ -46,6 +45,7 @@
 		2CB0C9F50F1A17640091C640 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB0C9F40F1A17640091C640 /* Sparkle.framework */; };
 		2CB0C9FE0F1AFC2E0091C640 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CB0C9F40F1A17640091C640 /* Sparkle.framework */; };
 		2CC01CD70F1B006A003DF3C8 /* PowerSelect.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2CC01CD60F1B006A003DF3C8 /* PowerSelect.icns */; };
+		2CE044E016007531006F2C10 /* OSAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE044DF16007531006F2C10 /* OSAKit.framework */; };
 		2CEB3C720BE10A92000B33AD /* FilterActionMaker.applescript in AppleScript */ = {isa = PBXBuildFile; fileRef = 2CEB3C710BE10A92000B33AD /* FilterActionMaker.applescript */; settings = {ATTRIBUTES = (Debug, ); }; };
 		2CF0385C10A24DB7007707C2 /* CheckGUIScripting.applescript in AppleScript */ = {isa = PBXBuildFile; fileRef = 2CF0385B10A24DB7007707C2 /* CheckGUIScripting.applescript */; settings = {ATTRIBUTES = (Debug, ); }; };
 		2CF038F310A25517007707C2 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2CF038F210A25517007707C2 /* Credits.rtf */; };
@@ -95,6 +95,7 @@
 		2C9B3146067879DF00ED69CB /* DefaultValueManager.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = DefaultValueManager.applescript; sourceTree = "<group>"; };
 		2CB0C9F40F1A17640091C640 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = ../Sparkle.framework; sourceTree = SOURCE_ROOT; };
 		2CC01CD60F1B006A003DF3C8 /* PowerSelect.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = PowerSelect.icns; sourceTree = "<group>"; };
+		2CE044DF16007531006F2C10 /* OSAKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSAKit.framework; path = /System/Library/Frameworks/OSAKit.framework; sourceTree = "<absolute>"; };
 		2CEB3C710BE10A92000B33AD /* FilterActionMaker.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = FilterActionMaker.applescript; sourceTree = "<group>"; wrapsLines = 1; };
 		2CF0385B10A24DB7007707C2 /* CheckGUIScripting.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = CheckGUIScripting.applescript; sourceTree = "<group>"; };
 		2CF038F210A25517007707C2 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
@@ -114,6 +115,7 @@
 				2C2371E3097F28A800693050 /* AppleScriptKit.framework in Frameworks */,
 				2C814F9F0BFACD0B00814390 /* DonationReminder.framework in Frameworks */,
 				2CB0C9F50F1A17640091C640 /* Sparkle.framework in Frameworks */,
+				2CE044E016007531006F2C10 /* OSAKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +141,7 @@
 				2C814F9A0BFACD0B00814390 /* DonationReminder.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 				DA206CF1015C4E2903C91932 /* AppleScriptKit.framework */,
+				2CE044DF16007531006F2C10 /* OSAKit.framework */,
 			);
 			name = "Linked Frameworks";
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 		29B97314FDCFA39411CA2CEA /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				2CE0445116002C8E006F2C10 /* Classes */,
 				2CFF0AD60BCFDF4C00374FBA /* History.rd */,
 				080E96DDFE201D6D7F000001 /* Scripts */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -178,8 +182,6 @@
 			isa = PBXGroup;
 			children = (
 				29B97316FDCFA39411CA2CEA /* main.m */,
-				2C3DB66F0BE1C51900FD7D6E /* AppController.h */,
-				2C3DB6700BE1C51900FD7D6E /* AppController.m */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -224,18 +226,16 @@
 			path = CocoaLib;
 			sourceTree = "<group>";
 		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		2C2371D7097F28A800693050 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2C3DB6710BE1C51A00FD7D6E /* AppController.h in Headers */,
+		2CE0445116002C8E006F2C10 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2C3DB66F0BE1C51900FD7D6E /* AppController.h */,
+				2C3DB6700BE1C51900FD7D6E /* AppController.m */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			name = Classes;
+			sourceTree = "<group>";
 		};
-/* End PBXHeadersBuildPhase section */
+/* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
 		2C2371D6097F28A800693050 /* PowerSelect */ = {
@@ -243,12 +243,12 @@
 			buildConfigurationList = 2C2371E5097F28A800693050 /* Build configuration list for PBXNativeTarget "PowerSelect" */;
 			buildPhases = (
 				2C91CF6114DAF58400588379 /* ShellScript */,
-				2C2371D7097F28A800693050 /* Headers */,
 				2C2371D8097F28A800693050 /* AppleScript */,
 				2C2371DC097F28A800693050 /* Resources */,
 				2C2371DF097F28A800693050 /* Sources */,
 				2C2371E1097F28A800693050 /* Frameworks */,
 				2C814FA50BFACD2B00814390 /* CopyFiles */,
+				2CE043F0160020B8006F2C10 /* ShellScript */,
 				2C2371E4097F28A800693050 /* ShellScript */,
 			);
 			buildRules = (
@@ -308,6 +308,7 @@
 		2C2371E4097F28A800693050 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 8;
+			comments = "setup HelpBook";
 			files = (
 			);
 			inputPaths = (
@@ -332,6 +333,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Extract English strings (use this to check if you added new strings to your nibs)\n#ibtool --generate-strings-file Resources/English.lproj/MainWindow.strings Resources/#English.lproj/MainWindow.xib\n# Generate Localized interface\n\nfunction generate_localized_interface\n{\nbase_lang=$1\ntarget_lang=$2\ntarget_nib=$3\n\nnib_basename=`basename ${target_nib} .nib` \nibtool --strings-file ${target_lang}.lproj/${nib_basename}.strings --write ${target_lang}.lproj/${target_nib} ${base_lang}.lproj/${target_nib}\nrm -rf ${target_lang}.lproj/${target_nib}/.svn\n}\n\ngenerate_localized_interface English Japanese MainMenu.nib\n\n\n";
+		};
+		2CE043F0160020B8006F2C10 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			comments = "Compile AppleScripts";
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/CheckGUIScripting.applescript",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(SCRIPT_FOLDER_PATH)/CheckGUIScripting.scpt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#osacompile -dx -o ${BUILT_PRODUCTS_DIR}/${SCRIPTS_FOLDER_PATH}/${SCRIPT_INPUT_FILE_0} ${SCRIPT_INPUT_FILE_0}\nosacompile -d -o ${SCRIPT_OUTPUT_FILE_0} ${SCRIPT_INPUT_FILE_0}\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

@@ -1,6 +1,6 @@
 (*== Script Modules *)
 property InsertionLocator : module
-property GUIScriptingChecker : module
+--property GUIScriptingChecker : module
 property XList : module
 property loader : boot (module loader of application (get "PowerSelectLib")) for me
 
@@ -136,11 +136,13 @@ on will open theObject
 		set ComboBoxHistory to import_script("ComboBoxHistory")
 		set DefaultValueManager to import_script("DefaultValueManager")
 		set FilterActionMaker to import_script("FilterActionMaker")
+		(*
 		set CheckGUIScripting to import_script("CheckGUIScripting")
 		if not (run CheckGUIScripting) then
 			quit
 			return
 		end if
+		*)
 		set windowPosition to registControl(a reference to position of theObject, "WindowPosition", {0, 0}) of DefaultValueManager
 		if currentValue of windowPosition is {0, 0} then
 			center theObject
