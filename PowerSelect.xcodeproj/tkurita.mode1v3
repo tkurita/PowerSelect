@@ -231,7 +231,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>2C68D3BE1603654B00711D73</string>
+						<string>2C68D3D916037DF400711D73</string>
 						<key>history</key>
 						<array>
 							<string>2C68D39D160362CF00711D73</string>
@@ -285,6 +285,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -336,8 +338,9 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>13</integer>
-									<integer>7</integer>
+									<integer>23</integer>
+									<integer>22</integer>
+									<integer>14</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -374,8 +377,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -393,7 +394,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>2C68D3BB1603654B00711D73</string>
+										<string>2C68D3D716037DF400711D73</string>
 										<key>history</key>
 										<array>
 											<string>2C4186C814DFF7CC008F3F5E</string>
@@ -409,12 +410,11 @@
 											<string>2CE045FC160195EE006F2C10</string>
 											<string>2CE045FE160195EE006F2C10</string>
 											<string>2C68D27C1601D71D00711D73</string>
-											<string>2C68D35C16035D6800711D73</string>
 											<string>2C68D35E16035D6800711D73</string>
 											<string>2C68D36916035FCE00711D73</string>
 											<string>2C68D38A1603625F00711D73</string>
 											<string>2C68D3B0160364AC00711D73</string>
-											<string>2C68D38B1603625F00711D73</string>
+											<string>2C68D3C616037CD000711D73</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -453,7 +453,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>2C68D3BD1603654B00711D73</string>
+										<string>2C68D3D816037DF400711D73</string>
 										<key>history</key>
 										<array>
 											<string>2C4186C814DFF7CC008F3F5E</string>
@@ -467,7 +467,6 @@
 											<string>2CE044E7160075D7006F2C10</string>
 											<string>2CE045AC16009318006F2C10</string>
 											<string>2CE045E71601720C006F2C10</string>
-											<string>2CE045FB160195EE006F2C10</string>
 											<string>2CE045FC160195EE006F2C10</string>
 											<string>2CE045FE160195EE006F2C10</string>
 											<string>2C68D2811601D71D00711D73</string>
@@ -668,15 +667,14 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>2C68D3BF1603654B00711D73</string>
 		<string>2C68D2441601D38700711D73</string>
 		<string>2C68D2451601D38700711D73</string>
 		<string>2CC01CE70F1B2340003DF3C8</string>
 		<string>2C68D3921603625F00711D73</string>
 		<string>2C68D38E1603625F00711D73</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>1C530D57069F1CE1000CFCEE</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/tkurita/Dev/Projects/PowerSelect/PowerSelect/2_4/PowerSelect.xcodeproj</string>
 	</array>
 	<key>WindowString</key>

@@ -16,7 +16,7 @@
 			2C9227980BE06CBA00F055A3 /* PowerSelect.applescript:1 */,
 			2C92279A0BE06CBC00F055A3 /* PowerSelect.applescript:1 */,
 			2C814EFE0BFAC70F00814390 /* PowerSelect.applescript:8 */,
-			2CE045C0160153D8006F2C10 /* PowerSelectWindowController.m:236 */,
+			2CE045C0160153D8006F2C10 /* PowerSelectWindowController.m:241 */,
 			2C68D3861603621900711D73 /* PowerSelectWindowController.m:74 */,
 			2C68D399160362C600711D73 /* PowerSelectWindowController.m:22 */,
 		);
@@ -827,6 +827,16 @@
 			2C68D3BC1603654B00711D73 /* PBXTextBookmark */ = 2C68D3BC1603654B00711D73 /* PBXTextBookmark */;
 			2C68D3BD1603654B00711D73 /* PBXTextBookmark */ = 2C68D3BD1603654B00711D73 /* PBXTextBookmark */;
 			2C68D3BE1603654B00711D73 /* PBXTextBookmark */ = 2C68D3BE1603654B00711D73 /* PBXTextBookmark */;
+			2C68D3C616037CD000711D73 /* PBXTextBookmark */ = 2C68D3C616037CD000711D73 /* PBXTextBookmark */;
+			2C68D3C716037CD000711D73 /* PBXTextBookmark */ = 2C68D3C716037CD000711D73 /* PBXTextBookmark */;
+			2C68D3C816037CD000711D73 /* PBXTextBookmark */ = 2C68D3C816037CD000711D73 /* PBXTextBookmark */;
+			2C68D3C916037CD000711D73 /* PBXTextBookmark */ = 2C68D3C916037CD000711D73 /* PBXTextBookmark */;
+			2C68D3CD16037D2300711D73 /* PBXTextBookmark */ = 2C68D3CD16037D2300711D73 /* PBXTextBookmark */;
+			2C68D3CE16037D2300711D73 /* PBXTextBookmark */ = 2C68D3CE16037D2300711D73 /* PBXTextBookmark */;
+			2C68D3CF16037D2300711D73 /* PBXTextBookmark */ = 2C68D3CF16037D2300711D73 /* PBXTextBookmark */;
+			2C68D3D716037DF400711D73 /* PBXTextBookmark */ = 2C68D3D716037DF400711D73 /* PBXTextBookmark */;
+			2C68D3D816037DF400711D73 /* PBXTextBookmark */ = 2C68D3D816037DF400711D73 /* PBXTextBookmark */;
+			2C68D3D916037DF400711D73 /* PBXTextBookmark */ = 2C68D3D916037DF400711D73 /* PBXTextBookmark */;
 			2CE043CF16002071006F2C10 = 2CE043CF16002071006F2C10 /* PlistBookmark */;
 			2CE043D016002071006F2C10 = 2CE043D016002071006F2C10 /* PBXTextBookmark */;
 			2CE0440416002304006F2C10 = 2CE0440416002304006F2C10 /* PBXTextBookmark */;
@@ -965,8 +975,8 @@
 	2C3DB6700BE1C51900FD7D6E /* AppController.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {859, 2600}}";
-			sepNavSelRange = "{3766, 0}";
-			sepNavVisRange = "{3708, 194}";
+			sepNavSelRange = "{4894, 0}";
+			sepNavVisRange = "{4601, 445}";
 			sepNavVisRect = "{{0, 0}, {761, 497}}";
 			sepNavWindowFrame = "{{15, 76}, {756, 756}}";
 		};
@@ -1078,7 +1088,7 @@
 		isa = PBXTextBookmark;
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		rLen = 1;
-		rLoc = 159;
+		rLoc = 161;
 		rType = 1;
 	};
 	2C68D21B1601D0C500711D73 /* PBXTextBookmark */ = {
@@ -1096,7 +1106,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 56";
 		rLen = 0;
-		rLoc = 5057;
+		rLoc = 5146;
 		rType = 0;
 		vrLen = 1362;
 		vrLoc = 373;
@@ -1127,7 +1137,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 159;
+		rLoc = 161;
 		rType = 1;
 	};
 	2C68D2251601D34600711D73 /* PBXTextBookmark */ = {
@@ -1135,7 +1145,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 45";
 		rLen = 0;
-		rLoc = 4848;
+		rLoc = 4934;
 		rType = 0;
 		vrLen = 297;
 		vrLoc = 1273;
@@ -1213,7 +1223,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 159;
+		rLoc = 161;
 		rType = 1;
 	};
 	2C68D23E1601D38700711D73 /* PBXTextBookmark */ = {
@@ -1221,7 +1231,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 79";
 		rLen = 0;
-		rLoc = 5727;
+		rLoc = 5898;
 		rType = 0;
 		vrLen = 374;
 		vrLoc = 1886;
@@ -1241,7 +1251,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 79";
 		rLen = 0;
-		rLoc = 5727;
+		rLoc = 5898;
 		rType = 0;
 		vrLen = 374;
 		vrLoc = 1886;
@@ -1251,7 +1261,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 79";
 		rLen = 0;
-		rLoc = 5727;
+		rLoc = 5898;
 		rType = 0;
 		vrLen = 374;
 		vrLoc = 1886;
@@ -1271,7 +1281,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 79";
 		rLen = 0;
-		rLoc = 5727;
+		rLoc = 5898;
 		rType = 0;
 		vrLen = 676;
 		vrLoc = 1055;
@@ -1281,7 +1291,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 79";
 		rLen = 0;
-		rLoc = 5727;
+		rLoc = 5898;
 		rType = 0;
 		vrLen = 619;
 		vrLoc = 1055;
@@ -1301,7 +1311,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 45";
 		rLen = 0;
-		rLoc = 4848;
+		rLoc = 4934;
 		rType = 0;
 		vrLen = 279;
 		vrLoc = 1240;
@@ -1416,7 +1426,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 83";
 		rLen = 0;
-		rLoc = 5682;
+		rLoc = 5771;
 		rType = 0;
 		vrLen = 362;
 		vrLoc = 2079;
@@ -1456,7 +1466,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 80";
 		rLen = 0;
-		rLoc = 5559;
+		rLoc = 5648;
 		rType = 0;
 		vrLen = 428;
 		vrLoc = 1932;
@@ -1516,7 +1526,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 123";
 		rLen = 0;
-		rLoc = 5843;
+		rLoc = 6014;
 		rType = 0;
 		vrLen = 1699;
 		vrLoc = 399;
@@ -1526,7 +1536,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 109";
 		rLen = 0;
-		rLoc = 5559;
+		rLoc = 5648;
 		rType = 0;
 		vrLen = 40;
 		vrLoc = 2096;
@@ -1616,7 +1626,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 68";
 		rLen = 0;
-		rLoc = 4105;
+		rLoc = 4182;
 		rType = 0;
 		vrLen = 466;
 		vrLoc = 1776;
@@ -1811,7 +1821,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 139";
 		rLen = 0;
-		rLoc = 5692;
+		rLoc = 5781;
 		rType = 0;
 		vrLen = 364;
 		vrLoc = 3899;
@@ -1821,7 +1831,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 140";
 		rLen = 0;
-		rLoc = 5692;
+		rLoc = 5781;
 		rType = 0;
 		vrLen = 784;
 		vrLoc = 3574;
@@ -2137,7 +2147,7 @@
 		isa = PBXTextBookmark;
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		rLen = 0;
-		rLoc = 191;
+		rLoc = 193;
 		rType = 1;
 	};
 	2C68D30516033AB300711D73 /* PBXTextBookmark */ = {
@@ -2145,7 +2155,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 148";
 		rLen = 0;
-		rLoc = 5478;
+		rLoc = 5567;
 		rType = 0;
 		vrLen = 559;
 		vrLoc = 2804;
@@ -2549,7 +2559,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 156";
 		rLen = 0;
-		rLoc = 5475;
+		rLoc = 5564;
 		rType = 0;
 		vrLen = 618;
 		vrLoc = 4070;
@@ -2599,7 +2609,7 @@
 		fRef = 2CE0445816002F26006F2C10 /* History.rd */;
 		name = "History.rd: 7";
 		rLen = 0;
-		rLoc = 244;
+		rLoc = 250;
 		rType = 0;
 		vrLen = 579;
 		vrLoc = 0;
@@ -2635,7 +2645,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 124";
 		rLen = 0;
-		rLoc = 4736;
+		rLoc = 4822;
 		rType = 0;
 		vrLen = 1026;
 		vrLoc = 3263;
@@ -2796,7 +2806,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 147;
+		rLoc = 149;
 		rType = 1;
 	};
 	2C68D37E1603612A00711D73 /* PBXTextBookmark */ = {
@@ -2804,7 +2814,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 138";
 		rLen = 0;
-		rLoc = 4621;
+		rLoc = 4707;
 		rType = 0;
 		vrLen = 934;
 		vrLoc = 3585;
@@ -2899,7 +2909,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 150";
 		rLen = 47;
-		rLoc = 4848;
+		rLoc = 4934;
 		rType = 0;
 		vrLen = 902;
 		vrLoc = 3552;
@@ -2957,7 +2967,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 141";
 		rLen = 0;
-		rLoc = 4573;
+		rLoc = 4656;
 		rType = 0;
 		vrLen = 742;
 		vrLoc = 72;
@@ -2967,7 +2977,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 141";
 		rLen = 0;
-		rLoc = 4573;
+		rLoc = 4656;
 		rType = 0;
 		vrLen = 743;
 		vrLoc = 71;
@@ -3007,7 +3017,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 145";
 		rLen = 0;
-		rLoc = 4573;
+		rLoc = 4656;
 		rType = 0;
 		vrLen = 770;
 		vrLoc = 71;
@@ -3087,7 +3097,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 145";
 		rLen = 0;
-		rLoc = 4573;
+		rLoc = 4656;
 		rType = 0;
 		vrLen = 770;
 		vrLoc = 71;
@@ -3137,9 +3147,109 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 151";
 		rLen = 0;
-		rLoc = 4573;
+		rLoc = 4656;
 		rType = 0;
 		vrLen = 934;
+		vrLoc = 71;
+	};
+	2C68D3C616037CD000711D73 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
+		name = "PowerSelectWindowController.m: 25";
+		rLen = 0;
+		rLoc = 698;
+		rType = 0;
+		vrLen = 924;
+		vrLoc = 217;
+	};
+	2C68D3C716037CD000711D73 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
+		name = "PowerSelectWindowController.m: 137";
+		rLen = 0;
+		rLoc = 4141;
+		rType = 0;
+		vrLen = 765;
+		vrLoc = 3813;
+	};
+	2C68D3C816037CD000711D73 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2C3DB6700BE1C51900FD7D6E /* AppController.m */;
+		name = "AppController.m: 177";
+		rLen = 0;
+		rLoc = 4894;
+		rType = 0;
+		vrLen = 442;
+		vrLoc = 4601;
+	};
+	2C68D3C916037CD000711D73 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
+		name = "PowerSelectWindowController.m: 152";
+		rLen = 0;
+		rLoc = 4656;
+		rType = 0;
+		vrLen = 934;
+		vrLoc = 71;
+	};
+	2C68D3CD16037D2300711D73 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
+		name = "PowerSelectWindowController.m: 205";
+		rLen = 0;
+		rLoc = 5886;
+		rType = 0;
+		vrLen = 571;
+		vrLoc = 5351;
+	};
+	2C68D3CE16037D2300711D73 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2C3DB6700BE1C51900FD7D6E /* AppController.m */;
+		name = "AppController.m: 177";
+		rLen = 0;
+		rLoc = 4894;
+		rType = 0;
+		vrLen = 442;
+		vrLoc = 4601;
+	};
+	2C68D3CF16037D2300711D73 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
+		name = "PowerSelectWindowController.m: 153";
+		rLen = 0;
+		rLoc = 4656;
+		rType = 0;
+		vrLen = 934;
+		vrLoc = 71;
+	};
+	2C68D3D716037DF400711D73 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
+		name = "PowerSelectWindowController.m: 134";
+		rLen = 0;
+		rLoc = 4027;
+		rType = 0;
+		vrLen = 838;
+		vrLoc = 3813;
+	};
+	2C68D3D816037DF400711D73 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2C3DB6700BE1C51900FD7D6E /* AppController.m */;
+		name = "AppController.m: 177";
+		rLen = 0;
+		rLoc = 4894;
+		rType = 0;
+		vrLen = 445;
+		vrLoc = 4601;
+	};
+	2C68D3D916037DF400711D73 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
+		name = "PowerSelectWindowController.m: 153";
+		rLen = 0;
+		rLoc = 4656;
+		rType = 0;
+		vrLen = 935;
 		vrLoc = 71;
 	};
 	2C717DA80BFB079400A8929B /* HelpSetup.plist */ = {
@@ -3318,9 +3428,10 @@
 		path = /Users/tkurita/Dev/Projects/PowerSelect/History.rd;
 		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {785, 3881}}";
-			sepNavSelRange = "{138, 0}";
-			sepNavVisRange = "{0, 579}";
+			sepNavIntBoundsRect = "{{0, 0}, {840, 3935}}";
+			sepNavSelRange = "{194, 0}";
+			sepNavVisRange = "{0, 951}";
+			sepNavWindowFrame = "{{316, 86}, {899, 719}}";
 		};
 	};
 	2CE044E7160075D7006F2C10 /* PBXTextBookmark */ = {
@@ -3350,9 +3461,9 @@
 	};
 	2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {785, 3315}}";
-			sepNavSelRange = "{698, 0}";
-			sepNavVisRange = "{217, 924}";
+			sepNavIntBoundsRect = "{{0, 0}, {878, 3406}}";
+			sepNavSelRange = "{4656, 0}";
+			sepNavVisRange = "{71, 935}";
 			sepNavWindowFrame = "{{15, 385}, {937, 488}}";
 		};
 	};
@@ -3366,7 +3477,7 @@
 		vrLen = 1175;
 		vrLoc = 0;
 	};
-	2CE045C0160153D8006F2C10 /* PowerSelectWindowController.m:236 */ = {
+	2CE045C0160153D8006F2C10 /* PowerSelectWindowController.m:241 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -3378,7 +3489,7 @@
 		functionName = "-windowWillClose:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 236;
+		lineNumber = 241;
 		location = PowerSelect;
 		modificationTime = 369320665.506608;
 		originalNumberOfMultipleMatches = 1;
@@ -3407,7 +3518,7 @@
 		fRef = 2CE0445816002F26006F2C10 /* History.rd */;
 		name = "History.rd: 5";
 		rLen = 0;
-		rLoc = 173;
+		rLoc = 156;
 		rType = 0;
 		vrLen = 887;
 		vrLoc = 0;
@@ -3477,7 +3588,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 23";
 		rLen = 0;
-		rLoc = 4768;
+		rLoc = 4854;
 		rType = 0;
 		vrLen = 1232;
 		vrLoc = 171;
@@ -3487,7 +3598,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 40";
 		rLen = 0;
-		rLoc = 5558;
+		rLoc = 5647;
 		rType = 0;
 		vrLen = 853;
 		vrLoc = 171;
@@ -3511,9 +3622,9 @@
 	};
 	2CEB3C710BE10A92000B33AD /* FilterActionMaker.applescript */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {785, 3459}}";
-			sepNavSelRange = "{4880, 22}";
-			sepNavVisRange = "{4298, 790}";
+			sepNavIntBoundsRect = "{{0, 0}, {814, 3461}}";
+			sepNavSelRange = "{5119, 10}";
+			sepNavVisRange = "{4700, 763}";
 			sepNavVisRect = "{{0, 2686}, {761, 668}}";
 			sepNavWindowFrame = "{{38, 50}, {756, 756}}";
 		};

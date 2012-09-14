@@ -134,23 +134,25 @@ bail:
 
 - (IBAction)performSearch:(id)sender
 {
+	[progressIndicator setHidden:NO];
+	[progressIndicator startAnimation:self];
 	static OSAScript *insertionLocatorScript = nil;
 	if (!insertionLocatorScript) {
 		insertionLocatorScript = loadScript(@"InsertionLocator");
-		if (!insertionLocatorScript) return;
+		if (!insertionLocatorScript) goto bail;
 	}
 	
 	NSDictionary *error_info = nil;
 	NSAppleEventDescriptor *result_desc = [insertionLocatorScript executeAndReturnError:&error_info];
 	if (error_info) {
 		showError(error_info);
-		return;
+		goto bail;
 	}
 	OSAScript *locator_script = [[OSAScript alloc] initWithCompiledData:[result_desc data] 
 																  error:&error_info];
 	if (error_info) {
 		showError(error_info);
-		return;
+		goto bail;
 	}	
 	self.locator = locator_script;
 	result_desc = [locator executeHandlerWithName:@"insertion_path" arguments:nil
@@ -158,7 +160,7 @@ bail:
 	DescType desc_type = [result_desc descriptorType];
 	if (desc_type == 'type') {
 		if ([result_desc typeCodeValue] == 'msng') {
-			return;
+			goto bail;
 		}
 	}
 	
@@ -198,7 +200,10 @@ bail:
 	} else {
 		[self setupDrawer];
 	}
-	
+bail:
+	[progressIndicator stopAnimation:self];
+	[progressIndicator setHidden:YES];
+
 	return;
 }
 
