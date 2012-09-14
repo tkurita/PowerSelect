@@ -239,8 +239,8 @@ end opened
 
 on will quit theObject
 	--log "will quit"
-	writeDefaults() of searchTextHistoryObj
-	writeAllDefaults() of DefaultValueManager
+	--writeDefaults() of searchTextHistoryObj
+	--writeAllDefaults() of DefaultValueManager
 end will quit
 
 on should select row theObject row theRow

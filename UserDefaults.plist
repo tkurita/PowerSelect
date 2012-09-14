@@ -8,5 +8,7 @@
 	<integer>0</integer>
 	<key>SUScheduledCheckInterval</key>
 	<integer>86400</integer>
+	<key>HistoryMax</key>
+	<integer>10</integer>
 </dict>
 </plist>

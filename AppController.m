@@ -1,8 +1,9 @@
 #import "AppController.h"
 #import "DonationReminder/DonationReminder.h"
 #import "CocoaLib/StringExtra.h"
-#import "CocoaLib/PathExtra.h"
+#import "CocoaLib/PathExtra.h" // will be removed
 #import <OSAKit/OSAScript.h>
+#import "PowerSelectWindowController.h"
 
 #define CMPARE_OPTIONS NSCaseInsensitiveSearch
 @implementation NSString (PowerSelectExtra)
@@ -55,10 +56,10 @@ void showError(NSDictionary *err_info)
 					@"OK", nil, nil);	
 }
 
-BOOL checkGUIScripting()
+OSAScript* loadScript(NSString *script_name)
 {
 	NSDictionary *err_info = nil;
-	NSString *path = [[NSBundle mainBundle] pathForResource:@"CheckGUIScripting"
+	NSString *path = [[NSBundle mainBundle] pathForResource:script_name
 													 ofType:@"scpt" inDirectory:@"Scripts"];
 	
 	OSAScript *scpt = [[OSAScript alloc] initWithContentsOfURL:
@@ -66,9 +67,20 @@ BOOL checkGUIScripting()
 	
 	if (err_info) {
 		showError(err_info);
-		if (scpt) [scpt release];
-		return NO;
+		if (scpt) {
+			[scpt release];
+			scpt = nil;
+		}
 	}
+	
+	return scpt;
+}
+
+BOOL checkGUIScripting()
+{
+	NSDictionary *err_info = nil;
+	OSAScript *scpt = loadScript(@"CheckGUIScripting");
+	if (!scpt) return NO;
 	
 	NSAppleEventDescriptor *result_desc = [scpt executeAndReturnError:&err_info];
 	if (err_info) {
@@ -120,7 +132,10 @@ BOOL checkGUIScripting()
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-	[DonationReminder remindDonation];
+	[[[PowerSelectWindowController alloc] initWithWindowNibName:@"PowerSelectWindow"] 
+		showWindow:self];
+	
+	[DonationReminder remindDonation];	
 }
 
 - (int)countResultRows
@@ -134,7 +149,7 @@ BOOL checkGUIScripting()
 	searchResult = nil;
 }
 
-- (void)setSearchResult:(NSArray *)an_array
+- (void)setSearchResult:(NSArray *)an_array // obsolute
 {
 	NSMutableArray *result_array = [NSMutableArray array];
 	
@@ -174,7 +189,7 @@ bail:
 }
 
 #pragma mark search directory
-
+// will be removed
 - (NSArray *)searchAtDirectory:(NSString*)path withString:(NSString*)subText withMethod:(NSString *)methodName
 {
 	NSFileManager *file_manager = [NSFileManager defaultManager];
