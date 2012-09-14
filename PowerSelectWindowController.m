@@ -1,5 +1,4 @@
 #import "PowerSelectWindowController.h"
-#import <OSAKit/OSAScript.h>
 #import "CocoaLib/PathExtra.h"
 
 extern OSAScript* loadScript(NSString *script_name);
@@ -9,7 +8,30 @@ extern void showError(NSDictionary *err_info);
 
 @synthesize searchText;
 @synthesize searchLocation;
+@synthesize locator;
 @synthesize modeIndex;
+
+- (IBAction)performSelect:(id)sender
+{
+	NSArray *array = [searchResultController valueForKeyPath:@"selectedObjects.path"];
+	NSDictionary *error_info = nil;
+	NSArray *args = [NSArray arrayWithObject:array];
+	[locator executeHandlerWithName:@"select_in_finder" arguments:args error:&error_info];
+	if (error_info) {
+		showError(error_info);
+	}
+}
+
+- (IBAction)performSelectAll:(id)sender
+{
+	NSArray *array = [searchResultController valueForKeyPath:@"arrangedObjects.path"];
+	NSDictionary *error_info = nil;
+	NSArray *args = [NSArray arrayWithObject:array];
+	[locator executeHandlerWithName:@"select_in_finder" arguments:args error:&error_info];
+	if (error_info) {
+		showError(error_info);
+	}
+}
 
 - (void)setSearchResult:(NSArray *)an_array
 {
@@ -120,7 +142,19 @@ bail:
 	
 	NSDictionary *error_info = nil;
 	NSAppleEventDescriptor *result_desc = [insertionLocatorScript executeAndReturnError:&error_info];
-	
+	if (error_info) {
+		showError(error_info);
+		return;
+	}
+	OSAScript *locator_script = [[OSAScript alloc] initWithCompiledData:[result_desc data] 
+																  error:&error_info];
+	if (error_info) {
+		showError(error_info);
+		return;
+	}	
+	self.locator = locator_script;
+	result_desc = [locator executeHandlerWithName:@"insertion_path" arguments:nil
+											error:&error_info];
 	DescType desc_type = [result_desc descriptorType];
 	if (desc_type == 'type') {
 		if ([result_desc typeCodeValue] == 'msng') {
@@ -156,10 +190,7 @@ bail:
 	}
 	
 	NSArray *search_resut = [self searchAtDirectory:path withMethod:search_method];
-	/*
-	if (!search_resut) return;
-	if (![search_resut count]) return;
-	*/
+
 	[self setSearchResult:search_resut];
 	
 	if ([candidateDrawer state] ==  NSDrawerClosedState) {
@@ -176,6 +207,7 @@ bail:
 	[searchText release];
 	[searchLocation release];
 	[searchResult release];
+	[locator release];
 	[super dealloc];
 }
 

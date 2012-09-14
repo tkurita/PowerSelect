@@ -1075,6 +1075,14 @@
 					</object>
 					<int key="connectionID">103</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">searchResultController</string>
+						<reference key="source" ref="1001"/>
+						<reference key="destination" ref="653986832"/>
+					</object>
+					<int key="connectionID">104</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -1755,7 +1763,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">103</int>
+			<int key="maxID">104</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1811,11 +1819,13 @@
 							<string>candidateTableScrollView</string>
 							<string>progressIndicator</string>
 							<string>searchComboBox</string>
+							<string>searchResultController</string>
 							<string>selectAllButton</string>
 							<string>selectButton</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
@@ -1834,6 +1844,7 @@
 							<string>candidateTableScrollView</string>
 							<string>progressIndicator</string>
 							<string>searchComboBox</string>
+							<string>searchResultController</string>
 							<string>selectAllButton</string>
 							<string>selectButton</string>
 						</object>
@@ -1857,6 +1868,10 @@
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">searchComboBox</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">searchResultController</string>
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBToOneOutletInfo">
