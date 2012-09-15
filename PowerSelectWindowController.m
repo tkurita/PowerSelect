@@ -11,7 +11,7 @@ extern void showError(NSDictionary *err_info);
 @synthesize locator;
 @synthesize modeIndex;
 
-- (void)clickableBoxClicked:(id)sender
+- (void)clickableBoxDoubleClicked:(id)sender
 {
 	[[NSWorkspace sharedWorkspace] openFile:searchLocation];
 }

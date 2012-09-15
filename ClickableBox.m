@@ -6,7 +6,9 @@
 - (void)mouseUp:(NSEvent *)theEvent
 {
 	if (delegate) {
-		[delegate clickableBoxClicked:self];
+		if ([theEvent clickCount] > 1) {
+			[delegate clickableBoxDoubleClicked:self];
+		}
 	}
 }
 

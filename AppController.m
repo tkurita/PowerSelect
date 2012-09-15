@@ -143,6 +143,4 @@ BOOL checkGUIScripting()
 	[DonationReminder goToDonation];
 }
 
-#pragma mark search directory
-
 @end

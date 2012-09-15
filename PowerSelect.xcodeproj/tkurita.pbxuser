@@ -697,6 +697,12 @@
 		};
 	};
 	2C145A000BD5B1D900CE5554 /* ComboBoxHistory.applescript */ = {
+		isa = PBXFileReference;
+		fileEncoding = 2147483649;
+		lastKnownFileType = sourcecode.applescript;
+		name = ComboBoxHistory.applescript;
+		path = /Users/tkurita/Dev/Projects/PowerSelect/PowerSelect/2_4/ComboBoxHistory.applescript;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {854, 825}}";
 			sepNavSelRange = "{0, 0}";
@@ -801,9 +807,9 @@
 	};
 	2C3DB6700BE1C51900FD7D6E /* AppController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {859, 2002}}";
-			sepNavSelRange = "{3708, 0}";
-			sepNavVisRange = "{2609, 554}";
+			sepNavIntBoundsRect = "{{0, 0}, {859, 1911}}";
+			sepNavSelRange = "{3783, 0}";
+			sepNavVisRange = "{0, 872}";
 			sepNavVisRect = "{{0, 0}, {761, 497}}";
 			sepNavWindowFrame = "{{15, 76}, {756, 756}}";
 		};
@@ -919,7 +925,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 141";
 		rLen = 0;
-		rLoc = 4810;
+		rLoc = 4816;
 		rType = 0;
 		vrLen = 742;
 		vrLoc = 72;
@@ -929,7 +935,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 146";
 		rLen = 0;
-		rLoc = 4553;
+		rLoc = 4559;
 		rType = 0;
 		vrLen = 1000;
 		vrLoc = 0;
@@ -1037,7 +1043,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 79";
 		rLen = 0;
-		rLoc = 2438;
+		rLoc = 2444;
 		rType = 0;
 		vrLen = 714;
 		vrLoc = 0;
@@ -1047,7 +1053,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 158";
 		rLen = 0;
-		rLoc = 4810;
+		rLoc = 4816;
 		rType = 0;
 		vrLen = 990;
 		vrLoc = 71;
@@ -1148,10 +1154,16 @@
 		state = 1;
 	};
 	2C9B3146067879DF00ED69CB /* DefaultValueManager.applescript */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.applescript;
+		name = DefaultValueManager.applescript;
+		path = /Users/tkurita/Dev/Projects/PowerSelect/PowerSelect/2_4/DefaultValueManager.applescript;
+		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {785, 555}}";
+			sepNavIntBoundsRect = "{{0, 0}, {785, 561}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 732}";
+			sepNavVisRange = "{0, 414}";
 			sepNavVisRect = "{{0, 0}, {761, 478}}";
 			sepNavWindowFrame = "{{38, 248}, {750, 558}}";
 		};
@@ -1255,9 +1267,9 @@
 	};
 	2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {878, 3458}}";
-			sepNavSelRange = "{4758, 0}";
-			sepNavVisRange = "{71, 899}";
+			sepNavIntBoundsRect = "{{0, 0}, {878, 3484}}";
+			sepNavSelRange = "{4816, 0}";
+			sepNavVisRange = "{71, 764}";
 			sepNavWindowFrame = "{{240, 94}, {937, 488}}";
 		};
 	};
@@ -1315,13 +1327,20 @@
 		indexTemplatePath = "";
 	};
 	2CEB3C710BE10A92000B33AD /* FilterActionMaker.applescript */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.applescript;
+		name = FilterActionMaker.applescript;
+		path = /Users/tkurita/Dev/Projects/PowerSelect/PowerSelect/2_4/FilterActionMaker.applescript;
+		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {814, 3628}}";
+			sepNavIntBoundsRect = "{{0, 0}, {785, 3570}}";
 			sepNavSelRange = "{4983, 14}";
-			sepNavVisRange = "{4605, 692}";
+			sepNavVisRange = "{4605, 676}";
 			sepNavVisRect = "{{0, 2686}, {761, 668}}";
 			sepNavWindowFrame = "{{38, 50}, {756, 756}}";
 		};
+		wrapsLines = 1;
 	};
 	2CEDCE3F160400DB00D42997 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -1338,7 +1357,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 79";
 		rLen = 0;
-		rLoc = 2438;
+		rLoc = 2444;
 		rType = 0;
 		vrLen = 758;
 		vrLoc = 0;
@@ -1348,23 +1367,23 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 158";
 		rLen = 0;
-		rLoc = 4810;
+		rLoc = 4816;
 		rType = 0;
 		vrLen = 902;
 		vrLoc = 71;
 	};
 	2CEDCE5216040C0F00D42997 /* ClickableBox.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {785, 326}}";
-			sepNavSelRange = "{140, 19}";
-			sepNavVisRange = "{0, 179}";
+			sepNavIntBoundsRect = "{{0, 0}, {785, 405}}";
+			sepNavSelRange = "{157, 0}";
+			sepNavVisRange = "{0, 226}";
 		};
 	};
 	2CEDCE5316040C0F00D42997 /* ClickableBox.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {785, 287}}";
-			sepNavSelRange = "{143, 0}";
-			sepNavVisRange = "{0, 162}";
+			sepNavIntBoundsRect = "{{0, 0}, {785, 405}}";
+			sepNavSelRange = "{201, 0}";
+			sepNavVisRange = "{0, 208}";
 		};
 	};
 	2CEDCE5A16041A8600D42997 /* PBXTextBookmark */ = {
@@ -1382,7 +1401,7 @@
 		fRef = 2CEDCE5316040C0F00D42997 /* ClickableBox.m */;
 		name = "ClickableBox.m: 9";
 		rLen = 0;
-		rLoc = 143;
+		rLoc = 185;
 		rType = 0;
 		vrLen = 162;
 		vrLoc = 0;
@@ -1392,7 +1411,7 @@
 		fRef = 2CEDCE5316040C0F00D42997 /* ClickableBox.m */;
 		name = "ClickableBox.m: 9";
 		rLen = 0;
-		rLoc = 143;
+		rLoc = 185;
 		rType = 0;
 		vrLen = 162;
 		vrLoc = 0;
@@ -1453,7 +1472,7 @@
 		fRef = 2CEDCE5316040C0F00D42997 /* ClickableBox.m */;
 		name = "ClickableBox.m: 9";
 		rLen = 0;
-		rLoc = 143;
+		rLoc = 185;
 		rType = 0;
 		vrLen = 162;
 		vrLoc = 0;
@@ -1493,7 +1512,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 158";
 		rLen = 0;
-		rLoc = 4810;
+		rLoc = 4816;
 		rType = 0;
 		vrLen = 899;
 		vrLoc = 71;
@@ -1503,7 +1522,7 @@
 		fRef = 2CEDCE5316040C0F00D42997 /* ClickableBox.m */;
 		name = "ClickableBox.m: 9";
 		rLen = 0;
-		rLoc = 143;
+		rLoc = 185;
 		rType = 0;
 		vrLen = 162;
 		vrLoc = 0;
@@ -1513,7 +1532,7 @@
 		fRef = 2CEDCE5316040C0F00D42997 /* ClickableBox.m */;
 		name = "ClickableBox.m: 9";
 		rLen = 0;
-		rLoc = 143;
+		rLoc = 185;
 		rType = 0;
 		vrLen = 162;
 		vrLoc = 0;
@@ -1533,7 +1552,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 151";
 		rLen = 0;
-		rLoc = 4553;
+		rLoc = 4559;
 		rType = 0;
 		vrLen = 744;
 		vrLoc = 314;
@@ -1543,7 +1562,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 258";
 		rLen = 0;
-		rLoc = 7500;
+		rLoc = 7506;
 		rType = 0;
 		vrLen = 656;
 		vrLoc = 6809;
@@ -1563,7 +1582,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 158";
 		rLen = 0;
-		rLoc = 4810;
+		rLoc = 4816;
 		rType = 0;
 		vrLen = 849;
 		vrLoc = 71;
@@ -1577,7 +1596,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 245";
 		rLen = 0;
-		rLoc = 6929;
+		rLoc = 6935;
 		rType = 0;
 		vrLen = 658;
 		vrLoc = 6809;
@@ -1627,7 +1646,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 158";
 		rLen = 0;
-		rLoc = 4810;
+		rLoc = 4816;
 		rType = 0;
 		vrLen = 899;
 		vrLoc = 71;
@@ -1704,7 +1723,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 158";
 		rLen = 0;
-		rLoc = 4810;
+		rLoc = 4816;
 		rType = 0;
 		vrLen = 899;
 		vrLoc = 71;
@@ -1734,7 +1753,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 211";
 		rLen = 0;
-		rLoc = 6043;
+		rLoc = 6049;
 		rType = 0;
 		vrLen = 668;
 		vrLoc = 5336;
@@ -1784,7 +1803,7 @@
 		fRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */;
 		name = "PowerSelectWindowController.m: 158";
 		rLen = 0;
-		rLoc = 4810;
+		rLoc = 4816;
 		rType = 0;
 		vrLen = 899;
 		vrLoc = 71;
@@ -1813,10 +1832,16 @@
 		};
 	};
 	DA206CF3015C4E8B03C91932 /* PowerSelect.applescript */ = {
+		isa = PBXFileReference;
+		fileEncoding = 2147483649;
+		lastKnownFileType = sourcecode.applescript;
+		name = PowerSelect.applescript;
+		path = /Users/tkurita/Dev/Projects/PowerSelect/PowerSelect/2_4/PowerSelect.applescript;
+		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {929, 4245}}";
-			sepNavSelRange = "{3933, 0}";
-			sepNavVisRange = "{0, 792}";
+			sepNavIntBoundsRect = "{{0, 0}, {814, 3953}}";
+			sepNavSelRange = "{7602, 0}";
+			sepNavVisRange = "{890, 535}";
 			sepNavVisRect = "{{0, 0}, {761, 654}}";
 			sepNavWindowFrame = "{{198, 80}, {835, 739}}";
 		};

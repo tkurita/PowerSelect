@@ -11,5 +11,7 @@
 
 - (void)clickableBoxClicked:(id)sender;
 
+- (void)clickableBoxDoubleClicked:(id)sender;
+
 @end
  
