@@ -100,7 +100,11 @@ on select_in_Finder(target_items)
 					set item_pos_b to (item_pos_b - content_pos_v)
 				end tell
 				set scroll_properties to properties of it
-				set sbar_h to item 2 of (get size of scroll bar 2)
+				if (count (scroll bars)) > 1 then
+					set sbar_h to item 2 of (get size of scroll bar 2)
+				else
+					set sbar_h to 0
+				end if
 				set scroll_size_v to ((item 2 of size of scroll_properties) - header_h - sbar_h) -- header をのぞいたサイズ
 				set scroll_pos_v to ((item 2 of position of scroll_properties) + header_h) -- header の内側からのサイズ
 				set current_t to scroll_pos_v - content_pos_v

@@ -241,7 +241,8 @@ bail:
 }
 
 - (void)windowWillClose:(NSNotification*)notification
-{	//[super windowWillClose:notification];
+{	
+	//[super windowWillClose:notification];
 	NSUserDefaults *user_defaults = [NSUserDefaults standardUserDefaults];
 	[user_defaults setObject:searchText forKey:@"SearchText"];
 	[user_defaults setInteger:modeIndex	forKey:@"ModePopup"];
@@ -255,6 +256,7 @@ bail:
 	NSUserDefaults *user_defaults = [NSUserDefaults standardUserDefaults];
 	self.searchText = [user_defaults stringForKey:@"SearchText"];
 	self.modeIndex = [user_defaults integerForKey:@"ModePopup"];
+	[candidateTable setDoubleAction:@selector(performSelect:)];
 }
 
 @end

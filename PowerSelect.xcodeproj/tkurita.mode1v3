@@ -214,6 +214,46 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
+				<string>2CEDCE84160437BB00D42997</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>History.rd</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>2CEDCE85160437BB00D42997</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>History.rd</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>2CEDCE86160437BB00D42997</string>
+						<key>history</key>
+						<array>
+							<string>2CEDCE7F1604374C00D42997</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {899, 678}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>316 86 899 719 0 0 1440 878 </string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
 				<string>2C68D38E1603625F00711D73</string>
 				<key>PBXProjectModuleLabel</key>
 				<string>PowerSelectWindowController.m</string>
@@ -228,7 +268,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>2CEDCE6616041A8600D42997</string>
+						<string>2CEDCE87160437BB00D42997</string>
 						<key>history</key>
 						<array>
 							<string>2C68D43C1603A11E00711D73</string>
@@ -335,18 +375,12 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>5</integer>
-									<integer>1</integer>
-									<integer>0</integer>
-								</array>
-								<array>
-									<integer>6</integer>
-									<integer>1</integer>
+									<integer>8</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 22}, {267, 669}}</string>
+							<string>{{0, 0}, {267, 669}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -383,7 +417,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ClickableBox.m</string>
+								<string>History.rd</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -391,11 +425,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ClickableBox.m</string>
+										<string>History.rd</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>2CEDCE5C16041A8600D42997</string>
+										<string>2CEDCE82160437BB00D42997</string>
 										<key>history</key>
 										<array>
 											<string>2C4186C814DFF7CC008F3F5E</string>
@@ -409,10 +443,11 @@
 											<string>2CE044E7160075D7006F2C10</string>
 											<string>2CE045AC16009318006F2C10</string>
 											<string>2C68D35E16035D6800711D73</string>
-											<string>2C68D415160387BA00711D73</string>
-											<string>2C68D417160387BA00711D73</string>
-											<string>2CEDCE5A16041A8600D42997</string>
-											<string>2CEDCE5B16041A8600D42997</string>
+											<string>2CEDCE6C16041B7900D42997</string>
+											<string>2CEDCE6D16041B7900D42997</string>
+											<string>2CEDCE6E16041B7900D42997</string>
+											<string>2CEDCE80160437BB00D42997</string>
+											<string>2CEDCE81160437BB00D42997</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -451,7 +486,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>2CEDCE6516041A8600D42997</string>
+										<string>2CEDCE83160437BB00D42997</string>
 										<key>history</key>
 										<array>
 											<string>2C4186C814DFF7CC008F3F5E</string>
@@ -672,7 +707,9 @@
 		<string>2CC01CE70F1B2340003DF3C8</string>
 		<string>2C68D38E1603625F00711D73</string>
 		<string>1CD10A99069EF8BA00B06720</string>
+		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>/Users/tkurita/Dev/Projects/PowerSelect/PowerSelect/2_4/PowerSelect.xcodeproj</string>
+		<string>2CEDCE84160437BB00D42997</string>
 	</array>
 	<key>WindowString</key>
 	<string>74 128 1135 750 0 0 1440 878 </string>
@@ -910,7 +947,7 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>&lt;エディタがありません&gt;</string>
+										<string>PowerSelect.applescript</string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>
@@ -968,8 +1005,8 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C530D57069F1CE1000CFCEE</string>
-				<string>2C68D2331601D34600711D73</string>
-				<string>2C68D2341601D34600711D73</string>
+				<string>2CEDCE7316041B7900D42997</string>
+				<string>2CEDCE7416041B7900D42997</string>
 				<string>1CDD528C0622207200134675</string>
 				<string>1CD0528E0623707200166675</string>
 			</array>
