@@ -12,8 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="11"/>
-			<integer value="31"/>
+			<integer value="8"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -64,8 +63,8 @@
 			<object class="NSWindowTemplate" id="19356187">
 				<int key="NSWindowStyleMask">7</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{241, 489}, {440, 110}}</string>
-				<int key="NSWTFlags">1886914560</int>
+				<string key="NSWindowRect">{{229, 548}, {440, 110}}</string>
+				<int key="NSWTFlags">813172736</int>
 				<string key="NSWindowTitle">PowerSelect</string>
 				<string key="NSWindowClass">NSWindow</string>
 				<object class="NSMutableString" key="NSViewClass">
@@ -394,9 +393,10 @@
 				<string key="NSScreenRect">{{0, 0}, {1440, 878}}</string>
 				<string key="NSMinSize">{440, 132}</string>
 				<string key="NSMaxSize">{440, 132}</string>
+				<string key="NSFrameAutosaveName">PowerSelectWindow</string>
 			</object>
 			<object class="NSCustomView" id="867575220">
-				<reference key="NSNextResponder"/>
+				<nil key="NSNextResponder"/>
 				<int key="NSvFlags">274</int>
 				<object class="NSMutableArray" key="NSSubviews">
 					<bool key="EncodedWithXMLCoder">YES</bool>
@@ -539,7 +539,6 @@
 								</object>
 								<string key="NSFrame">{{1, 17}, {403, 131}}</string>
 								<reference key="NSSuperview" ref="352454872"/>
-								<reference key="NSNextKeyView" ref="369089845"/>
 								<reference key="NSDocView" ref="369089845"/>
 								<reference key="NSBGColor" ref="387894261"/>
 								<int key="NScvFlags">4</int>
@@ -572,7 +571,6 @@
 								</object>
 								<string key="NSFrame">{{1, 0}, {403, 17}}</string>
 								<reference key="NSSuperview" ref="352454872"/>
-								<reference key="NSNextKeyView" ref="721562742"/>
 								<reference key="NSDocView" ref="721562742"/>
 								<reference key="NSBGColor" ref="387894261"/>
 								<int key="NScvFlags">4</int>
@@ -581,7 +579,6 @@
 						</object>
 						<string key="NSFrame">{{0, 42}, {420, 149}}</string>
 						<reference key="NSSuperview" ref="867575220"/>
-						<reference key="NSNextKeyView" ref="381113464"/>
 						<int key="NSsFlags">18</int>
 						<reference key="NSVScroller" ref="728729359"/>
 						<reference key="NSHScroller" ref="56881731"/>
@@ -726,7 +723,6 @@
 					</object>
 				</object>
 				<string key="NSFrameSize">{420, 220}</string>
-				<reference key="NSSuperview"/>
 				<string key="NSClassName">NSView</string>
 				<string key="NSExtension">NSResponder</string>
 			</object>
@@ -1743,11 +1739,11 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 						</object>
 					</object>
-					<string>{{0, 724}, {440, 110}}</string>
+					<string>{{241, 489}, {440, 110}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{0, 724}, {440, 110}}</string>
+					<string>{{241, 489}, {440, 110}}</string>
 					<boolean value="YES"/>
-					<boolean value="YES"/>
+					<boolean value="NO"/>
 					<boolean value="YES"/>
 					<boolean value="YES"/>
 					<string>{440, 110}</string>

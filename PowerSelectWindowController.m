@@ -24,6 +24,8 @@ extern void showError(NSDictionary *err_info);
 	[locator executeHandlerWithName:@"select_in_finder" arguments:args error:&error_info];
 	if (error_info) {
 		showError(error_info);
+	} else {
+		[self close];
 	}
 }
 
@@ -35,6 +37,8 @@ extern void showError(NSDictionary *err_info);
 	[locator executeHandlerWithName:@"select_in_finder" arguments:args error:&error_info];
 	if (error_info) {
 		showError(error_info);
+	} else {
+		[self close];
 	}
 }
 

@@ -125,9 +125,6 @@
 			isa = PBXGroup;
 			children = (
 				DA206CF3015C4E8B03C91932 /* PowerSelect.applescript */,
-				2C145A000BD5B1D900CE5554 /* ComboBoxHistory.applescript */,
-				2C9B3146067879DF00ED69CB /* DefaultValueManager.applescript */,
-				2CEB3C710BE10A92000B33AD /* FilterActionMaker.applescript */,
 				2CF0385B10A24DB7007707C2 /* CheckGUIScripting.applescript */,
 				2CE045F01601771C006F2C10 /* InsertionLocator.applescript */,
 			);
@@ -168,6 +165,7 @@
 			children = (
 				2CE0445116002C8E006F2C10 /* Classes */,
 				2CFF0AD60BCFDF4C00374FBA /* History.rd */,
+				2CEDCE881604380400D42997 /* deprecated */,
 				080E96DDFE201D6D7F000001 /* Scripts */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -232,12 +230,22 @@
 			children = (
 				2C3DB66F0BE1C51900FD7D6E /* AppController.h */,
 				2C3DB6700BE1C51900FD7D6E /* AppController.m */,
-				2CE04523160079BC006F2C10 /* PowerSelectWindowController.h */,
 				2CEDCE5216040C0F00D42997 /* ClickableBox.h */,
 				2CEDCE5316040C0F00D42997 /* ClickableBox.m */,
+				2CE04523160079BC006F2C10 /* PowerSelectWindowController.h */,
 				2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		2CEDCE881604380400D42997 /* deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				2CEB3C710BE10A92000B33AD /* FilterActionMaker.applescript */,
+				2C145A000BD5B1D900CE5554 /* ComboBoxHistory.applescript */,
+				2C9B3146067879DF00ED69CB /* DefaultValueManager.applescript */,
+			);
+			name = deprecated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
