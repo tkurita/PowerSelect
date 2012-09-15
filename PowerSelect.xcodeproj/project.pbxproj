@@ -12,12 +12,6 @@
 			buildActionMask = 2147483647;
 			contextName = "";
 			files = (
-				2C2371D9097F28A800693050 /* PowerSelect.applescript in AppleScript */,
-				2C2371DA097F28A800693050 /* DefaultValueManager.applescript in AppleScript */,
-				2C145A010BD5B1D900CE5554 /* ComboBoxHistory.applescript in AppleScript */,
-				2CEB3C720BE10A92000B33AD /* FilterActionMaker.applescript in AppleScript */,
-				2CF0385C10A24DB7007707C2 /* CheckGUIScripting.applescript in AppleScript */,
-				2CE045F11601771C006F2C10 /* InsertionLocator.applescript in AppleScript */,
 			);
 			isSharedContext = 0;
 			runOnlyForDeploymentPostprocessing = 0;
@@ -26,9 +20,6 @@
 
 /* Begin PBXBuildFile section */
 		2C14517615DF8F9E00481DE3 /* MainMenu.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C14517415DF8F9E00481DE3 /* MainMenu.strings */; };
-		2C145A010BD5B1D900CE5554 /* ComboBoxHistory.applescript in AppleScript */ = {isa = PBXBuildFile; fileRef = 2C145A000BD5B1D900CE5554 /* ComboBoxHistory.applescript */; settings = {ATTRIBUTES = (Debug, ); }; };
-		2C2371D9097F28A800693050 /* PowerSelect.applescript in AppleScript */ = {isa = PBXBuildFile; fileRef = DA206CF3015C4E8B03C91932 /* PowerSelect.applescript */; settings = {ATTRIBUTES = (Debug, ); }; };
-		2C2371DA097F28A800693050 /* DefaultValueManager.applescript in AppleScript */ = {isa = PBXBuildFile; fileRef = 2C9B3146067879DF00ED69CB /* DefaultValueManager.applescript */; settings = {ATTRIBUTES = (Debug, ); }; };
 		2C2371DD097F28A800693050 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
 		2C2371E0097F28A800693050 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		2C2371E2097F28A800693050 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -49,9 +40,7 @@
 		2CE044E016007531006F2C10 /* OSAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE044DF16007531006F2C10 /* OSAKit.framework */; };
 		2CE0451D160077D6006F2C10 /* PowerSelectWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0451C160077D6006F2C10 /* PowerSelectWindow.xib */; };
 		2CE04525160079BC006F2C10 /* PowerSelectWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */; };
-		2CE045F11601771C006F2C10 /* InsertionLocator.applescript in AppleScript */ = {isa = PBXBuildFile; fileRef = 2CE045F01601771C006F2C10 /* InsertionLocator.applescript */; settings = {ATTRIBUTES = (Debug, ); }; };
-		2CEB3C720BE10A92000B33AD /* FilterActionMaker.applescript in AppleScript */ = {isa = PBXBuildFile; fileRef = 2CEB3C710BE10A92000B33AD /* FilterActionMaker.applescript */; settings = {ATTRIBUTES = (Debug, ); }; };
-		2CF0385C10A24DB7007707C2 /* CheckGUIScripting.applescript in AppleScript */ = {isa = PBXBuildFile; fileRef = 2CF0385B10A24DB7007707C2 /* CheckGUIScripting.applescript */; settings = {ATTRIBUTES = (Debug, ); }; };
+		2CEDCE5416040C0F00D42997 /* ClickableBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEDCE5316040C0F00D42997 /* ClickableBox.m */; };
 		2CF038F310A25517007707C2 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2CF038F210A25517007707C2 /* Credits.rtf */; };
 		2CFF0AB30BCFD8CF00374FBA /* FolderIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CFF0AB20BCFD8CF00374FBA /* FolderIcon.png */; };
 /* End PBXBuildFile section */
@@ -105,6 +94,8 @@
 		2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PowerSelectWindowController.m; sourceTree = "<group>"; };
 		2CE045F01601771C006F2C10 /* InsertionLocator.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = InsertionLocator.applescript; sourceTree = "<group>"; };
 		2CEB3C710BE10A92000B33AD /* FilterActionMaker.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = FilterActionMaker.applescript; sourceTree = "<group>"; wrapsLines = 1; };
+		2CEDCE5216040C0F00D42997 /* ClickableBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickableBox.h; sourceTree = "<group>"; };
+		2CEDCE5316040C0F00D42997 /* ClickableBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickableBox.m; sourceTree = "<group>"; };
 		2CF0385B10A24DB7007707C2 /* CheckGUIScripting.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = CheckGUIScripting.applescript; sourceTree = "<group>"; };
 		2CF038F210A25517007707C2 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		2CFF0AB20BCFD8CF00374FBA /* FolderIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FolderIcon.png; sourceTree = "<group>"; };
@@ -242,6 +233,8 @@
 				2C3DB66F0BE1C51900FD7D6E /* AppController.h */,
 				2C3DB6700BE1C51900FD7D6E /* AppController.m */,
 				2CE04523160079BC006F2C10 /* PowerSelectWindowController.h */,
+				2CEDCE5216040C0F00D42997 /* ClickableBox.h */,
+				2CEDCE5316040C0F00D42997 /* ClickableBox.m */,
 				2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */,
 			);
 			name = Classes;
@@ -261,6 +254,7 @@
 				2C2371E1097F28A800693050 /* Frameworks */,
 				2C814FA50BFACD2B00814390 /* CopyFiles */,
 				2CE043F0160020B8006F2C10 /* ShellScript */,
+				2C68D3EC160380FE00711D73 /* ShellScript */,
 				2C2371E4097F28A800693050 /* ShellScript */,
 			);
 			buildRules = (
@@ -332,6 +326,21 @@
 			shellPath = /bin/sh;
 			shellScript = "if [ \"$BUILD_STYLE\" = 'Release' ]; then\ncd $BUILT_PRODUCTS_DIR\nSetupHelpBook $FULL_PRODUCT_NAME\nfi\n";
 		};
+		2C68D3EC160380FE00711D73 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/InsertionLocator.applescript",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(SCRIPTS_FOLDER_PATH)/InsertionLocator.scpt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mkdir -p \"${BUILT_PRODUCTS_DIR}/${SCRIPTS_FOLDER_PATH}\"\nosacompile -d -o ${SCRIPT_OUTPUT_FILE_0} ${SCRIPT_INPUT_FILE_0}\n";
+		};
 		2C91CF6114DAF58400588379 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -357,11 +366,11 @@
 				"$(SRCROOT)/CheckGUIScripting.applescript",
 			);
 			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(SCRIPT_FOLDER_PATH)/CheckGUIScripting.scpt",
+				"$(BUILT_PRODUCTS_DIR)/$(SCRIPTS_FOLDER_PATH)/CheckGUIScripting.scpt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#osacompile -dx -o ${BUILT_PRODUCTS_DIR}/${SCRIPTS_FOLDER_PATH}/${SCRIPT_INPUT_FILE_0} ${SCRIPT_INPUT_FILE_0}\nosacompile -d -o ${SCRIPT_OUTPUT_FILE_0} ${SCRIPT_INPUT_FILE_0}\n";
+			shellScript = "mkdir -p \"${BUILT_PRODUCTS_DIR}/${SCRIPTS_FOLDER_PATH}\"\nosacompile -d -o ${SCRIPT_OUTPUT_FILE_0} ${SCRIPT_INPUT_FILE_0}\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -376,6 +385,7 @@
 				2C4186C714DFF74E008F3F5E /* PathExtra.m in Sources */,
 				2C4186DE14DFFC0B008F3F5E /* NSURL+NDCarbonUtilities.m in Sources */,
 				2CE04525160079BC006F2C10 /* PowerSelectWindowController.m in Sources */,
+				2CEDCE5416040C0F00D42997 /* ClickableBox.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

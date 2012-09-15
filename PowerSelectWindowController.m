@@ -11,6 +11,11 @@ extern void showError(NSDictionary *err_info);
 @synthesize locator;
 @synthesize modeIndex;
 
+- (void)clickableBoxClicked:(id)sender
+{
+	[[NSWorkspace sharedWorkspace] openFile:searchLocation];
+}
+
 - (IBAction)performSelect:(id)sender
 {
 	NSArray *array = [searchResultController valueForKeyPath:@"selectedObjects.path"];
