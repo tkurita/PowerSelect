@@ -9,6 +9,7 @@
 }
 
 - (IBAction)makeDonation:(id)sender;
+- (IBAction)newWindow:(id)sender;
 
 @end
 

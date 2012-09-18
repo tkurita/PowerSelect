@@ -16,6 +16,17 @@ extern void showError(NSDictionary *err_info);
 	[[NSWorkspace sharedWorkspace] openFile:searchLocation];
 }
 
+- (IBAction)performSelectWithoutClosing:(id)sender
+{
+	NSArray *array = [searchResultController valueForKeyPath:@"selectedObjects.path"];
+	NSDictionary *error_info = nil;
+	NSArray *args = [NSArray arrayWithObject:array];
+	[locator executeHandlerWithName:@"select_in_finder" arguments:args error:&error_info];
+	if (error_info) {
+		showError(error_info);
+	}		
+}
+
 - (IBAction)performSelect:(id)sender
 {
 	NSArray *array = [searchResultController valueForKeyPath:@"selectedObjects.path"];
@@ -260,7 +271,7 @@ bail:
 	NSUserDefaults *user_defaults = [NSUserDefaults standardUserDefaults];
 	self.searchText = [user_defaults stringForKey:@"SearchText"];
 	self.modeIndex = [user_defaults integerForKey:@"ModePopup"];
-	[candidateTable setDoubleAction:@selector(performSelect:)];
+	[candidateTable setDoubleAction:@selector(performSelectWithoutClosing:)];
 }
 
 @end

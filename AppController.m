@@ -1,7 +1,6 @@
 #import "AppController.h"
 #import "DonationReminder/DonationReminder.h"
 #import "CocoaLib/StringExtra.h"
-#import "CocoaLib/PathExtra.h" // will be removed
 #import <OSAKit/OSAScript.h>
 #import "PowerSelectWindowController.h"
 
@@ -138,6 +137,11 @@ BOOL checkGUIScripting()
 	[DonationReminder remindDonation];	
 }
 
+- (IBAction)newWindow:(id)sender
+{
+	[[[PowerSelectWindowController alloc] initWithWindowNibName:@"PowerSelectWindow"] 
+	 showWindow:self];	
+}
 - (IBAction)makeDonation:(id)sender
 {
 	[DonationReminder goToDonation];

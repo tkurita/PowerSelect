@@ -189,6 +189,15 @@
 							</object>
 							<object class="NSMutableArray" key="NSMenuItems">
 								<bool key="EncodedWithXMLCoder">YES</bool>
+								<object class="NSMenuItem" id="78323526">
+									<reference key="NSMenu" ref="275305500"/>
+									<string key="NSTitle">New Window</string>
+									<string key="NSKeyEquiv">n</string>
+									<int key="NSKeyEquivModMask">1048576</int>
+									<int key="NSMnemonicLoc">2147483647</int>
+									<reference key="NSOnImage" ref="412658488"/>
+									<reference key="NSMixedImage" ref="260139816"/>
+								</object>
 								<object class="NSMenuItem" id="629473797">
 									<reference key="NSMenu" ref="275305500"/>
 									<string key="NSTitle">Close</string>
@@ -542,12 +551,6 @@
 				</object>
 				<string key="NSName">_NSMainMenu</string>
 			</object>
-			<object class="ASKNibObjectInfoManager" id="103867017">
-				<nil key="$0"/>
-				<object class="NSMutableArray" key="$1">
-					<bool key="EncodedWithXMLCoder">YES</bool>
-				</object>
-			</object>
 			<object class="NSCustomObject" id="56421028">
 				<string key="NSClassName">AppController</string>
 			</object>
@@ -750,6 +753,14 @@
 					</object>
 					<int key="connectionID">597</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">newWindow:</string>
+						<reference key="source" ref="56421028"/>
+						<reference key="destination" ref="78323526"/>
+					</object>
+					<int key="connectionID">647</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -940,6 +951,7 @@
 							<reference ref="465574894"/>
 							<reference ref="158657235"/>
 							<reference ref="90028087"/>
+							<reference ref="78323526"/>
 						</object>
 						<reference key="parent" ref="975474640"/>
 					</object>
@@ -1165,15 +1177,6 @@
 						<reference key="parent" ref="328500050"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">209</int>
-						<reference key="object" ref="103867017"/>
-						<object class="NSMutableArray" key="children">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-						</object>
-						<reference key="parent" ref="0"/>
-						<string key="objectName">AppleScript Info</string>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">486</int>
 						<reference key="object" ref="56421028"/>
 						<reference key="parent" ref="0"/>
@@ -1184,6 +1187,11 @@
 						<reference key="object" ref="547441655"/>
 						<reference key="parent" ref="0"/>
 						<string key="objectName">Updater</string>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">646</int>
+						<reference key="object" ref="78323526"/>
+						<reference key="parent" ref="275305500"/>
 					</object>
 				</object>
 			</object>
@@ -1264,7 +1272,6 @@
 					<string>19.ImportedFromIB2</string>
 					<string>191.IBPluginDependency</string>
 					<string>191.ImportedFromIB2</string>
-					<string>209.ImportedFromIB2</string>
 					<string>23.IBPluginDependency</string>
 					<string>23.ImportedFromIB2</string>
 					<string>24.IBPluginDependency</string>
@@ -1294,6 +1301,7 @@
 					<string>595.ImportedFromIB2</string>
 					<string>596.IBPluginDependency</string>
 					<string>596.ImportedFromIB2</string>
+					<string>646.IBPluginDependency</string>
 					<string>73.IBPluginDependency</string>
 					<string>73.ImportedFromIB2</string>
 					<string>74.IBPluginDependency</string>
@@ -1390,7 +1398,6 @@
 					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="YES"/>
-					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -1427,6 +1434,7 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="YES"/>
@@ -1458,7 +1466,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">645</int>
+			<int key="maxID">647</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1467,14 +1475,35 @@
 					<string key="className">AppController</string>
 					<string key="superclassName">NSObject</string>
 					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">makeDonation:</string>
-						<string key="NS.object.0">id</string>
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>makeDonation:</string>
+							<string>newWindow:</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
+							<string>id</string>
+						</object>
 					</object>
 					<object class="NSMutableDictionary" key="actionInfosByName">
-						<string key="NS.key.0">makeDonation:</string>
-						<object class="IBActionInfo" key="NS.object.0">
-							<string key="name">makeDonation:</string>
-							<string key="candidateClassName">id</string>
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>makeDonation:</string>
+							<string>newWindow:</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<object class="IBActionInfo">
+								<string key="name">makeDonation:</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
+								<string key="name">newWindow:</string>
+								<string key="candidateClassName">id</string>
+							</object>
 						</object>
 					</object>
 					<object class="NSMutableDictionary" key="outlets">
