@@ -127,7 +127,7 @@ extern void showError(NSDictionary *err_info);
 	[progressIndicator setHidden:YES];
 }
 
-- (void)searchLocation:(id)sender
+- (void)searchInThread:(id)sender
 {
 	NSAutoreleasePool *pool = [NSAutoreleasePool new];
 	SEL selector = [self searchMethod];
@@ -209,7 +209,7 @@ extern void showError(NSDictionary *err_info);
 	[progressIndicator startAnimation:self];
 
 	self.searchLocation = path;
-	self.searchThread = [[[NSThread alloc] initWithTarget:self selector:@selector(searchLocation:)
+	self.searchThread = [[[NSThread alloc] initWithTarget:self selector:@selector(searchInThread:)
 							  object:self] autorelease];
 
 	self.searchResult = [NSMutableArray arrayWithCapacity:1];
@@ -225,6 +225,7 @@ bail:
 	[searchLocation release];
 	[searchResult release];
 	[locator release];
+	[searchThread release];
 	[super dealloc];
 }
 

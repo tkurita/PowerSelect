@@ -12,7 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="8"/>
+			<integer value="31"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -539,6 +539,7 @@
 								</object>
 								<string key="NSFrame">{{1, 17}, {403, 131}}</string>
 								<reference key="NSSuperview" ref="352454872"/>
+								<reference key="NSNextKeyView" ref="369089845"/>
 								<reference key="NSDocView" ref="369089845"/>
 								<reference key="NSBGColor" ref="387894261"/>
 								<int key="NScvFlags">4</int>
@@ -571,6 +572,7 @@
 								</object>
 								<string key="NSFrame">{{1, 0}, {403, 17}}</string>
 								<reference key="NSSuperview" ref="352454872"/>
+								<reference key="NSNextKeyView" ref="721562742"/>
 								<reference key="NSDocView" ref="721562742"/>
 								<reference key="NSBGColor" ref="387894261"/>
 								<int key="NScvFlags">4</int>
@@ -579,12 +581,12 @@
 						</object>
 						<string key="NSFrame">{{0, 42}, {420, 149}}</string>
 						<reference key="NSSuperview" ref="867575220"/>
+						<reference key="NSNextKeyView" ref="381113464"/>
 						<int key="NSsFlags">18</int>
 						<reference key="NSVScroller" ref="728729359"/>
 						<reference key="NSHScroller" ref="56881731"/>
 						<reference key="NSContentView" ref="381113464"/>
 						<reference key="NSHeaderClipView" ref="429748150"/>
-						<reference key="NSCornerView" ref="698836767"/>
 						<bytes key="NSScrollAmts">QSAAAEEgAABBmAAAQZgAAA</bytes>
 					</object>
 					<object class="NSButton" id="946238207">
@@ -728,6 +730,14 @@
 			</object>
 			<object class="NSUserDefaultsController" id="641586618">
 				<bool key="NSSharedInstance">YES</bool>
+			</object>
+			<object class="NSObjectController" id="110347272">
+				<object class="NSMutableArray" key="NSDeclaredKeys">
+					<bool key="EncodedWithXMLCoder">YES</bool>
+					<string>hidden</string>
+				</object>
+				<bool key="NSEditable">YES</bool>
+				<object class="_NSManagedProxy" key="_NSManagedProxy"/>
 			</object>
 		</object>
 		<object class="IBObjectContainer" key="IBDocument.Objects">
@@ -1087,6 +1097,30 @@
 					</object>
 					<int key="connectionID">109</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">content</string>
+						<reference key="source" ref="110347272"/>
+						<reference key="destination" ref="957425979"/>
+					</object>
+					<int key="connectionID">111</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">enabled: content.hidden</string>
+						<reference key="source" ref="102187291"/>
+						<reference key="destination" ref="110347272"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="102187291"/>
+							<reference key="NSDestination" ref="110347272"/>
+							<string key="NSLabel">enabled: content.hidden</string>
+							<string key="NSBinding">enabled</string>
+							<string key="NSKeyPath">content.hidden</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">113</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -1438,6 +1472,11 @@
 						<reference key="object" ref="707545115"/>
 						<reference key="parent" ref="974986023"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">110</int>
+						<reference key="object" ref="110347272"/>
+						<reference key="parent" ref="0"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -1451,6 +1490,7 @@
 					<string>11.IBAttributePlaceholdersKey</string>
 					<string>11.IBPluginDependency</string>
 					<string>11.ImportedFromIB2</string>
+					<string>110.IBPluginDependency</string>
 					<string>12.IBAttributePlaceholdersKey</string>
 					<string>12.IBPluginDependency</string>
 					<string>12.ImportedFromIB2</string>
@@ -1565,6 +1605,7 @@
 					</object>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="YES"/>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<object class="NSMutableDictionary">
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<reference key="dict.sortedKeys" ref="0"/>
@@ -1739,9 +1780,9 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 						</object>
 					</object>
-					<string>{{241, 489}, {440, 110}}</string>
+					<string>{{184, 529}, {440, 110}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{241, 489}, {440, 110}}</string>
+					<string>{{184, 529}, {440, 110}}</string>
 					<boolean value="YES"/>
 					<boolean value="NO"/>
 					<boolean value="YES"/>
@@ -1769,7 +1810,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">109</int>
+			<int key="maxID">113</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
