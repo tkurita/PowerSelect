@@ -29,5 +29,6 @@
 - (IBAction)performSearch:(id)sender;
 - (IBAction)performSelect:(id)sender;
 - (IBAction)performSelectAll:(id)sender;
+- (IBAction)cancelAction:(id)sender;
 
 @end

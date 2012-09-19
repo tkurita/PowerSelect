@@ -731,7 +731,7 @@
 			<object class="NSUserDefaultsController" id="641586618">
 				<bool key="NSSharedInstance">YES</bool>
 			</object>
-			<object class="NSObjectController" id="110347272">
+			<object class="NSObjectController" id="541891125">
 				<object class="NSMutableArray" key="NSDeclaredKeys">
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>hidden</string>
@@ -1059,14 +1059,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
-						<string key="label">performClose:</string>
-						<reference key="source" ref="19356187"/>
-						<reference key="destination" ref="974986023"/>
-					</object>
-					<int key="connectionID">101</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
 						<string key="label">performSelect:</string>
 						<reference key="source" ref="1001"/>
 						<reference key="destination" ref="301038180"/>
@@ -1100,7 +1092,7 @@
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">content</string>
-						<reference key="source" ref="110347272"/>
+						<reference key="source" ref="541891125"/>
 						<reference key="destination" ref="957425979"/>
 					</object>
 					<int key="connectionID">111</int>
@@ -1109,10 +1101,10 @@
 					<object class="IBBindingConnection" key="connection">
 						<string key="label">enabled: content.hidden</string>
 						<reference key="source" ref="102187291"/>
-						<reference key="destination" ref="110347272"/>
+						<reference key="destination" ref="541891125"/>
 						<object class="NSNibBindingConnector" key="connector">
 							<reference key="NSSource" ref="102187291"/>
-							<reference key="NSDestination" ref="110347272"/>
+							<reference key="NSDestination" ref="541891125"/>
 							<string key="NSLabel">enabled: content.hidden</string>
 							<string key="NSBinding">enabled</string>
 							<string key="NSKeyPath">content.hidden</string>
@@ -1120,6 +1112,14 @@
 						</object>
 					</object>
 					<int key="connectionID">113</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">cancelAction:</string>
+						<reference key="source" ref="1001"/>
+						<reference key="destination" ref="974986023"/>
+					</object>
+					<int key="connectionID">114</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -1474,7 +1474,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">110</int>
-						<reference key="object" ref="110347272"/>
+						<reference key="object" ref="541891125"/>
 						<reference key="parent" ref="0"/>
 					</object>
 				</object>
@@ -1810,7 +1810,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">113</int>
+			<int key="maxID">114</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1841,12 +1841,14 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>cancelAction:</string>
 							<string>performSearch:</string>
 							<string>performSelect:</string>
 							<string>performSelectAll:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
@@ -1856,12 +1858,17 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>cancelAction:</string>
 							<string>performSearch:</string>
 							<string>performSelect:</string>
 							<string>performSelectAll:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<object class="IBActionInfo">
+								<string key="name">cancelAction:</string>
+								<string key="candidateClassName">id</string>
+							</object>
 							<object class="IBActionInfo">
 								<string key="name">performSearch:</string>
 								<string key="candidateClassName">id</string>

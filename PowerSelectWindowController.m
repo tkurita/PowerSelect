@@ -13,6 +13,16 @@ extern void showError(NSDictionary *err_info);
 @synthesize searchThread;
 @synthesize searchResult;
 
+
+- (IBAction) cancelAction:(id)sender
+{
+	if (searchThread && [searchThread isExecuting]) {
+		[searchThread cancel];
+	} else {
+		//[self close];
+	}
+}
+
 - (void)clickableBoxDoubleClicked:(id)sender
 {
 	[[NSWorkspace sharedWorkspace] openFile:searchLocation];
@@ -137,6 +147,9 @@ extern void showError(NSDictionary *err_info);
 	NSString *item_name;
 	isFound = NO;
 	while (item_name = [enumerator nextObject]) {
+		if ([searchThread isCancelled]) {
+			goto bail;
+		}
 		BOOL matched = [(NSNumber *)[item_name performSelector:selector withObject:searchText] boolValue];
 		if (matched) {
 			NSString *matched_item = [searchLocation stringByAppendingPathComponent:item_name];
@@ -149,7 +162,8 @@ extern void showError(NSDictionary *err_info);
 									   (CFStringRef *)&a_kind);
 				[dict setObject:a_kind forKey:@"kind"];
 				[dict setObject:[file_manager displayNameAtPath:matched_item] forKey:@"name"];
-				[searchResultController addObject:dict];
+				[searchResultController performSelectorOnMainThread:@selector(addObject:)
+														 withObject:dict waitUntilDone:NO];
 				isFound = YES;
 			}
 		}
@@ -161,11 +175,11 @@ extern void showError(NSDictionary *err_info);
 		NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithObject:message forKey:@"name"];
 		[searchResultController addObject:dict];		
 	}
-	[file_manager release];
-	[pool release];
+bail:
 	[self performSelectorOnMainThread:@selector(searchThreadDidEnd:)
 						   withObject:nil waitUntilDone:NO];
-
+	[file_manager release];
+	[pool release];
 }
 
 - (void)drawerDidOpen:(NSNotification *)notification
