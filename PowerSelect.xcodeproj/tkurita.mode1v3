@@ -277,6 +277,7 @@
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>2C14517415DF8F9E00481DE3</string>
 								<string>29B97318FDCFA39411CA2CEA</string>
+								<string>2C4A6D9D097F6BAB00D4AF6B</string>
 								<string>2C5453A50ED9532B0098D94A</string>
 								<string>2C65ED3A16095457005A33E8</string>
 								<string>2CE0451C160077D6006F2C10</string>
@@ -288,9 +289,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>32</integer>
-									<integer>31</integer>
-									<integer>12</integer>
+									<integer>8</integer>
+									<integer>2</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -316,7 +316,7 @@
 							<real>245</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>23 128 1135 750 0 0 1440 878 </string>
+						<string>105 128 1135 750 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -346,23 +346,27 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>2C65EE181609C35E005A33E8</string>
+										<string>2C65EE281609C58E005A33E8</string>
 										<key>history</key>
 										<array>
 											<string>2C4186C814DFF7CC008F3F5E</string>
 											<string>2C4186E314DFFC39008F3F5E</string>
 											<string>2C4186E414DFFC39008F3F5E</string>
 											<string>2C4186E514DFFC39008F3F5E</string>
-											<string>2CE043CF16002071006F2C10</string>
 											<string>2CE043D016002071006F2C10</string>
 											<string>2CE0440416002304006F2C10</string>
 											<string>2CE044E7160075D7006F2C10</string>
-											<string>2CEDCE5D16041A8600D42997</string>
 											<string>2CEDCE6016041A8600D42997</string>
 											<string>2CE8E1A41608119000429F7C</string>
 											<string>2CE8E1A51608119000429F7C</string>
 											<string>2C65EDA41609B537005A33E8</string>
-											<string>2C65EDF41609C14B005A33E8</string>
+											<string>2C65EE211609C58E005A33E8</string>
+											<string>2C65EE221609C58E005A33E8</string>
+											<string>2C65EE231609C58E005A33E8</string>
+											<string>2C65EE241609C58E005A33E8</string>
+											<string>2C65EE251609C58E005A33E8</string>
+											<string>2C65EE261609C58E005A33E8</string>
+											<string>2C65EE271609C58E005A33E8</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -376,7 +380,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {846, 562}}</string>
 								<key>RubberWindowFrame</key>
-								<string>23 128 1135 750 0 0 1440 878 </string>
+								<string>105 128 1135 750 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -401,7 +405,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>2C65EE191609C35E005A33E8</string>
+										<string>2C65EE291609C58E005A33E8</string>
 										<key>history</key>
 										<array>
 											<string>2C4186C814DFF7CC008F3F5E</string>
@@ -431,7 +435,7 @@
 								<key>Frame</key>
 								<string>{{0, 567}, {846, 116}}</string>
 								<key>RubberWindowFrame</key>
-								<string>23 128 1135 750 0 0 1440 878 </string>
+								<string>105 128 1135 750 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -451,7 +455,7 @@
 								<key>Frame</key>
 								<string>{{0, 688}, {846, 0}}</string>
 								<key>RubberWindowFrame</key>
-								<string>23 128 1135 750 0 0 1440 878 </string>
+								<string>105 128 1135 750 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -613,16 +617,16 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>2C65EE1A1609C35E005A33E8</string>
+		<string>2C65EE2A1609C58E005A33E8</string>
 		<string>2C65EDA91609B537005A33E8</string>
 		<string>2C65EDAA1609B537005A33E8</string>
 		<string>2CC01CE70F1B2340003DF3C8</string>
-		<string>/Users/tkurita/Dev/Projects/PowerSelect/PowerSelect/2_4/PowerSelect.xcodeproj</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
+		<string>1C78EAAD065D492600B07095</string>
+		<string>/Users/tkurita/Dev/Projects/PowerSelect/PowerSelect/2_4/PowerSelect.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>23 128 1135 750 0 0 1440 878 </string>
+	<string>105 128 1135 750 0 0 1440 878 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
