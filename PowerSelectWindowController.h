@@ -4,8 +4,9 @@
 @interface PowerSelectWindowController : NSWindowController {
 	NSString *searchText;
 	NSString *searchLocation;
-	NSArray *searchResult;
+	NSMutableArray *searchResult;
 	OSAScript *locator;
+	NSThread *searchThread;
 	BOOL isFound;
 	unsigned int modeIndex;
 	IBOutlet id progressIndicator;
@@ -21,6 +22,8 @@
 @property(retain) NSString *searchText;
 @property(retain) NSString *searchLocation;
 @property(retain) OSAScript *locator;
+@property(retain) NSThread *searchThread;
+@property(retain) NSMutableArray *searchResult;
 @property(assign) unsigned int modeIndex;
 
 - (IBAction)performSearch:(id)sender;

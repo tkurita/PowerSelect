@@ -10,6 +10,8 @@ extern void showError(NSDictionary *err_info);
 @synthesize searchLocation;
 @synthesize locator;
 @synthesize modeIndex;
+@synthesize searchThread;
+@synthesize searchResult;
 
 - (void)clickableBoxDoubleClicked:(id)sender
 {
@@ -53,68 +55,34 @@ extern void showError(NSDictionary *err_info);
 	}
 }
 
-- (void)setSearchResult:(NSArray *)an_array
+
+- (SEL)searchMethod
 {
-	NSMutableArray *result_array;
-	if (an_array) {
-		result_array = [NSMutableArray array];
-	} else {
-		result_array = [NSMutableArray arrayWithCapacity:1];
+	SEL search_method;
+	switch (modeIndex) {
+		case 0:
+			search_method = @selector(nameContain:);
+			break;
+		case 1:
+			search_method = @selector(nameNotContain:);
+			break;
+		case 3:
+			search_method = @selector(nameHasPrefix:);
+			break;
+		case 4:
+			search_method = @selector(nameNotHasPrefix:);
+			break;
+		case 6:
+			search_method = @selector(nameHasSuffix:);
+			break;
+		case 7:
+			search_method = @selector(nameNotHasSuffix:);
+			break;
+		default:
+			search_method = @selector(nameNotContain:);
+			break;
 	}
-
-	
-	if (!an_array) {
-		NSString *message = NSLocalizedString(@"NoItemsFound",@"");
-		NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithObject:message forKey:@"name"];
-		[result_array addObject:dict];
-		isFound = NO;
-		goto bail;
-	}
-	isFound = YES;
-	NSEnumerator *enumerator = [an_array objectEnumerator];
-	NSString *a_path;
-	NSWorkspace *workspace = [NSWorkspace sharedWorkspace];
-	NSFileManager *file_manager = [NSFileManager defaultManager];
-	while (a_path = [enumerator nextObject]) {
-		NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithObject:a_path forKey:@"path"];
-		[dict setObject:[workspace iconForFile:a_path] forKey:@"icon"];
-		NSString *a_kind;
-		LSCopyKindStringForURL((CFURLRef)[NSURL fileURLWithPath:a_path], (CFStringRef *)&a_kind);
-		[dict setObject:a_kind forKey:@"kind"];
-		[dict setObject:[file_manager displayNameAtPath:a_path] forKey:@"name"];
-		[result_array addObject:dict];
-	}
-bail:
-	[searchResult release];
-	searchResult = [result_array retain];
-}
-
-- (NSArray *)searchAtDirectory:(NSString*)path withMethod:(SEL)selector
-{
-	self.searchLocation = path;
-	NSFileManager *file_manager = [NSFileManager defaultManager];
-	NSDirectoryEnumerator *enumerator = [file_manager enumeratorAtPath:path];
-	NSString *item_name;
-	NSMutableArray *results = [NSMutableArray arrayWithCapacity:1];
-	BOOL is_found = NO;
-	while (item_name = [enumerator nextObject]) {
-		BOOL matched = [(NSNumber *)[item_name performSelector:selector withObject:searchText] boolValue];
-		if (matched) {
-			NSString *matched_item = [path stringByAppendingPathComponent:item_name];
-			if ([matched_item isVisible]) {
-				[results addObject:matched_item];
-				is_found = YES;
-			}
-		}
-		[enumerator skipDescendents];
-	}
-	
-	if (is_found) {
-		return results;
-	} else {
-		return nil;
-	}
-
+	return search_method;
 }
 
 - (void)setupDrawer
@@ -147,6 +115,59 @@ bail:
 	[selectButton setEnabled:NO];
 }
 
+- (void)searchThreadDidEnd:(NSNotification *)notification
+{
+	if ([candidateDrawer state] ==  NSDrawerClosedState) {
+		[candidateDrawer open];
+	} else {
+		[self setupDrawer];
+	}
+	
+	[progressIndicator stopAnimation:self];
+	[progressIndicator setHidden:YES];
+}
+
+- (void)searchLocation:(id)sender
+{
+	NSAutoreleasePool *pool = [NSAutoreleasePool new];
+	SEL selector = [self searchMethod];
+	NSFileManager *file_manager = [NSFileManager new];
+	NSWorkspace *workspace = [NSWorkspace sharedWorkspace];
+	NSDirectoryEnumerator *enumerator = [file_manager enumeratorAtPath:searchLocation];
+	NSString *item_name;
+	isFound = NO;
+	while (item_name = [enumerator nextObject]) {
+		BOOL matched = [(NSNumber *)[item_name performSelector:selector withObject:searchText] boolValue];
+		if (matched) {
+			NSString *matched_item = [searchLocation stringByAppendingPathComponent:item_name];
+			if ([matched_item isVisible]) {
+				NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithObject:matched_item 
+																			   forKey:@"path"];
+				[dict setObject:[workspace iconForFile:matched_item] forKey:@"icon"];
+				NSString *a_kind;
+				LSCopyKindStringForURL((CFURLRef)[NSURL fileURLWithPath:matched_item], 
+									   (CFStringRef *)&a_kind);
+				[dict setObject:a_kind forKey:@"kind"];
+				[dict setObject:[file_manager displayNameAtPath:matched_item] forKey:@"name"];
+				[searchResultController addObject:dict];
+				isFound = YES;
+			}
+		}
+		[enumerator skipDescendents];
+	}
+	
+	if (!isFound) {
+		NSString *message = NSLocalizedString(@"NoItemsFound",@"");
+		NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithObject:message forKey:@"name"];
+		[searchResultController addObject:dict];		
+	}
+	[file_manager release];
+	[pool release];
+	[self performSelectorOnMainThread:@selector(searchThreadDidEnd:)
+						   withObject:nil waitUntilDone:NO];
+
+}
+
 - (void)drawerDidOpen:(NSNotification *)notification
 {
 	[self setupDrawer];
@@ -154,8 +175,6 @@ bail:
 
 - (IBAction)performSearch:(id)sender
 {
-	[progressIndicator setHidden:NO];
-	[progressIndicator startAnimation:self];
 	static OSAScript *insertionLocatorScript = nil;
 	if (!insertionLocatorScript) {
 		insertionLocatorScript = loadScript(@"InsertionLocator");
@@ -185,45 +204,18 @@ bail:
 	}
 	
 	NSString *path = [result_desc stringValue];
-	
-	SEL search_method;
-	switch (modeIndex) {
-		case 0:
-			search_method = @selector(nameContain:);
-			break;
-		case 1:
-			search_method = @selector(nameNotContain:);
-			break;
-		case 3:
-			search_method = @selector(nameHasPrefix:);
-			break;
-		case 4:
-			search_method = @selector(nameNotHasPrefix:);
-			break;
-		case 6:
-			search_method = @selector(nameHasSuffix:);
-			break;
-		case 7:
-			search_method = @selector(nameNotHasSuffix:);
-			break;
-		default:
-			search_method = @selector(nameNotContain:);
-			break;
-	}
-	
-	NSArray *search_resut = [self searchAtDirectory:path withMethod:search_method];
 
-	[self setSearchResult:search_resut];
+	[progressIndicator setHidden:NO];
+	[progressIndicator startAnimation:self];
+
+	self.searchLocation = path;
+	self.searchThread = [[[NSThread alloc] initWithTarget:self selector:@selector(searchLocation:)
+							  object:self] autorelease];
+
+	self.searchResult = [NSMutableArray arrayWithCapacity:1];
+	[searchThread start];
 	
-	if ([candidateDrawer state] ==  NSDrawerClosedState) {
-		[candidateDrawer open];
-	} else {
-		[self setupDrawer];
-	}
 bail:
-	[progressIndicator stopAnimation:self];
-	[progressIndicator setHidden:YES];
-
 	return;
 }
 
@@ -257,7 +249,6 @@ bail:
 
 - (void)windowWillClose:(NSNotification*)notification
 {	
-	//[super windowWillClose:notification];
 	NSUserDefaults *user_defaults = [NSUserDefaults standardUserDefaults];
 	[user_defaults setObject:searchText forKey:@"SearchText"];
 	[user_defaults setInteger:modeIndex	forKey:@"ModePopup"];

@@ -6,18 +6,6 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAppleScriptBuildPhase section */
-		2C2371D8097F28A800693050 /* AppleScript */ = {
-			isa = PBXAppleScriptBuildPhase;
-			buildActionMask = 2147483647;
-			contextName = "";
-			files = (
-			);
-			isSharedContext = 0;
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXAppleScriptBuildPhase section */
-
 /* Begin PBXBuildFile section */
 		2C14517615DF8F9E00481DE3 /* MainMenu.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C14517415DF8F9E00481DE3 /* MainMenu.strings */; };
 		2C2371DD097F28A800693050 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
@@ -244,7 +232,6 @@
 			buildConfigurationList = 2C2371E5097F28A800693050 /* Build configuration list for PBXNativeTarget "PowerSelect" */;
 			buildPhases = (
 				2C91CF6114DAF58400588379 /* ShellScript */,
-				2C2371D8097F28A800693050 /* AppleScript */,
 				2C2371DC097F28A800693050 /* Resources */,
 				2C2371DF097F28A800693050 /* Sources */,
 				2C2371E1097F28A800693050 /* Frameworks */,
