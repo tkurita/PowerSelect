@@ -171,7 +171,7 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 369799036;
+			PBXPerProjectTemplateStateSaveDate = 369800091;
 			PBXPrepackagedSmartGroups_v2 = (
 				{
 					PBXTransientLocationAtTop = bottom;
@@ -607,7 +607,7 @@
 				Frame = "{{0, 0}, {745, 422}}";
 				RubberWindowFrame = "311 275 745 464 0 0 1280 832 ";
 			};
-			PBXWorkspaceStateSaveDate = 369799036;
+			PBXWorkspaceStateSaveDate = 369800091;
 		};
 		perUserProjectItems = {
 			2C3DB6700BE1C51900FD7D6E = 2C3DB6700BE1C51900FD7D6E /* AppController.m */;
@@ -627,14 +627,16 @@
 			2C65EE2E1609C5ED005A33E8 = 2C65EE2E1609C5ED005A33E8 /* PBXTextBookmark */;
 			2C65EE311609C8C3005A33E8 = 2C65EE311609C8C3005A33E8 /* PBXTextBookmark */;
 			2C65EE331609C8C3005A33E8 = 2C65EE331609C8C3005A33E8 /* PBXTextBookmark */;
-			2CDFE8D0160AB028008B65CB /* PBXTextBookmark */ = 2CDFE8D0160AB028008B65CB /* PBXTextBookmark */;
-			2CDFE8D1160AB028008B65CB /* PBXTextBookmark */ = 2CDFE8D1160AB028008B65CB /* PBXTextBookmark */;
-			2CDFE8D2160AB028008B65CB /* PBXTextBookmark */ = 2CDFE8D2160AB028008B65CB /* PBXTextBookmark */;
-			2CDFE8D3160AB028008B65CB /* PBXTextBookmark */ = 2CDFE8D3160AB028008B65CB /* PBXTextBookmark */;
-			2CDFE8E1160AB338008B65CB /* PBXTextBookmark */ = 2CDFE8E1160AB338008B65CB /* PBXTextBookmark */;
-			2CDFE8E2160AB338008B65CB /* PBXTextBookmark */ = 2CDFE8E2160AB338008B65CB /* PBXTextBookmark */;
-			2CDFE8E3160AB338008B65CB /* PBXTextBookmark */ = 2CDFE8E3160AB338008B65CB /* PBXTextBookmark */;
-			2CDFE8E4160AB338008B65CB /* PBXTextBookmark */ = 2CDFE8E4160AB338008B65CB /* PBXTextBookmark */;
+			2CDFE8D0160AB028008B65CB = 2CDFE8D0160AB028008B65CB /* PBXTextBookmark */;
+			2CDFE8D1160AB028008B65CB = 2CDFE8D1160AB028008B65CB /* PBXTextBookmark */;
+			2CDFE8D2160AB028008B65CB = 2CDFE8D2160AB028008B65CB /* PBXTextBookmark */;
+			2CDFE8D3160AB028008B65CB = 2CDFE8D3160AB028008B65CB /* PBXTextBookmark */;
+			2CDFE8E1160AB338008B65CB = 2CDFE8E1160AB338008B65CB /* PBXTextBookmark */;
+			2CDFE8E2160AB338008B65CB = 2CDFE8E2160AB338008B65CB /* PBXTextBookmark */;
+			2CDFE8E3160AB338008B65CB = 2CDFE8E3160AB338008B65CB /* PBXTextBookmark */;
+			2CDFE8E4160AB338008B65CB = 2CDFE8E4160AB338008B65CB /* PBXTextBookmark */;
+			2CDFE8EF160AB392008B65CB = 2CDFE8EF160AB392008B65CB /* PlistBookmark */;
+			2CDFE8F0160AB392008B65CB = 2CDFE8F0160AB392008B65CB /* PlistBookmark */;
 			2CE043CF16002071006F2C10 = 2CE043CF16002071006F2C10 /* PlistBookmark */;
 			2CE043D016002071006F2C10 = 2CE043D016002071006F2C10 /* PBXTextBookmark */;
 			2CE0440416002304006F2C10 = 2CE0440416002304006F2C10 /* PBXTextBookmark */;
@@ -747,16 +749,16 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {785, 338}}";
 			sepNavSelRange = "{226, 0}";
-			sepNavVisRange = "{82, 498}";
+			sepNavVisRange = "{82, 492}";
 			sepNavVisRect = "{{0, 0}, {761, 478}}";
 			sepNavWindowFrame = "{{15, 214}, {899, 719}}";
 		};
 	};
 	2C3DB6700BE1C51900FD7D6E /* AppController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {859, 1963}}";
+			sepNavIntBoundsRect = "{{0, 0}, {859, 1937}}";
 			sepNavSelRange = "{3659, 32}";
-			sepNavVisRange = "{3227, 612}";
+			sepNavVisRange = "{3077, 804}";
 			sepNavVisRect = "{{0, 0}, {761, 497}}";
 			sepNavWindowFrame = "{{15, 76}, {756, 756}}";
 		};
@@ -765,14 +767,14 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {831, 455}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 836}";
+			sepNavVisRange = "{0, 1038}";
 		};
 	};
 	2C4186C514DFF74E008F3F5E /* PathExtra.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1044, 5499}}";
+			sepNavIntBoundsRect = "{{0, 0}, {785, 5577}}";
 			sepNavSelRange = "{22, 0}";
-			sepNavVisRange = "{0, 418}";
+			sepNavVisRange = "{0, 777}";
 		};
 	};
 	2C4186C814DFF7CC008F3F5E /* PBXTextBookmark */ = {
@@ -787,16 +789,16 @@
 	};
 	2C4186DB14DFFC0B008F3F5E /* NSURL+NDCarbonUtilities.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {992, 2379}}";
+			sepNavIntBoundsRect = "{{0, 0}, {992, 2353}}";
 			sepNavSelRange = "{804, 0}";
-			sepNavVisRange = "{0, 1908}";
+			sepNavVisRange = "{0, 1092}";
 		};
 	};
 	2C4186DC14DFFC0B008F3F5E /* NSURL+NDCarbonUtilities.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1139, 2665}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 218}";
+			sepNavVisRange = "{0, 751}";
 		};
 	};
 	2C4186E314DFFC39008F3F5E /* PBXTextBookmark */ = {
@@ -825,7 +827,7 @@
 	};
 	2C4A6D9E097F6BAC00D4AF6B /* English */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1188, 505}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1188, 389}}";
 			sepNavSelRange = "{420, 0}";
 			sepNavVisRange = "{0, 780}";
 			sepNavVisRect = "{{0, 0}, {761, 478}}";
@@ -833,7 +835,7 @@
 	};
 	2C5453A10ED953190098D94A /* English */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {785, 135}}";
+			sepNavIntBoundsRect = "{{0, 0}, {785, 389}}";
 			sepNavSelRange = "{87, 70}";
 			sepNavVisRange = "{0, 157}";
 			sepNavVisRect = "{{0, 0}, {761, 653}}";
@@ -966,11 +968,6 @@
 		name = History.rd;
 		path = /Users/tkurita/Dev/Projects/PowerSelect/History.rd;
 		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {785, 4071}}";
-			sepNavSelRange = "{26, 22}";
-			sepNavVisRange = "{0, 607}";
-		};
 	};
 	2C65EE331609C8C3005A33E8 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -1036,9 +1033,9 @@
 	};
 	2C91CE0A14DACCC500588379 /* StringExtra.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {845, 650}}";
-			sepNavSelRange = "{314, 873}";
-			sepNavVisRange = "{0, 1187}";
+			sepNavIntBoundsRect = "{{0, 0}, {845, 390}}";
+			sepNavSelRange = "{312, 0}";
+			sepNavVisRange = "{0, 1245}";
 		};
 	};
 	2C91CE0B14DACCC500588379 /* StringExtra.m */ = {
@@ -1050,14 +1047,14 @@
 	};
 	2C91CF7814DB990100588379 /* Japanese */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {979, 505}}";
+			sepNavIntBoundsRect = "{{0, 0}, {979, 389}}";
 			sepNavSelRange = "{532, 0}";
 			sepNavVisRange = "{0, 532}";
 		};
 	};
 	2C91CF7914DB991E00588379 /* Japanese */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {785, 632}}";
+			sepNavIntBoundsRect = "{{0, 0}, {785, 389}}";
 			sepNavSelRange = "{108, 0}";
 			sepNavVisRange = "{0, 108}";
 		};
@@ -1210,6 +1207,28 @@
 		vrLen = 482;
 		vrLoc = 472;
 	};
+	2CDFE8EF160AB392008B65CB /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 2C2371EA097F28A800693050 /* Info-PowerSelect.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/tkurita/Dev/Projects/PowerSelect/PowerSelect/2_4/Info-PowerSelect.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	2CDFE8F0160AB392008B65CB /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 2C2371EA097F28A800693050 /* Info-PowerSelect.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/tkurita/Dev/Projects/PowerSelect/PowerSelect/2_4/Info-PowerSelect.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
 	2CE043CF16002071006F2C10 /* PlistBookmark */ = {
 		isa = PlistBookmark;
 		fRef = 2C2371EA097F28A800693050 /* Info-PowerSelect.plist */;
@@ -1261,16 +1280,16 @@
 	2CE04523160079BC006F2C10 /* PowerSelectWindowController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {785, 455}}";
-			sepNavSelRange = "{947, 0}";
+			sepNavSelRange = "{953, 0}";
 			sepNavVisRange = "{472, 482}";
 			sepNavWindowFrame = "{{420, 94}, {835, 739}}";
 		};
 	};
 	2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {785, 3809}}";
-			sepNavSelRange = "{3395, 0}";
-			sepNavVisRange = "{7353, 926}";
+			sepNavIntBoundsRect = "{{0, 0}, {785, 3991}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{218, 342}";
 			sepNavWindowFrame = "{{240, 94}, {937, 488}}";
 		};
 	};
