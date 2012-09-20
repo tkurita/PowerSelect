@@ -5,11 +5,11 @@
 @interface AppController : NSObject
 {
     IBOutlet id searchResult;
-	IBOutlet id searchResultController;
-
+	IBOutlet id searchResultController;	
 }
 
 - (IBAction)makeDonation:(id)sender;
+- (IBAction)newWindow:(id)sender;
 
 @end
 

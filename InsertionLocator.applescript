@@ -1,8 +1,24 @@
-global keyText
-global InsertionLocator
-global mainWindow
-global appController
-global XList
+property InsertionLocator : module
+property XList : module
+property loader : boot (module loader of application (get "PowerSelectLib")) for me
+
+on init()
+	InsertionLocator's set_allow_closed_folder(false)
+end init
+
+property _ : init()
+
+on run
+	--return missing value
+	(*
+	set a_result to InsertionLocator's do()
+	if a_result is not missing value then
+		set a_result to POSIX path of a_result
+	end if
+	return a_result
+	*)
+	return make
+end run
 
 on select_in_Finder(target_items)
 	script to_fileref
@@ -11,8 +27,8 @@ on select_in_Finder(target_items)
 		end do
 	end script
 	
-	set target_items to target_items's map_as_list(to_fileref)
-	tell InsertionLocator
+	set target_items to XList's make_with(target_items)'s map_as_list(to_fileref)
+	tell my _locator
 		--log is_location_in_window()
 		--log is_determined_by_selection()
 		--log is_closed_folder()
@@ -24,14 +40,14 @@ on select_in_Finder(target_items)
 		end if
 	end tell
 	using terms from application "Finder"
-		if view_type() of InsertionLocator is not list view then
+		if my _locator's view_type() is not list view then
 			tell application "Finder"
 				select target_items
 			end tell
 			return true
 		end if
 	end using terms from
-	set a_window to target_window() of InsertionLocator
+	set a_window to my _locator's target_window()
 	tell application "Finder"
 		try
 			set toolbar_visible to toolbar visible of a_window
@@ -84,7 +100,11 @@ on select_in_Finder(target_items)
 					set item_pos_b to (item_pos_b - content_pos_v)
 				end tell
 				set scroll_properties to properties of it
-				set sbar_h to item 2 of (get size of scroll bar 2)
+				if (count (scroll bars)) > 1 then
+					set sbar_h to item 2 of (get size of scroll bar 2)
+				else
+					set sbar_h to 0
+				end if
 				set scroll_size_v to ((item 2 of size of scroll_properties) - header_h - sbar_h) -- header をのぞいたサイズ
 				set scroll_pos_v to ((item 2 of position of scroll_properties) + header_h) -- header の内側からのサイズ
 				set current_t to scroll_pos_v - content_pos_v
@@ -119,120 +139,21 @@ on select_in_Finder(target_items)
 	return true
 end select_in_Finder
 
+on insertion_path()
+	set my _insertion_path to my _locator's do()
+	set a_result to my _insertion_path
+	if a_result is not missing value then
+		set a_result to a_result's POSIX path
+	end if
+	return a_result
+end insertion_path
 
-on make_for_location(a_location)
-	script FilterActionBaseCore
-		property _container : a_location
-		property _itemList : missing value
+on make
+	set self to me
+	script
+		property parent : self
+		property _locator : make InsertionLocator
+		property _insertion_path : missing value
 	end script
-end make_for_location
-
-on count_items()
-	return my _itemList's item_counts()
-end count_items
-
-on all_items()
-	return my _itemList's list_ref()
-end all_items
-
-on target_container()
-	return my _container
-end target_container
-
-on is_found()
-	return (my _itemList's item_counts() is not 0)
-end is_found
-
-on setup_pathes()
-	set path_list to {}
-	set path_list to my _itemList's list_ref()
-	call method "setSearchResult:" of appController with parameter path_list
-	--return path_list
-end setup_pathes
-
-on select_table_selection()
-	if not is_found() then
-		return false
-	end if
-	set path_list to call method "tableSelection"
-	set target_items to XList's make_with(path_list)
-	return select_in_Finder(target_items)
-end select_table_selection
-
-on select_all()
-	select_in_Finder(my _itemList)
-end select_all
-
-on store_search_result()
-	set my _itemList to XList's make_with(do_search())
-end store_search_result
-
-on do_search()
-	return {}
-end do_search
-
-on do(a_location, a_mode)
-	--log "start do in FilterActionMaker"
-	--log a_location
-	set filter_action_base to make_for_location(a_location)
-	
-	if a_mode is 1 then
-		script ContainFilter
-			property parent : filter_action_base
-			on do_search()
-				return call method "searchAtDirectory:withString:withMethod:" of appController with parameters {my _container, keyText, "nameContain:"}
-			end do_search
-		end script
-		
-	else if a_mode is 2 then
-		script NotContainFilter
-			property parent : filter_action_base
-			on do_search()
-				return call method "searchAtDirectory:withString:withMethod:" of appController with parameters {my _container, keyText, "nameNotContain:"}
-			end do_search
-		end script
-		
-	else if a_mode is 4 then
-		script StartWithFilter
-			property parent : filter_action_base
-			on do_search()
-				return call method "searchAtDirectory:withString:withMethod:" of appController with parameters {my _container, keyText, "nameHasPrefix:"}
-			end do_search
-		end script
-		
-	else if a_mode is 5 then
-		script NotStartWithFilter
-			property parent : filter_action_base
-			on do_search()
-				return call method "searchAtDirectory:withString:withMethod:" of appController with parameters {my _container, keyText, "nameNotHasPrefix:"}
-			end do_search
-		end script
-		
-	else if a_mode is 7 then
-		script EndWithFilter
-			property parent : filter_action_base
-			on do_search()
-				return call method "searchAtDirectory:withString:withMethod:" of appController with parameters {my _container, keyText, "nameHasSuffix:"}
-			end do_search
-		end script
-		
-	else if a_mode is 8 then
-		script NotEndWithFilter
-			property parent : filter_action_base
-			on do_search()
-				return call method "searchAtDirectory:withString:withMethod:" of appController with parameters {my _container, keyText, "nameNotHasSuffix:"}
-			end do_search
-		end script
-		
-	else
-		script InvalidFilter
-			on do_search()
-				set a_message to localized string "InternalError"
-				error a_message number -128
-			end do_search
-			
-		end script
-	end if
-	
-	return the result
-end do
+	return result
+end make

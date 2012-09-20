@@ -1,4 +1,5 @@
-global GUIScriptingChecker
+property GUIScriptingChecker : module
+property loader : boot (module loader of application (get "PowerSelectLib")) for me
 
 on run
 	tell GUIScriptingChecker
