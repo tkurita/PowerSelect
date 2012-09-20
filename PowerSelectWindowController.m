@@ -19,7 +19,7 @@ extern void showError(NSDictionary *err_info);
 	if (searchThread && [searchThread isExecuting]) {
 		[searchThread cancel];
 	} else {
-		//[self close];
+		[self close];
 	}
 }
 
@@ -129,6 +129,7 @@ extern void showError(NSDictionary *err_info);
 {
 	if ([candidateDrawer state] ==  NSDrawerClosedState) {
 		[candidateDrawer open];
+		[self setupDrawer];
 	} else {
 		[self setupDrawer];
 	}
@@ -182,11 +183,13 @@ bail:
 	[pool release];
 }
 
+/*
 - (void)drawerDidOpen:(NSNotification *)notification
 {
 	[self setupDrawer];
 }
-
+*/
+ 
 - (IBAction)performSearch:(id)sender
 {
 	[progressIndicator setHidden:NO];
@@ -228,7 +231,11 @@ bail:
 
 	self.searchResult = [NSMutableArray arrayWithCapacity:1];
 	[searchThread start];
-
+	
+	if ([candidateDrawer state] ==  NSDrawerClosedState) {
+		[candidateDrawer open];
+	}
+	
 	goto bail;
 
 error:	
