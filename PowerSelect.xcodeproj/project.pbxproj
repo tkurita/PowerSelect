@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C14517615DF8F9E00481DE3 /* MainMenu.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C14517415DF8F9E00481DE3 /* MainMenu.strings */; };
 		2C2371DD097F28A800693050 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
 		2C2371E0097F28A800693050 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		2C2371E2097F28A800693050 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -17,7 +16,6 @@
 		2C4186DE14DFFC0B008F3F5E /* NSURL+NDCarbonUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4186DC14DFFC0B008F3F5E /* NSURL+NDCarbonUtilities.m */; };
 		2C4A6D9F097F6BAC00D4AF6B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C4A6D9D097F6BAB00D4AF6B /* Localizable.strings */; };
 		2C5453A60ED9532B0098D94A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C5453A50ED9532B0098D94A /* InfoPlist.strings */; };
-		2C65ED3C16095457005A33E8 /* PowerSelectWindow.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C65ED3A16095457005A33E8 /* PowerSelectWindow.strings */; };
 		2C717DA90BFB079400A8929B /* HelpSetup.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C717DA80BFB079400A8929B /* HelpSetup.plist */; };
 		2C814F9F0BFACD0B00814390 /* DonationReminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C814F9A0BFACD0B00814390 /* DonationReminder.framework */; };
 		2C814FA90BFACD4500814390 /* DonationReminder.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C814F9A0BFACD0B00814390 /* DonationReminder.framework */; };
@@ -287,9 +285,7 @@
 				2C5453A60ED9532B0098D94A /* InfoPlist.strings in Resources */,
 				2CC01CD70F1B006A003DF3C8 /* PowerSelect.icns in Resources */,
 				2CF038F310A25517007707C2 /* Credits.rtf in Resources */,
-				2C14517615DF8F9E00481DE3 /* MainMenu.strings in Resources */,
 				2CE0451D160077D6006F2C10 /* PowerSelectWindow.xib in Resources */,
-				2C65ED3C16095457005A33E8 /* PowerSelectWindow.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
