@@ -775,6 +775,13 @@
 			sepNavWindowFrame = "{{38, 79}, {880, 833}}";
 		};
 	};
+	2C65ED3B16095457005A33E8 /* Japanese */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1181, 663}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1875}";
+		};
+	};
 	2C68D42716039E4200711D73 /* PowerSelectWindowController.m:28 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
@@ -1005,9 +1012,9 @@
 	};
 	2CFF0AD60BCFDF4C00374FBA /* History.rd */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {687, 4094}}";
-			sepNavSelRange = "{215, 0}";
-			sepNavVisRange = "{0, 967}";
+			sepNavIntBoundsRect = "{{0, 0}, {785, 4134}}";
+			sepNavSelRange = "{9, 0}";
+			sepNavVisRange = "{0, 914}";
 			sepNavVisRect = "{{0, 0}, {761, 234}}";
 			sepNavWindowFrame = "{{316, 86}, {899, 719}}";
 		};
