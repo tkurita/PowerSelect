@@ -2,7 +2,7 @@
 {
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeArchitecturePreference = x86_64;
-		activeBuildConfigurationName = Release;
+		activeBuildConfigurationName = Debug;
 		activeExecutable = 2C2371EC097F28A900693050 /* PowerSelect */;
 		activeTarget = 2C2371D6097F28A800693050 /* PowerSelect */;
 		addToTargets = (
@@ -80,7 +80,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					559,
+					377,
 					20,
 					96,
 					43,
@@ -116,7 +116,7 @@
 					16,
 					245,
 					273,
-					197,
+					279,
 				);
 				PBXFileTableDataSourceColumnsKey = (
 					PBXSymbolsDataSource_SymbolTypeIconID,
@@ -154,7 +154,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					538,
+					295,
 					60,
 					20,
 					77,
@@ -171,7 +171,7 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 371654160;
+			PBXPerProjectTemplateStateSaveDate = 394459072;
 			PBXPrepackagedSmartGroups_v2 = (
 				{
 					PBXTransientLocationAtTop = bottom;
@@ -607,12 +607,15 @@
 				Frame = "{{0, 0}, {745, 422}}";
 				RubberWindowFrame = "311 275 745 464 0 0 1280 832 ";
 			};
-			PBXWorkspaceStateSaveDate = 371654160;
+			PBXWorkspaceStateSaveDate = 394459072;
 		};
 		perUserProjectItems = {
-			2C3DB6700BE1C51900FD7D6E = 2C3DB6700BE1C51900FD7D6E /* AppController.m */;
-			2CDFE8EF160AB392008B65CB = 2CDFE8EF160AB392008B65CB /* PlistBookmark */;
-			2CFF0AD60BCFDF4C00374FBA = 2CFF0AD60BCFDF4C00374FBA /* History.rd */;
+			2CEB0440178301E000719450 /* PBXTextBookmark */ = 2CEB0440178301E000719450 /* PBXTextBookmark */;
+			2CEB0441178301E000719450 /* PBXTextBookmark */ = 2CEB0441178301E000719450 /* PBXTextBookmark */;
+			2CEB0442178301E400719450 /* PBXTextBookmark */ = 2CEB0442178301E400719450 /* PBXTextBookmark */;
+			2CEB0443178301E400719450 /* PBXBookmark */ = 2CEB0443178301E400719450 /* PBXBookmark */;
+			2CEB0444178301E400719450 /* PBXTextBookmark */ = 2CEB0444178301E400719450 /* PBXTextBookmark */;
+			2CEB0447178301F400719450 /* PBXTextBookmark */ = 2CEB0447178301F400719450 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 2CE5B935067839E1006E3003 /* Source Control */;
 		userBuildSettings = {
@@ -620,10 +623,17 @@
 	};
 	29B97316FDCFA39411CA2CEA /* main.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {785, 622}}";
+			sepNavIntBoundsRect = "{{0, 0}, {785, 388}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 217}";
 			sepNavVisRect = "{{0, 0}, {606, 390}}";
+		};
+	};
+	2C14517515DF8F9E00481DE3 /* Japanese */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1027, 1924}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1785}";
 		};
 	};
 	2C2371C7097F26B800693050 /* PowerSelect.applescript:1 */ = {
@@ -798,7 +808,7 @@
 		location = PowerSelect;
 		modificationTime = 369735690.324619;
 		originalNumberOfMultipleMatches = 1;
-		state = 1;
+		state = 0;
 	};
 	2C717DA80BFB079400A8929B /* HelpSetup.plist */ = {
 		uiCtxt = {
@@ -836,16 +846,16 @@
 	};
 	2C91CE0A14DACCC500588379 /* StringExtra.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {845, 390}}";
-			sepNavSelRange = "{312, 0}";
-			sepNavVisRange = "{0, 1245}";
+			sepNavIntBoundsRect = "{{0, 0}, {845, 442}}";
+			sepNavSelRange = "{1276, 0}";
+			sepNavVisRange = "{0, 313}";
 		};
 	};
 	2C91CE0B14DACCC500588379 /* StringExtra.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {845, 1872}}";
-			sepNavSelRange = "{2485, 0}";
-			sepNavVisRange = "{2262, 608}";
+			sepNavIntBoundsRect = "{{0, 0}, {691, 2093}}";
+			sepNavSelRange = "{5022, 0}";
+			sepNavVisRange = "{2330, 293}";
 		};
 	};
 	2C91CF7814DB990100588379 /* Japanese */ = {
@@ -930,17 +940,6 @@
 		originalNumberOfMultipleMatches = 0;
 		state = 1;
 	};
-	2CDFE8EF160AB392008B65CB /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 2C2371EA097F28A800693050 /* Info-PowerSelect.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = "/Users/tkurita/Dev/Projects/PowerSelect/PowerSelect/2_4/Info-PowerSelect.plist";
-		rLen = 0;
-		rLoc = 9223372036854775808;
-	};
 	2CE04523160079BC006F2C10 /* PowerSelectWindowController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {785, 455}}";
@@ -981,6 +980,60 @@
 	2CE5B936067839E1006E3003 /* Code sense */ = {
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
+	};
+	2CEB0440178301E000719450 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2C91CE0B14DACCC500588379 /* StringExtra.m */;
+		name = "StringExtra.m: 80";
+		rLen = 0;
+		rLoc = 2485;
+		rType = 0;
+		vrLen = 299;
+		vrLoc = 2386;
+	};
+	2CEB0441178301E000719450 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2C91CE0B14DACCC500588379 /* StringExtra.m */;
+		name = "StringExtra.m: 80";
+		rLen = 0;
+		rLoc = 2485;
+		rType = 0;
+		vrLen = 299;
+		vrLoc = 2386;
+	};
+	2CEB0442178301E400719450 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2C91CE0B14DACCC500588379 /* StringExtra.m */;
+		name = "StringExtra.m: 158";
+		rLen = 0;
+		rLoc = 5022;
+		rType = 0;
+		vrLen = 293;
+		vrLoc = 2330;
+	};
+	2CEB0443178301E400719450 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 2C91CE0A14DACCC500588379 /* StringExtra.h */;
+	};
+	2CEB0444178301E400719450 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2C91CE0A14DACCC500588379 /* StringExtra.h */;
+		name = "StringExtra.h: 8";
+		rLen = 0;
+		rLoc = 312;
+		rType = 0;
+		vrLen = 314;
+		vrLoc = 0;
+	};
+	2CEB0447178301F400719450 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2C91CE0A14DACCC500588379 /* StringExtra.h */;
+		name = "StringExtra.h: 30";
+		rLen = 0;
+		rLoc = 1276;
+		rType = 0;
+		vrLen = 313;
+		vrLoc = 0;
 	};
 	2CEDCE5216040C0F00D42997 /* ClickableBox.h */ = {
 		uiCtxt = {
