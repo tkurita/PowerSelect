@@ -12,8 +12,6 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="12"/>
-			<integer value="31"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -72,7 +70,7 @@
 				<string key="NSWindowContentMaxSize">{440, 110}</string>
 				<string key="NSWindowContentMinSize">{440, 110}</string>
 				<object class="NSView" key="NSWindowView" id="44533389">
-					<reference key="NSNextResponder"/>
+					<nil key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
 					<object class="NSMutableArray" key="NSSubviews">
 						<bool key="EncodedWithXMLCoder">YES</bool>
@@ -387,7 +385,6 @@
 						</object>
 					</object>
 					<string key="NSFrameSize">{440, 110}</string>
-					<reference key="NSSuperview"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1440, 878}}</string>
 				<string key="NSMinSize">{440, 132}</string>
@@ -395,7 +392,7 @@
 				<string key="NSFrameAutosaveName">PowerSelectWindow</string>
 			</object>
 			<object class="NSCustomView" id="867575220">
-				<reference key="NSNextResponder"/>
+				<nil key="NSNextResponder"/>
 				<int key="NSvFlags">274</int>
 				<object class="NSMutableArray" key="NSSubviews">
 					<bool key="EncodedWithXMLCoder">YES</bool>
@@ -538,7 +535,6 @@
 								</object>
 								<string key="NSFrame">{{1, 17}, {403, 131}}</string>
 								<reference key="NSSuperview" ref="352454872"/>
-								<reference key="NSNextKeyView" ref="369089845"/>
 								<reference key="NSDocView" ref="369089845"/>
 								<reference key="NSBGColor" ref="387894261"/>
 								<int key="NScvFlags">4</int>
@@ -571,7 +567,6 @@
 								</object>
 								<string key="NSFrame">{{1, 0}, {403, 17}}</string>
 								<reference key="NSSuperview" ref="352454872"/>
-								<reference key="NSNextKeyView" ref="721562742"/>
 								<reference key="NSDocView" ref="721562742"/>
 								<reference key="NSBGColor" ref="387894261"/>
 								<int key="NScvFlags">4</int>
@@ -580,7 +575,6 @@
 						</object>
 						<string key="NSFrame">{{0, 42}, {420, 149}}</string>
 						<reference key="NSSuperview" ref="867575220"/>
-						<reference key="NSNextKeyView" ref="381113464"/>
 						<int key="NSsFlags">18</int>
 						<reference key="NSVScroller" ref="728729359"/>
 						<reference key="NSHScroller" ref="56881731"/>
@@ -725,21 +719,11 @@
 					</object>
 				</object>
 				<string key="NSFrameSize">{420, 220}</string>
-				<reference key="NSSuperview"/>
 				<string key="NSClassName">NSView</string>
 				<string key="NSExtension">NSResponder</string>
 			</object>
 			<object class="NSUserDefaultsController" id="641586618">
 				<bool key="NSSharedInstance">YES</bool>
-			</object>
-			<object class="NSObjectController" id="541891125">
-				<object class="NSMutableArray" key="NSDeclaredKeys">
-					<bool key="EncodedWithXMLCoder">YES</bool>
-					<string>hidden</string>
-					<string>@count</string>
-				</object>
-				<bool key="NSEditable">YES</bool>
-				<object class="_NSManagedProxy" key="_NSManagedProxy"/>
 			</object>
 		</object>
 		<object class="IBObjectContainer" key="IBDocument.Objects">
@@ -1013,22 +997,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
-						<string key="label">contentArray: searchResult</string>
-						<reference key="source" ref="653986832"/>
-						<reference key="destination" ref="1001"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="653986832"/>
-							<reference key="NSDestination" ref="1001"/>
-							<string key="NSLabel">contentArray: searchResult</string>
-							<string key="NSBinding">contentArray</string>
-							<string key="NSKeyPath">searchResult</string>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">95</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
 						<string key="label">value: searchLocation</string>
 						<reference key="source" ref="524651675"/>
 						<reference key="destination" ref="1001"/>
@@ -1092,30 +1060,6 @@
 					<int key="connectionID">109</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">content</string>
-						<reference key="source" ref="541891125"/>
-						<reference key="destination" ref="957425979"/>
-					</object>
-					<int key="connectionID">111</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">enabled: content.hidden</string>
-						<reference key="source" ref="102187291"/>
-						<reference key="destination" ref="541891125"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="102187291"/>
-							<reference key="NSDestination" ref="541891125"/>
-							<string key="NSLabel">enabled: content.hidden</string>
-							<string key="NSBinding">enabled</string>
-							<string key="NSKeyPath">content.hidden</string>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">113</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
 						<string key="label">cancelAction:</string>
 						<reference key="source" ref="1001"/>
@@ -1125,19 +1069,19 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
-						<string key="label">enabled: selectedObjects.@count</string>
-						<reference key="source" ref="1008670001"/>
-						<reference key="destination" ref="541891125"/>
+						<string key="label">contentArray: searchResult</string>
+						<reference key="source" ref="653986832"/>
+						<reference key="destination" ref="1001"/>
 						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="1008670001"/>
-							<reference key="NSDestination" ref="541891125"/>
-							<string key="NSLabel">enabled: selectedObjects.@count</string>
-							<string key="NSBinding">enabled</string>
-							<string key="NSKeyPath">selectedObjects.@count</string>
+							<reference key="NSSource" ref="653986832"/>
+							<reference key="NSDestination" ref="1001"/>
+							<string key="NSLabel">contentArray: searchResult</string>
+							<string key="NSBinding">contentArray</string>
+							<string key="NSKeyPath">searchResult</string>
 							<int key="NSNibBindingConnectorVersion">2</int>
 						</object>
 					</object>
-					<int key="connectionID">116</int>
+					<int key="connectionID">121</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -1490,11 +1434,6 @@
 						<reference key="object" ref="707545115"/>
 						<reference key="parent" ref="974986023"/>
 					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">110</int>
-						<reference key="object" ref="541891125"/>
-						<reference key="parent" ref="0"/>
-					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -1508,7 +1447,6 @@
 					<string>11.IBAttributePlaceholdersKey</string>
 					<string>11.IBPluginDependency</string>
 					<string>11.ImportedFromIB2</string>
-					<string>110.IBPluginDependency</string>
 					<string>12.IBAttributePlaceholdersKey</string>
 					<string>12.IBPluginDependency</string>
 					<string>12.ImportedFromIB2</string>
@@ -1624,7 +1562,6 @@
 					</object>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="YES"/>
-					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<object class="NSMutableDictionary">
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<reference key="dict.sortedKeys" ref="0"/>
@@ -1832,7 +1769,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">116</int>
+			<int key="maxID">121</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
