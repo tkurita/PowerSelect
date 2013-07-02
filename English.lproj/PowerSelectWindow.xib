@@ -12,6 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
+			<integer value="9"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -392,7 +393,7 @@
 				<string key="NSFrameAutosaveName">PowerSelectWindow</string>
 			</object>
 			<object class="NSCustomView" id="867575220">
-				<nil key="NSNextResponder"/>
+				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">274</int>
 				<object class="NSMutableArray" key="NSSubviews">
 					<bool key="EncodedWithXMLCoder">YES</bool>
@@ -535,6 +536,7 @@
 								</object>
 								<string key="NSFrame">{{1, 17}, {403, 131}}</string>
 								<reference key="NSSuperview" ref="352454872"/>
+								<reference key="NSNextKeyView" ref="369089845"/>
 								<reference key="NSDocView" ref="369089845"/>
 								<reference key="NSBGColor" ref="387894261"/>
 								<int key="NScvFlags">4</int>
@@ -567,6 +569,7 @@
 								</object>
 								<string key="NSFrame">{{1, 0}, {403, 17}}</string>
 								<reference key="NSSuperview" ref="352454872"/>
+								<reference key="NSNextKeyView" ref="721562742"/>
 								<reference key="NSDocView" ref="721562742"/>
 								<reference key="NSBGColor" ref="387894261"/>
 								<int key="NScvFlags">4</int>
@@ -575,6 +578,7 @@
 						</object>
 						<string key="NSFrame">{{0, 42}, {420, 149}}</string>
 						<reference key="NSSuperview" ref="867575220"/>
+						<reference key="NSNextKeyView" ref="381113464"/>
 						<int key="NSsFlags">18</int>
 						<reference key="NSVScroller" ref="728729359"/>
 						<reference key="NSHScroller" ref="56881731"/>
@@ -599,7 +603,7 @@
 							<int key="NSButtonFlags2">268435457</int>
 							<reference key="NSAlternateImage" ref="223614495"/>
 							<string key="NSAlternateContents"/>
-							<string key="NSKeyEquivalent">y</string>
+							<string key="NSKeyEquivalent">j</string>
 							<int key="NSPeriodicDelay">200</int>
 							<int key="NSPeriodicInterval">25</int>
 						</object>
@@ -719,6 +723,7 @@
 					</object>
 				</object>
 				<string key="NSFrameSize">{420, 220}</string>
+				<reference key="NSSuperview"/>
 				<string key="NSClassName">NSView</string>
 				<string key="NSExtension">NSResponder</string>
 			</object>
@@ -1563,19 +1568,21 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="YES"/>
 					<object class="NSMutableDictionary">
-						<bool key="EncodedWithXMLCoder">YES</bool>
-						<reference key="dict.sortedKeys" ref="0"/>
-						<object class="NSMutableArray" key="dict.values">
-							<bool key="EncodedWithXMLCoder">YES</bool>
+						<string key="NS.key.0">ToolTip</string>
+						<object class="IBToolTipAttribute" key="NS.object.0">
+							<string key="name">ToolTip</string>
+							<reference key="object" ref="301038180"/>
+							<string key="toolTip">⌘K</string>
 						</object>
 					</object>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="YES"/>
 					<object class="NSMutableDictionary">
-						<bool key="EncodedWithXMLCoder">YES</bool>
-						<reference key="dict.sortedKeys" ref="0"/>
-						<object class="NSMutableArray" key="dict.values">
-							<bool key="EncodedWithXMLCoder">YES</bool>
+						<string key="NS.key.0">ToolTip</string>
+						<object class="IBToolTipAttribute" key="NS.object.0">
+							<string key="name">ToolTip</string>
+							<reference key="object" ref="946238207"/>
+							<string key="toolTip">⌘J</string>
 						</object>
 					</object>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
