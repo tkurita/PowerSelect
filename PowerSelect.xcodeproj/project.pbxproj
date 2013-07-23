@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C179B85179D694200D0C234 /* ServicesMenu.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C179B84179D694200D0C234 /* ServicesMenu.strings */; };
 		2C2371DD097F28A800693050 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
 		2C2371E0097F28A800693050 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		2C2371E2097F28A800693050 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -53,6 +54,8 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		2C14517515DF8F9E00481DE3 /* Japanese */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Japanese; path = Japanese.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		2C179B76179D692900D0C234 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; lineEnding = 0; name = English; path = English.lproj/ServicesMenu.strings; sourceTree = "<group>"; };
+		2C179B86179D695000D0C234 /* Japanese */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; lineEnding = 0; name = Japanese; path = Japanese.lproj/ServicesMenu.strings; sourceTree = "<group>"; };
 		2C2371EA097F28A800693050 /* Info-PowerSelect.plist */ = {isa = PBXFileReference; explicitFileType = text.plist; fileEncoding = 4; path = "Info-PowerSelect.plist"; sourceTree = "<group>"; };
 		2C2371EB097F28A900693050 /* PowerSelect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerSelect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C3DB66F0BE1C51900FD7D6E /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 2147483649; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
@@ -183,6 +186,7 @@
 				2C5453A50ED9532B0098D94A /* InfoPlist.strings */,
 				2C65ED3A16095457005A33E8 /* PowerSelectWindow.strings */,
 				2CE0451C160077D6006F2C10 /* PowerSelectWindow.xib */,
+				2C179B84179D694200D0C234 /* ServicesMenu.strings */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -286,6 +290,7 @@
 				2CC01CD70F1B006A003DF3C8 /* PowerSelect.icns in Resources */,
 				2CF038F310A25517007707C2 /* Credits.rtf in Resources */,
 				2CE0451D160077D6006F2C10 /* PowerSelectWindow.xib in Resources */,
+				2C179B85179D694200D0C234 /* ServicesMenu.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +398,15 @@
 			name = MainMenu.strings;
 			sourceTree = "<group>";
 		};
+		2C179B84179D694200D0C234 /* ServicesMenu.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C179B76179D692900D0C234 /* English */,
+				2C179B86179D695000D0C234 /* Japanese */,
+			);
+			name = ServicesMenu.strings;
+			sourceTree = "<group>";
+		};
 		2C4A6D9D097F6BAB00D4AF6B /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -477,7 +491,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 12;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
@@ -517,7 +531,7 @@
 					i386,
 				);
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 12;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
@@ -549,7 +563,7 @@
 		2C2371E8097F28A800693050 /* SD Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 12;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
@@ -579,7 +593,7 @@
 		2C2371E9097F28A800693050 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 12;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",

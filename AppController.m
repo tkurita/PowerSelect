@@ -131,8 +131,36 @@ BOOL checkGUIScripting()
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-	[[[PowerSelectWindowController alloc] initWithWindowNibName:@"PowerSelectWindow"] 
-		showWindow:self];
+	
+	NSAppleEventDescriptor *ev = [[NSAppleEventManager sharedAppleEventManager] currentAppleEvent];
+	AEEventID evid = [ev eventID];
+	BOOL should_open_window = YES;
+	NSAppleEventDescriptor *propData;
+	switch (evid) {
+		case kAEOpenDocuments:
+			break;
+		case kAEOpenApplication:
+			propData = [ev paramDescriptorForKeyword: keyAEPropData];
+			DescType type = propData ? [propData descriptorType] : typeNull;
+			OSType value = 0;
+			if(type == typeType) {
+				value = [propData typeCodeValue];
+				switch (value) {
+					case keyAELaunchedAsLogInItem:
+						break;
+					case keyAELaunchedAsServiceItem:
+						should_open_window = NO;
+						break;
+				}
+			} else {
+			}
+			break;
+	}
+	
+	if (should_open_window) {
+		[[[PowerSelectWindowController alloc] initWithWindowNibName:@"PowerSelectWindow"] 
+			showWindow:self];
+	}
 	
 	[DonationReminder remindDonation];	
 }
@@ -145,6 +173,32 @@ BOOL checkGUIScripting()
 - (IBAction)makeDonation:(id)sender
 {
 	[DonationReminder goToDonation];
+}
+
+- (void)awakeFromNib
+{
+	[NSApp setServicesProvider:self];
+}
+
+- (void)searchInFront:(NSPasteboard *)pboard userData:(NSString *)data error:(NSString **)error
+{
+	NSString *pboard_string;
+    NSArray *types;
+	
+    types = [pboard types]; // ペーストボード内のデータ型
+	
+    if (![types containsObject:NSStringPboardType] // NSStringPboardTypeでない
+        || !(pboard_string = [pboard stringForType:NSStringPboardType])) { 
+        *error = NSLocalizedString(@"Error: Pasteboard doesn't contain a string.",
+								   @"Pasteboard couldn't give string.");
+        return;
+    }
+
+	PowerSelectWindowController *wc = [[PowerSelectWindowController alloc] initWithWindowNibName:@"PowerSelectWindow"];
+	[wc showWindow:self];
+	wc.searchText = pboard_string;
+	[wc performSearch:self];
+	return;
 }
 
 @end
