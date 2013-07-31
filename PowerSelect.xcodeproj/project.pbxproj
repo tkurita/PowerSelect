@@ -18,14 +18,15 @@
 		2C4A6D9F097F6BAC00D4AF6B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C4A6D9D097F6BAB00D4AF6B /* Localizable.strings */; };
 		2C5453A60ED9532B0098D94A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C5453A50ED9532B0098D94A /* InfoPlist.strings */; };
 		2C717DA90BFB079400A8929B /* HelpSetup.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C717DA80BFB079400A8929B /* HelpSetup.plist */; };
-		2C75ECC617A80C6600D647BA /* PowerSelect.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2C75ECC517A80C6600D647BA /* PowerSelect.icns */; };
+		2C75ECC617A80C6600D647BA /* PowerSelect-1024.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2C75ECC517A80C6600D647BA /* PowerSelect-1024.icns */; };
+		2C75ECEE17A8992A00D647BA /* PowerSelect.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2C75ECED17A8992A00D647BA /* PowerSelect.icns */; };
+		2C75ECF917A89BD900D647BA /* PowerSelect-Retina.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2CC01CD60F1B006A003DF3C8 /* PowerSelect-Retina.icns */; };
 		2C814F9F0BFACD0B00814390 /* DonationReminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C814F9A0BFACD0B00814390 /* DonationReminder.framework */; };
 		2C814FA90BFACD4500814390 /* DonationReminder.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C814F9A0BFACD0B00814390 /* DonationReminder.framework */; };
 		2C814FBD0BFACF8C00814390 /* UserDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C814FBC0BFACF8C00814390 /* UserDefaults.plist */; };
 		2C91CE1B14DACCC500588379 /* StringExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C91CE0B14DACCC500588379 /* StringExtra.m */; };
 		2CB0C9F50F1A17640091C640 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB0C9F40F1A17640091C640 /* Sparkle.framework */; };
 		2CB0C9FE0F1AFC2E0091C640 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CB0C9F40F1A17640091C640 /* Sparkle.framework */; };
-		2CC01CD70F1B006A003DF3C8 /* PowerSelect-Retina.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2CC01CD60F1B006A003DF3C8 /* PowerSelect-Retina.icns */; };
 		2CE044E016007531006F2C10 /* OSAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE044DF16007531006F2C10 /* OSAKit.framework */; };
 		2CE0451D160077D6006F2C10 /* PowerSelectWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0451C160077D6006F2C10 /* PowerSelectWindow.xib */; };
 		2CE04525160079BC006F2C10 /* PowerSelectWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */; };
@@ -70,7 +71,8 @@
 		2C65ED12160952F2005A33E8 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Japanese; path = Japanese.lproj/PowerSelectWindow.xib; sourceTree = "<group>"; };
 		2C65ED3B16095457005A33E8 /* Japanese */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Japanese; path = Japanese.lproj/PowerSelectWindow.strings; sourceTree = "<group>"; };
 		2C717DA80BFB079400A8929B /* HelpSetup.plist */ = {isa = PBXFileReference; explicitFileType = text.plist; fileEncoding = 4; path = HelpSetup.plist; sourceTree = "<group>"; };
-		2C75ECC517A80C6600D647BA /* PowerSelect.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = PowerSelect.icns; sourceTree = "<group>"; };
+		2C75ECC517A80C6600D647BA /* PowerSelect-1024.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "PowerSelect-1024.icns"; sourceTree = "<group>"; };
+		2C75ECED17A8992A00D647BA /* PowerSelect.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = PowerSelect.icns; sourceTree = "<group>"; };
 		2C814F9A0BFACD0B00814390 /* DonationReminder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DonationReminder.framework; path = ../DonationReminder.framework; sourceTree = SOURCE_ROOT; };
 		2C814FBC0BFACF8C00814390 /* UserDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 2147483649; lastKnownFileType = text.plist.xml; path = UserDefaults.plist; sourceTree = "<group>"; };
 		2C91CE0A14DACCC500588379 /* StringExtra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringExtra.h; sourceTree = "<group>"; };
@@ -175,13 +177,14 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2C75ECC517A80C6600D647BA /* PowerSelect.icns */,
+				2C75ECC517A80C6600D647BA /* PowerSelect-1024.icns */,
 				2CF038F210A25517007707C2 /* Credits.rtf */,
 				2CC01CD60F1B006A003DF3C8 /* PowerSelect-Retina.icns */,
 				2C717DA80BFB079400A8929B /* HelpSetup.plist */,
 				2CFF0AB20BCFD8CF00374FBA /* FolderIcon.png */,
 				2C814FBC0BFACF8C00814390 /* UserDefaults.plist */,
 				2C2371EA097F28A800693050 /* Info-PowerSelect.plist */,
+				2C75ECED17A8992A00D647BA /* PowerSelect.icns */,
 				2C14517415DF8F9E00481DE3 /* MainMenu.strings */,
 				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
 				DA206CF4015C4E8B03C91932 /* AppleScriptKit.asdictionary */,
@@ -290,11 +293,12 @@
 				2C814FBD0BFACF8C00814390 /* UserDefaults.plist in Resources */,
 				2C717DA90BFB079400A8929B /* HelpSetup.plist in Resources */,
 				2C5453A60ED9532B0098D94A /* InfoPlist.strings in Resources */,
-				2CC01CD70F1B006A003DF3C8 /* PowerSelect-Retina.icns in Resources */,
 				2CF038F310A25517007707C2 /* Credits.rtf in Resources */,
 				2CE0451D160077D6006F2C10 /* PowerSelectWindow.xib in Resources */,
 				2C179B85179D694200D0C234 /* ServicesMenu.strings in Resources */,
-				2C75ECC617A80C6600D647BA /* PowerSelect.icns in Resources */,
+				2C75ECC617A80C6600D647BA /* PowerSelect-1024.icns in Resources */,
+				2C75ECEE17A8992A00D647BA /* PowerSelect.icns in Resources */,
+				2C75ECF917A89BD900D647BA /* PowerSelect-Retina.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
