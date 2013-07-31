@@ -21,6 +21,31 @@
 		2C75ECC617A80C6600D647BA /* PowerSelect-1024.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2C75ECC517A80C6600D647BA /* PowerSelect-1024.icns */; };
 		2C75ECEE17A8992A00D647BA /* PowerSelect.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2C75ECED17A8992A00D647BA /* PowerSelect.icns */; };
 		2C75ECF917A89BD900D647BA /* PowerSelect-Retina.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2CC01CD60F1B006A003DF3C8 /* PowerSelect-Retina.icns */; };
+		2C75ED2B17A89E8300D647BA /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		2C75ED2C17A89E8300D647BA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C4A6D9D097F6BAB00D4AF6B /* Localizable.strings */; };
+		2C75ED2D17A89E8300D647BA /* FolderIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CFF0AB20BCFD8CF00374FBA /* FolderIcon.png */; };
+		2C75ED2E17A89E8300D647BA /* UserDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C814FBC0BFACF8C00814390 /* UserDefaults.plist */; };
+		2C75ED2F17A89E8300D647BA /* HelpSetup.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C717DA80BFB079400A8929B /* HelpSetup.plist */; };
+		2C75ED3017A89E8300D647BA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C5453A50ED9532B0098D94A /* InfoPlist.strings */; };
+		2C75ED3117A89E8300D647BA /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2CF038F210A25517007707C2 /* Credits.rtf */; };
+		2C75ED3217A89E8300D647BA /* PowerSelectWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0451C160077D6006F2C10 /* PowerSelectWindow.xib */; };
+		2C75ED3317A89E8300D647BA /* ServicesMenu.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C179B84179D694200D0C234 /* ServicesMenu.strings */; };
+		2C75ED3417A89E8300D647BA /* PowerSelect-1024.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2C75ECC517A80C6600D647BA /* PowerSelect-1024.icns */; };
+		2C75ED3517A89E8300D647BA /* PowerSelect.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2C75ECED17A8992A00D647BA /* PowerSelect.icns */; };
+		2C75ED3617A89E8300D647BA /* PowerSelect-Retina.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2CC01CD60F1B006A003DF3C8 /* PowerSelect-Retina.icns */; };
+		2C75ED3817A89E8300D647BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		2C75ED3917A89E8300D647BA /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3DB6700BE1C51900FD7D6E /* AppController.m */; };
+		2C75ED3A17A89E8300D647BA /* StringExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C91CE0B14DACCC500588379 /* StringExtra.m */; };
+		2C75ED3B17A89E8300D647BA /* PathExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4186C514DFF74E008F3F5E /* PathExtra.m */; };
+		2C75ED3C17A89E8300D647BA /* NSURL+NDCarbonUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4186DC14DFFC0B008F3F5E /* NSURL+NDCarbonUtilities.m */; };
+		2C75ED3D17A89E8300D647BA /* PowerSelectWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */; };
+		2C75ED3E17A89E8300D647BA /* ClickableBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEDCE5316040C0F00D42997 /* ClickableBox.m */; };
+		2C75ED4017A89E8300D647BA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		2C75ED4217A89E8300D647BA /* DonationReminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C814F9A0BFACD0B00814390 /* DonationReminder.framework */; };
+		2C75ED4317A89E8300D647BA /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB0C9F40F1A17640091C640 /* Sparkle.framework */; };
+		2C75ED4417A89E8300D647BA /* OSAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE044DF16007531006F2C10 /* OSAKit.framework */; };
+		2C75ED4617A89E8300D647BA /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CB0C9F40F1A17640091C640 /* Sparkle.framework */; };
+		2C75ED4717A89E8300D647BA /* DonationReminder.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C814F9A0BFACD0B00814390 /* DonationReminder.framework */; };
 		2C814F9F0BFACD0B00814390 /* DonationReminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C814F9A0BFACD0B00814390 /* DonationReminder.framework */; };
 		2C814FA90BFACD4500814390 /* DonationReminder.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C814F9A0BFACD0B00814390 /* DonationReminder.framework */; };
 		2C814FBD0BFACF8C00814390 /* UserDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C814FBC0BFACF8C00814390 /* UserDefaults.plist */; };
@@ -36,6 +61,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		2C75ED4517A89E8300D647BA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2C75ED4617A89E8300D647BA /* Sparkle.framework in CopyFiles */,
+				2C75ED4717A89E8300D647BA /* DonationReminder.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2C814FA50BFACD2B00814390 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,6 +109,8 @@
 		2C717DA80BFB079400A8929B /* HelpSetup.plist */ = {isa = PBXFileReference; explicitFileType = text.plist; fileEncoding = 4; path = HelpSetup.plist; sourceTree = "<group>"; };
 		2C75ECC517A80C6600D647BA /* PowerSelect-1024.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "PowerSelect-1024.icns"; sourceTree = "<group>"; };
 		2C75ECED17A8992A00D647BA /* PowerSelect.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = PowerSelect.icns; sourceTree = "<group>"; };
+		2C75ED5017A89E8300D647BA /* PowerSelect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerSelect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C75ED5217A89E8300D647BA /* Info-PowerSelect copy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-PowerSelect copy.plist"; sourceTree = "<group>"; };
 		2C814F9A0BFACD0B00814390 /* DonationReminder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DonationReminder.framework; path = ../DonationReminder.framework; sourceTree = SOURCE_ROOT; };
 		2C814FBC0BFACF8C00814390 /* UserDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 2147483649; lastKnownFileType = text.plist.xml; path = UserDefaults.plist; sourceTree = "<group>"; };
 		2C91CE0A14DACCC500588379 /* StringExtra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringExtra.h; sourceTree = "<group>"; };
@@ -107,6 +145,17 @@
 				2C814F9F0BFACD0B00814390 /* DonationReminder.framework in Frameworks */,
 				2CB0C9F50F1A17640091C640 /* Sparkle.framework in Frameworks */,
 				2CE044E016007531006F2C10 /* OSAKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C75ED3F17A89E8300D647BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C75ED4017A89E8300D647BA /* Cocoa.framework in Frameworks */,
+				2C75ED4217A89E8300D647BA /* DonationReminder.framework in Frameworks */,
+				2C75ED4317A89E8300D647BA /* Sparkle.framework in Frameworks */,
+				2C75ED4417A89E8300D647BA /* OSAKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				2C2371EB097F28A900693050 /* PowerSelect.app */,
+				2C75ED5017A89E8300D647BA /* PowerSelect.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,6 +243,7 @@
 				2C65ED3A16095457005A33E8 /* PowerSelectWindow.strings */,
 				2CE0451C160077D6006F2C10 /* PowerSelectWindow.xib */,
 				2C179B84179D694200D0C234 /* ServicesMenu.strings */,
+				2C75ED5217A89E8300D647BA /* Info-PowerSelect copy.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -258,6 +309,29 @@
 			productReference = 2C2371EB097F28A900693050 /* PowerSelect.app */;
 			productType = "com.apple.product-type.application";
 		};
+		2C75ED2817A89E8300D647BA /* PowerSelect-noASStudio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C75ED4B17A89E8300D647BA /* Build configuration list for PBXNativeTarget "PowerSelect-noASStudio" */;
+			buildPhases = (
+				2C75ED2917A89E8300D647BA /* ShellScript */,
+				2C75ED2A17A89E8300D647BA /* Resources */,
+				2C75ED3717A89E8300D647BA /* Sources */,
+				2C75ED3F17A89E8300D647BA /* Frameworks */,
+				2C75ED4517A89E8300D647BA /* CopyFiles */,
+				2C75ED4817A89E8300D647BA /* ShellScript */,
+				2C75ED4917A89E8300D647BA /* ShellScript */,
+				2C75ED4A17A89E8300D647BA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PowerSelect-noASStudio";
+			productInstallPath = "$(HOME)/Applications";
+			productName = Application;
+			productReference = 2C75ED5017A89E8300D647BA /* PowerSelect.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -278,6 +352,7 @@
 			projectRoot = "";
 			targets = (
 				2C2371D6097F28A800693050 /* PowerSelect */,
+				2C75ED2817A89E8300D647BA /* PowerSelect-noASStudio */,
 			);
 		};
 /* End PBXProject section */
@@ -299,6 +374,25 @@
 				2C75ECC617A80C6600D647BA /* PowerSelect-1024.icns in Resources */,
 				2C75ECEE17A8992A00D647BA /* PowerSelect.icns in Resources */,
 				2C75ECF917A89BD900D647BA /* PowerSelect-Retina.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C75ED2A17A89E8300D647BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C75ED2B17A89E8300D647BA /* MainMenu.nib in Resources */,
+				2C75ED2C17A89E8300D647BA /* Localizable.strings in Resources */,
+				2C75ED2D17A89E8300D647BA /* FolderIcon.png in Resources */,
+				2C75ED2E17A89E8300D647BA /* UserDefaults.plist in Resources */,
+				2C75ED2F17A89E8300D647BA /* HelpSetup.plist in Resources */,
+				2C75ED3017A89E8300D647BA /* InfoPlist.strings in Resources */,
+				2C75ED3117A89E8300D647BA /* Credits.rtf in Resources */,
+				2C75ED3217A89E8300D647BA /* PowerSelectWindow.xib in Resources */,
+				2C75ED3317A89E8300D647BA /* ServicesMenu.strings in Resources */,
+				2C75ED3417A89E8300D647BA /* PowerSelect-1024.icns in Resources */,
+				2C75ED3517A89E8300D647BA /* PowerSelect.icns in Resources */,
+				2C75ED3617A89E8300D647BA /* PowerSelect-Retina.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +427,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "mkdir -p \"${BUILT_PRODUCTS_DIR}/${SCRIPTS_FOLDER_PATH}\"\nosacompile -d -o ${SCRIPT_OUTPUT_FILE_0} ${SCRIPT_INPUT_FILE_0}\n";
+		};
+		2C75ED2917A89E8300D647BA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/English.lproj/MainMenu.nib",
+				"$(SRCROOT)/Japanese.lproj/MainMenu.strings",
+				"$(SRCROOT)/English.lproj/PowerSelectWindow.xib",
+				"$(SRCROOT)/Japanese.lproj/PowerSelectWindow.strings",
+			);
+			outputPaths = (
+				"$(SRCROOT)/Japanese.lproj/MainMenu.nib",
+				"$(SRCROOT)/Japanese.lproj/PowerSelectWindow.xib",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Extract English strings (use this to check if you added new strings to your nibs)\n#ibtool --generate-strings-file Resources/English.lproj/MainWindow.strings Resources/#English.lproj/MainWindow.xib\n# Generate Localized interface\n\nfunction generate_localized_interface\n{\nbase_lang=$1\ntarget_lang=$2\ntarget_nib=$3\n\nnib_basename=`echo ${target_nib} | sed -E -e 's/\\.(nib|xib)//'`\n\ntarget_lang_strings=${target_lang}.lproj/${nib_basename}.strings\ntarget_lang_nib=${target_lang}.lproj/${target_nib}\n\nif ! [ -e ${target_lang_strings} ]; then\n\tibtool --generate-strings-file ${target_lang_strings} ${target_lang_nib}\nelse\n\techo \"${target_lang_strings} exist\"\U0013\nfi\n\nibtool --strings-file ${target_lang_strings} --write ${target_lang_nib} ${base_lang}.lproj/${target_nib}\nif [ -e ${target_lang_nib}/.svn ]; then \n\trm -rf ${target_lang_nib}/.svn\nfi\n}\n\n\ngenerate_localized_interface English Japanese MainMenu.nib\ngenerate_localized_interface English Japanese PowerSelectWindow.xib\n\n";
+		};
+		2C75ED4817A89E8300D647BA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			comments = "Compile AppleScripts";
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/CheckGUIScripting.applescript",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(SCRIPTS_FOLDER_PATH)/CheckGUIScripting.scpt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mkdir -p \"${BUILT_PRODUCTS_DIR}/${SCRIPTS_FOLDER_PATH}\"\nosacompile -d -o ${SCRIPT_OUTPUT_FILE_0} ${SCRIPT_INPUT_FILE_0}\n";
+		};
+		2C75ED4917A89E8300D647BA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/InsertionLocator.applescript",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(SCRIPTS_FOLDER_PATH)/InsertionLocator.scpt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mkdir -p \"${BUILT_PRODUCTS_DIR}/${SCRIPTS_FOLDER_PATH}\"\nosacompile -d -o ${SCRIPT_OUTPUT_FILE_0} ${SCRIPT_INPUT_FILE_0}\n";
+		};
+		2C75ED4A17A89E8300D647BA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			comments = "setup HelpBook";
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"$BUILD_STYLE\" = 'Release' ]; then\ncd $BUILT_PRODUCTS_DIR\nSetupHelpBook $FULL_PRODUCT_NAME\nfi\n";
 		};
 		2C91CF6114DAF58400588379 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -383,6 +541,20 @@
 				2C4186DE14DFFC0B008F3F5E /* NSURL+NDCarbonUtilities.m in Sources */,
 				2CE04525160079BC006F2C10 /* PowerSelectWindowController.m in Sources */,
 				2CEDCE5416040C0F00D42997 /* ClickableBox.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C75ED3717A89E8300D647BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C75ED3817A89E8300D647BA /* main.m in Sources */,
+				2C75ED3917A89E8300D647BA /* AppController.m in Sources */,
+				2C75ED3A17A89E8300D647BA /* StringExtra.m in Sources */,
+				2C75ED3B17A89E8300D647BA /* PathExtra.m in Sources */,
+				2C75ED3C17A89E8300D647BA /* NSURL+NDCarbonUtilities.m in Sources */,
+				2C75ED3D17A89E8300D647BA /* PowerSelectWindowController.m in Sources */,
+				2C75ED3E17A89E8300D647BA /* ClickableBox.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,7 +671,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 13;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
@@ -515,7 +687,7 @@
 				INFOPLIST_FILE = "Info-PowerSelect.plist";
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CFLAGS = "";
+				OTHER_CFLAGS = "-DUSE_ASSTUDIO";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = PowerSelect;
 				SECTORDER_FLAGS = "";
@@ -539,7 +711,7 @@
 					i386,
 				);
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 13;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
@@ -551,7 +723,7 @@
 				INFOPLIST_FILE = "Info-PowerSelect.plist";
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CFLAGS = "";
+				OTHER_CFLAGS = "-DUSE_ASSTUDIO";
 				OTHER_LDFLAGS = "";
 				OTHER_OSAFLAGS = "-x";
 				PREBINDING = NO;
@@ -571,7 +743,7 @@
 		2C2371E8097F28A800693050 /* SD Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 13;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
@@ -583,7 +755,7 @@
 				INFOPLIST_FILE = "Info-PowerSelect.plist";
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CFLAGS = "";
+				OTHER_CFLAGS = "-DUSE_ASSTUDIO";
 				OTHER_LDFLAGS = "";
 				OTHER_OSAFLAGS = "-l \\\"AppleScript Debugger\\\"";
 				PRODUCT_NAME = PowerSelect;
@@ -601,7 +773,7 @@
 		2C2371E9097F28A800693050 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 13;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
@@ -611,6 +783,138 @@
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/..\"";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Info-PowerSelect.plist";
+				INSTALL_PATH = /Applications;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "-DUSE_ASSTUDIO";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = PowerSelect;
+				SECTORDER_FLAGS = "";
+				VERSIONING_SYSTEM = "apple-generic";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		2C75ED4C17A89E8300D647BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 13;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/..\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/..\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-PowerSelect copy.plist";
+				INSTALL_PATH = /Applications;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = PowerSelect;
+				SECTORDER_FLAGS = "";
+				VERSIONING_SYSTEM = "apple-generic";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		2C75ED4D17A89E8300D647BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					x86_64,
+					ppc,
+					i386,
+				);
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 13;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/..\"";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				HEADER_SEARCH_PATHS = "";
+				IBC_STRIP_NIBS = NO;
+				INFOPLIST_FILE = "Info-PowerSelect copy.plist";
+				INSTALL_PATH = /Applications;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_OSAFLAGS = "-x";
+				PREBINDING = NO;
+				PRODUCT_NAME = PowerSelect;
+				SECTORDER_FLAGS = "";
+				VERSIONING_SYSTEM = "apple-generic";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		2C75ED4E17A89E8300D647BA /* SD Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 13;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/..\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/..\"";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-PowerSelect copy.plist";
+				INSTALL_PATH = /Applications;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_OSAFLAGS = "-l \\\"AppleScript Debugger\\\"";
+				PRODUCT_NAME = PowerSelect;
+				SECTORDER_FLAGS = "";
+				VERSIONING_SYSTEM = "apple-generic";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = "SD Debug";
+		};
+		2C75ED4F17A89E8300D647BA /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 13;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/..\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/..\"";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-PowerSelect copy.plist";
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "";
@@ -648,6 +952,17 @@
 				2C2371E7097F28A800693050 /* Release */,
 				2C2371E8097F28A800693050 /* SD Debug */,
 				2C2371E9097F28A800693050 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C75ED4B17A89E8300D647BA /* Build configuration list for PBXNativeTarget "PowerSelect-noASStudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C75ED4C17A89E8300D647BA /* Debug */,
+				2C75ED4D17A89E8300D647BA /* Release */,
+				2C75ED4E17A89E8300D647BA /* SD Debug */,
+				2C75ED4F17A89E8300D647BA /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
