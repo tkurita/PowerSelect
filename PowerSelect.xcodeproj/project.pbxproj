@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C16FE6D1C76080C000A40D0 /* PathExtra_Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C16FE651C76080C000A40D0 /* PathExtra_Localizable.strings */; };
+		2C16FE6E1C76080C000A40D0 /* PathExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C16FE691C76080C000A40D0 /* PathExtra.m */; };
+		2C16FE6F1C76080C000A40D0 /* StringExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C16FE6C1C76080C000A40D0 /* StringExtra.m */; };
+		2C16FE781C76089B000A40D0 /* DonationReminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C16FE751C760886000A40D0 /* DonationReminder.framework */; };
+		2C16FE7A1C7608A6000A40D0 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C16FE791C7608A6000A40D0 /* Sparkle.framework */; };
+		2C16FE7B1C7608BE000A40D0 /* DonationReminder.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C16FE751C760886000A40D0 /* DonationReminder.framework */; };
+		2C16FE7C1C7608C1000A40D0 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C16FE791C7608A6000A40D0 /* Sparkle.framework */; };
 		2C179B85179D694200D0C234 /* ServicesMenu.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C179B84179D694200D0C234 /* ServicesMenu.strings */; };
 		2C2371DD097F28A800693050 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
 		2C2371E0097F28A800693050 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		2C2371E2097F28A800693050 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		2C3DB6720BE1C51A00FD7D6E /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3DB6700BE1C51900FD7D6E /* AppController.m */; };
-		2C4186C714DFF74E008F3F5E /* PathExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4186C514DFF74E008F3F5E /* PathExtra.m */; };
-		2C4186DE14DFFC0B008F3F5E /* NSURL+NDCarbonUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4186DC14DFFC0B008F3F5E /* NSURL+NDCarbonUtilities.m */; };
 		2C4A6D9F097F6BAC00D4AF6B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C4A6D9D097F6BAB00D4AF6B /* Localizable.strings */; };
 		2C5453A60ED9532B0098D94A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C5453A50ED9532B0098D94A /* InfoPlist.strings */; };
 		2C717DA90BFB079400A8929B /* HelpSetup.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C717DA80BFB079400A8929B /* HelpSetup.plist */; };
 		2C75ECC617A80C6600D647BA /* PowerSelect-1024.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2C75ECC517A80C6600D647BA /* PowerSelect-1024.icns */; };
 		2C75ECEE17A8992A00D647BA /* PowerSelect.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2C75ECED17A8992A00D647BA /* PowerSelect.icns */; };
 		2C75ECF917A89BD900D647BA /* PowerSelect-Retina.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2CC01CD60F1B006A003DF3C8 /* PowerSelect-Retina.icns */; };
-		2C814F9F0BFACD0B00814390 /* DonationReminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C814F9A0BFACD0B00814390 /* DonationReminder.framework */; };
-		2C814FA90BFACD4500814390 /* DonationReminder.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C814F9A0BFACD0B00814390 /* DonationReminder.framework */; };
 		2C814FBD0BFACF8C00814390 /* UserDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C814FBC0BFACF8C00814390 /* UserDefaults.plist */; };
-		2C91CE1B14DACCC500588379 /* StringExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C91CE0B14DACCC500588379 /* StringExtra.m */; };
-		2CB0C9F50F1A17640091C640 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB0C9F40F1A17640091C640 /* Sparkle.framework */; };
-		2CB0C9FE0F1AFC2E0091C640 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CB0C9F40F1A17640091C640 /* Sparkle.framework */; };
 		2CE044E016007531006F2C10 /* OSAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE044DF16007531006F2C10 /* OSAKit.framework */; };
 		2CE0451D160077D6006F2C10 /* PowerSelectWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0451C160077D6006F2C10 /* PowerSelectWindow.xib */; };
 		2CE04525160079BC006F2C10 /* PowerSelectWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */; };
@@ -34,6 +34,23 @@
 		2CFF0AB30BCFD8CF00374FBA /* FolderIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CFF0AB20BCFD8CF00374FBA /* FolderIcon.png */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2C16FE741C760886000A40D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C16FE701C760885000A40D0 /* DonationReminder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2C4A363E19E61FC40031E521;
+			remoteInfo = DonationReminder;
+		};
+		2C16FE761C760890000A40D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C16FE701C760885000A40D0 /* DonationReminder.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C4A363119E61FC40031E521;
+			remoteInfo = DonationReminder;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		2C814FA50BFACD2B00814390 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -41,8 +58,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2CB0C9FE0F1AFC2E0091C640 /* Sparkle.framework in CopyFiles */,
-				2C814FA90BFACD4500814390 /* DonationReminder.framework in CopyFiles */,
+				2C16FE7B1C7608BE000A40D0 /* DonationReminder.framework in CopyFiles */,
+				2C16FE7C1C7608C1000A40D0 /* Sparkle.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,16 +72,20 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		2C14517515DF8F9E00481DE3 /* Japanese */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Japanese; path = Japanese.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		2C16FE661C76080C000A40D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/PathExtra_Localizable.strings; sourceTree = "<group>"; };
+		2C16FE671C76080C000A40D0 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/PathExtra_Localizable.strings; sourceTree = "<group>"; };
+		2C16FE681C76080C000A40D0 /* PathExtra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathExtra.h; sourceTree = "<group>"; };
+		2C16FE691C76080C000A40D0 /* PathExtra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathExtra.m; sourceTree = "<group>"; };
+		2C16FE6B1C76080C000A40D0 /* StringExtra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringExtra.h; sourceTree = "<group>"; };
+		2C16FE6C1C76080C000A40D0 /* StringExtra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringExtra.m; sourceTree = "<group>"; };
+		2C16FE701C760885000A40D0 /* DonationReminder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DonationReminder.xcodeproj; path = DonationReminder/DonationReminder.xcodeproj; sourceTree = "<group>"; };
+		2C16FE791C7608A6000A40D0 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		2C179B76179D692900D0C234 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; lineEnding = 0; name = English; path = English.lproj/ServicesMenu.strings; sourceTree = "<group>"; };
 		2C179B86179D695000D0C234 /* Japanese */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; lineEnding = 0; name = Japanese; path = Japanese.lproj/ServicesMenu.strings; sourceTree = "<group>"; };
 		2C2371EA097F28A800693050 /* Info-PowerSelect.plist */ = {isa = PBXFileReference; explicitFileType = text.plist; fileEncoding = 4; path = "Info-PowerSelect.plist"; sourceTree = "<group>"; };
 		2C2371EB097F28A900693050 /* PowerSelect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerSelect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C3DB66F0BE1C51900FD7D6E /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 2147483649; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		2C3DB6700BE1C51900FD7D6E /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 2147483649; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
-		2C4186C414DFF74E008F3F5E /* PathExtra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathExtra.h; sourceTree = "<group>"; };
-		2C4186C514DFF74E008F3F5E /* PathExtra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathExtra.m; sourceTree = "<group>"; };
-		2C4186DB14DFFC0B008F3F5E /* NSURL+NDCarbonUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+NDCarbonUtilities.h"; sourceTree = "<group>"; };
-		2C4186DC14DFFC0B008F3F5E /* NSURL+NDCarbonUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+NDCarbonUtilities.m"; sourceTree = "<group>"; };
 		2C4A6D9E097F6BAC00D4AF6B /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; lineEnding = 0; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2C5453A10ED953190098D94A /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2C65ED12160952F2005A33E8 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Japanese; path = Japanese.lproj/PowerSelectWindow.xib; sourceTree = "<group>"; };
@@ -72,11 +93,8 @@
 		2C717DA80BFB079400A8929B /* HelpSetup.plist */ = {isa = PBXFileReference; explicitFileType = text.plist; fileEncoding = 4; path = HelpSetup.plist; sourceTree = "<group>"; };
 		2C75ECC517A80C6600D647BA /* PowerSelect-1024.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "PowerSelect-1024.icns"; sourceTree = "<group>"; };
 		2C75ECED17A8992A00D647BA /* PowerSelect.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = PowerSelect.icns; sourceTree = "<group>"; };
-		2C75ED5217A89E8300D647BA /* Info-PowerSelect copy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-PowerSelect copy.plist"; sourceTree = "<group>"; };
 		2C814F9A0BFACD0B00814390 /* DonationReminder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DonationReminder.framework; path = ../DonationReminder.framework; sourceTree = SOURCE_ROOT; };
 		2C814FBC0BFACF8C00814390 /* UserDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 2147483649; lastKnownFileType = text.plist.xml; path = UserDefaults.plist; sourceTree = "<group>"; };
-		2C91CE0A14DACCC500588379 /* StringExtra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringExtra.h; sourceTree = "<group>"; };
-		2C91CE0B14DACCC500588379 /* StringExtra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringExtra.m; sourceTree = "<group>"; };
 		2C91CF6F14DB906E00588379 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Japanese; path = Japanese.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		2C91CF7814DB990100588379 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Japanese; path = Japanese.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2C91CF7914DB991E00588379 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Japanese; path = Japanese.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -92,7 +110,7 @@
 		2CF0385B10A24DB7007707C2 /* CheckGUIScripting.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = CheckGUIScripting.applescript; sourceTree = "<group>"; };
 		2CF038F210A25517007707C2 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		2CFF0AB20BCFD8CF00374FBA /* FolderIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FolderIcon.png; sourceTree = "<group>"; };
-		2CFF0AD60BCFDF4C00374FBA /* History.rd */ = {isa = PBXFileReference; fileEncoding = 2147483649; lastKnownFileType = text; name = History.rd; path = ../../History.rd; sourceTree = SOURCE_ROOT; };
+		2CFF0AD60BCFDF4C00374FBA /* History.rd */ = {isa = PBXFileReference; fileEncoding = 2147483649; lastKnownFileType = text; name = History.rd; path = ../History.rd; sourceTree = SOURCE_ROOT; };
 		DA206CF1015C4E2903C91932 /* AppleScriptKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptKit.framework; path = /System/Library/Frameworks/AppleScriptKit.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
@@ -101,10 +119,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C16FE781C76089B000A40D0 /* DonationReminder.framework in Frameworks */,
 				2C2371E2097F28A800693050 /* Cocoa.framework in Frameworks */,
-				2C814F9F0BFACD0B00814390 /* DonationReminder.framework in Frameworks */,
-				2CB0C9F50F1A17640091C640 /* Sparkle.framework in Frameworks */,
 				2CE044E016007531006F2C10 /* OSAKit.framework in Frameworks */,
+				2C16FE7A1C7608A6000A40D0 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +171,8 @@
 			isa = PBXGroup;
 			children = (
 				2CFF0AD60BCFDF4C00374FBA /* History.rd */,
+				2C16FE641C76080C000A40D0 /* PathExtra */,
+				2C16FE6A1C76080C000A40D0 /* StringExtra */,
 				2CE0445116002C8E006F2C10 /* Classes */,
 				080E96DDFE201D6D7F000001 /* Scripts */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -160,6 +180,7 @@
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				2C91CDFD14DACCC500588379 /* CocoaLib */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				2C16FE701C760885000A40D0 /* DonationReminder.xcodeproj */,
 			);
 			name = Application;
 			sourceTree = "<group>";
@@ -190,7 +211,6 @@
 				2C65ED3A16095457005A33E8 /* PowerSelectWindow.strings */,
 				2CE0451C160077D6006F2C10 /* PowerSelectWindow.xib */,
 				2C179B84179D694200D0C234 /* ServicesMenu.strings */,
-				2C75ED5217A89E8300D647BA /* Info-PowerSelect copy.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -198,21 +218,43 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2C16FE791C7608A6000A40D0 /* Sparkle.framework */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2C16FE641C76080C000A40D0 /* PathExtra */ = {
+			isa = PBXGroup;
+			children = (
+				2C16FE651C76080C000A40D0 /* PathExtra_Localizable.strings */,
+				2C16FE681C76080C000A40D0 /* PathExtra.h */,
+				2C16FE691C76080C000A40D0 /* PathExtra.m */,
+			);
+			path = PathExtra;
+			sourceTree = "<group>";
+		};
+		2C16FE6A1C76080C000A40D0 /* StringExtra */ = {
+			isa = PBXGroup;
+			children = (
+				2C16FE6B1C76080C000A40D0 /* StringExtra.h */,
+				2C16FE6C1C76080C000A40D0 /* StringExtra.m */,
+			);
+			path = StringExtra;
+			sourceTree = "<group>";
+		};
+		2C16FE711C760885000A40D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C16FE751C760886000A40D0 /* DonationReminder.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		2C91CDFD14DACCC500588379 /* CocoaLib */ = {
 			isa = PBXGroup;
 			children = (
-				2C4186DB14DFFC0B008F3F5E /* NSURL+NDCarbonUtilities.h */,
-				2C4186DC14DFFC0B008F3F5E /* NSURL+NDCarbonUtilities.m */,
-				2C91CE0A14DACCC500588379 /* StringExtra.h */,
-				2C4186C414DFF74E008F3F5E /* PathExtra.h */,
-				2C4186C514DFF74E008F3F5E /* PathExtra.m */,
-				2C91CE0B14DACCC500588379 /* StringExtra.m */,
 			);
 			path = CocoaLib;
 			sourceTree = "<group>";
@@ -249,6 +291,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				2C16FE771C760890000A40D0 /* PBXTargetDependency */,
 			);
 			name = PowerSelect;
 			productInstallPath = "$(HOME)/Applications";
@@ -270,15 +313,33 @@
 				Japanese,
 				French,
 				German,
+				en,
+				ja,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* Application */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2C16FE711C760885000A40D0 /* Products */;
+					ProjectRef = 2C16FE701C760885000A40D0 /* DonationReminder.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2C2371D6097F28A800693050 /* PowerSelect */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2C16FE751C760886000A40D0 /* DonationReminder.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DonationReminder.framework;
+			remoteRef = 2C16FE741C760886000A40D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2C2371DC097F28A800693050 /* Resources */ = {
@@ -297,6 +358,7 @@
 				2C75ECC617A80C6600D647BA /* PowerSelect-1024.icns in Resources */,
 				2C75ECEE17A8992A00D647BA /* PowerSelect.icns in Resources */,
 				2C75ECF917A89BD900D647BA /* PowerSelect-Retina.icns in Resources */,
+				2C16FE6D1C76080C000A40D0 /* PathExtra_Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,15 +438,22 @@
 			files = (
 				2C2371E0097F28A800693050 /* main.m in Sources */,
 				2C3DB6720BE1C51A00FD7D6E /* AppController.m in Sources */,
-				2C91CE1B14DACCC500588379 /* StringExtra.m in Sources */,
-				2C4186C714DFF74E008F3F5E /* PathExtra.m in Sources */,
-				2C4186DE14DFFC0B008F3F5E /* NSURL+NDCarbonUtilities.m in Sources */,
 				2CE04525160079BC006F2C10 /* PowerSelectWindowController.m in Sources */,
 				2CEDCE5416040C0F00D42997 /* ClickableBox.m in Sources */,
+				2C16FE6E1C76080C000A40D0 /* PathExtra.m in Sources */,
+				2C16FE6F1C76080C000A40D0 /* StringExtra.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C16FE771C760890000A40D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DonationReminder;
+			targetProxy = 2C16FE761C760890000A40D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
@@ -402,6 +471,15 @@
 				2C14517515DF8F9E00481DE3 /* Japanese */,
 			);
 			name = MainMenu.strings;
+			sourceTree = "<group>";
+		};
+		2C16FE651C76080C000A40D0 /* PathExtra_Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C16FE661C76080C000A40D0 /* en */,
+				2C16FE671C76080C000A40D0 /* ja */,
+			);
+			name = PathExtra_Localizable.strings;
 			sourceTree = "<group>";
 		};
 		2C179B84179D694200D0C234 /* ServicesMenu.strings */ = {
@@ -455,8 +533,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				GCC_VERSION = "";
-				SDKROOT = macosx10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx10.8;
 			};
 			name = Debug;
 		};
@@ -464,8 +542,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				GCC_VERSION = "";
-				SDKROOT = macosx10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx10.8;
 			};
 			name = Release;
 		};
@@ -473,8 +551,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				GCC_VERSION = "";
-				SDKROOT = macosx10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx10.8;
 			};
 			name = Default;
 		};
@@ -487,9 +565,8 @@
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"\"$(SRCROOT)\"",
 				);
-				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/..\"";
-				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/..\"";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -519,17 +596,14 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"\"$(SRCROOT)\"",
 				);
-				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/..\"";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = "";
-				IBC_STRIP_NIBS = NO;
 				INFOPLIST_FILE = "Info-PowerSelect.plist";
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "";
-				OTHER_OSAFLAGS = "-x";
-				PREBINDING = NO;
 				PRODUCT_NAME = PowerSelect;
 				SECTORDER_FLAGS = "";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -550,9 +624,8 @@
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"\"$(SRCROOT)\"",
 				);
-				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/..\"";
-				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/..\"";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Info-PowerSelect.plist";
 				INSTALL_PATH = /Applications;
