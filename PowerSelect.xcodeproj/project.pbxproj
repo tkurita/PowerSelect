@@ -279,7 +279,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C2371E5097F28A800693050 /* Build configuration list for PBXNativeTarget "PowerSelect" */;
 			buildPhases = (
-				2C91CF6114DAF58400588379 /* ShellScript */,
 				2C2371DC097F28A800693050 /* Resources */,
 				2C2371DF097F28A800693050 /* Sources */,
 				2C2371E1097F28A800693050 /* Frameworks */,
@@ -394,25 +393,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "mkdir -p \"${BUILT_PRODUCTS_DIR}/${SCRIPTS_FOLDER_PATH}\"\nosacompile -d -o ${SCRIPT_OUTPUT_FILE_0} ${SCRIPT_INPUT_FILE_0}\n";
-		};
-		2C91CF6114DAF58400588379 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/English.lproj/MainMenu.nib",
-				"$(SRCROOT)/Japanese.lproj/MainMenu.strings",
-				"$(SRCROOT)/English.lproj/PowerSelectWindow.xib",
-				"$(SRCROOT)/Japanese.lproj/PowerSelectWindow.strings",
-			);
-			outputPaths = (
-				"$(SRCROOT)/Japanese.lproj/MainMenu.nib",
-				"$(SRCROOT)/Japanese.lproj/PowerSelectWindow.xib",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Extract English strings (use this to check if you added new strings to your nibs)\n#ibtool --generate-strings-file Resources/English.lproj/MainWindow.strings Resources/#English.lproj/MainWindow.xib\n# Generate Localized interface\n\nfunction generate_localized_interface\n{\nbase_lang=$1\ntarget_lang=$2\ntarget_nib=$3\n\nnib_basename=`echo ${target_nib} | sed -E -e 's/\\.(nib|xib)//'`\n\ntarget_lang_strings=${target_lang}.lproj/${nib_basename}.strings\ntarget_lang_nib=${target_lang}.lproj/${target_nib}\n\nif ! [ -e ${target_lang_strings} ]; then\n\tibtool --generate-strings-file ${target_lang_strings} ${target_lang_nib}\nelse\n\techo \"${target_lang_strings} exist\"\U0013\nfi\n\nibtool --strings-file ${target_lang_strings} --write ${target_lang_nib} ${base_lang}.lproj/${target_nib}\nif [ -e ${target_lang_nib}/.svn ]; then \n\trm -rf ${target_lang_nib}/.svn\nfi\n}\n\n\ngenerate_localized_interface English Japanese MainMenu.nib\ngenerate_localized_interface English Japanese PowerSelectWindow.xib\n\n";
 		};
 		2CE043F0160020B8006F2C10 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;

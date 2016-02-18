@@ -1,5 +1,5 @@
 #import "PowerSelectWindowController.h"
-#import "CocoaLib/PathExtra.h"
+#import "PathExtra.h"
 
 extern OSAScript* loadScript(NSString *script_name);
 extern void showError(NSDictionary *err_info);
