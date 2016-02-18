@@ -94,7 +94,6 @@
 		2CFF0AB20BCFD8CF00374FBA /* FolderIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FolderIcon.png; sourceTree = "<group>"; };
 		2CFF0AD60BCFDF4C00374FBA /* History.rd */ = {isa = PBXFileReference; fileEncoding = 2147483649; lastKnownFileType = text; name = History.rd; path = ../../History.rd; sourceTree = SOURCE_ROOT; };
 		DA206CF1015C4E2903C91932 /* AppleScriptKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptKit.framework; path = /System/Library/Frameworks/AppleScriptKit.framework; sourceTree = "<absolute>"; };
-		DA206CF4015C4E8B03C91932 /* AppleScriptKit.asdictionary */ = {isa = PBXFileReference; lastKnownFileType = archive.asdictionary; name = AppleScriptKit.asdictionary; path = /System/Library/Frameworks/AppleScriptKit.framework/Versions/A/Resources/AppleScriptKit.asdictionary; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,7 +185,6 @@
 				2C75ECED17A8992A00D647BA /* PowerSelect.icns */,
 				2C14517415DF8F9E00481DE3 /* MainMenu.strings */,
 				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
-				DA206CF4015C4E8B03C91932 /* AppleScriptKit.asdictionary */,
 				2C4A6D9D097F6BAB00D4AF6B /* Localizable.strings */,
 				2C5453A50ED9532B0098D94A /* InfoPlist.strings */,
 				2C65ED3A16095457005A33E8 /* PowerSelectWindow.strings */,

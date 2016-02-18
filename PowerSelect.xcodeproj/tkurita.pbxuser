@@ -638,9 +638,9 @@
 	};
 	29B97316FDCFA39411CA2CEA /* main.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {940, 208}}";
-			sepNavSelRange = "{0, 270}";
-			sepNavVisRange = "{0, 271}";
+			sepNavIntBoundsRect = "{{0, 0}, {940, 218}}";
+			sepNavSelRange = "{126, 0}";
+			sepNavVisRange = "{0, 168}";
 			sepNavVisRect = "{{0, 0}, {606, 390}}";
 		};
 	};
@@ -1111,7 +1111,7 @@
 		fRef = 2CFF0AD60BCFDF4C00374FBA /* History.rd */;
 		name = "History.rd: 5";
 		rLen = 97;
-		rLoc = 365;
+		rLoc = 370;
 		rType = 0;
 		vrLen = 305;
 		vrLoc = 0;
@@ -1246,10 +1246,5 @@
 		name = PowerSelect.applescript;
 		path = /Users/tkurita/Dev/Projects/PowerSelect/PowerSelect/2_4/PowerSelect.applescript;
 		sourceTree = "<absolute>";
-	};
-	DA206CF4015C4E8B03C91932 /* AppleScriptKit.asdictionary */ = {
-		uiCtxt = {
-			sepNavWindowFrame = "{{15, 269}, {750, 558}}";
-		};
 	};
 }
