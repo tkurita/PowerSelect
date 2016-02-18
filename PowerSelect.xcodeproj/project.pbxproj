@@ -68,7 +68,6 @@
 /* Begin PBXFileReference section */
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		2C14517515DF8F9E00481DE3 /* Japanese */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Japanese; path = Japanese.lproj/MainMenu.strings; sourceTree = "<group>"; };
@@ -80,6 +79,10 @@
 		2C16FE6C1C76080C000A40D0 /* StringExtra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringExtra.m; sourceTree = "<group>"; };
 		2C16FE701C760885000A40D0 /* DonationReminder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DonationReminder.xcodeproj; path = DonationReminder/DonationReminder.xcodeproj; sourceTree = "<group>"; };
 		2C16FE791C7608A6000A40D0 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		2C16FE7E1C7619F0000A40D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Base; path = Base.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		2C16FE7F1C7619F0000A40D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PowerSelectWindow.xib; sourceTree = "<group>"; };
+		2C16FE801C761A0E000A40D0 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = Japanese.lproj/PowerSelectWindow.strings; sourceTree = "<group>"; };
+		2C16FE811C761A1E000A40D0 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = Japanese.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		2C179B76179D692900D0C234 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; lineEnding = 0; name = English; path = English.lproj/ServicesMenu.strings; sourceTree = "<group>"; };
 		2C179B86179D695000D0C234 /* Japanese */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; lineEnding = 0; name = Japanese; path = Japanese.lproj/ServicesMenu.strings; sourceTree = "<group>"; };
 		2C2371EA097F28A800693050 /* Info-PowerSelect.plist */ = {isa = PBXFileReference; explicitFileType = text.plist; fileEncoding = 4; path = "Info-PowerSelect.plist"; sourceTree = "<group>"; };
@@ -88,20 +91,17 @@
 		2C3DB6700BE1C51900FD7D6E /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 2147483649; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
 		2C4A6D9E097F6BAC00D4AF6B /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; lineEnding = 0; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2C5453A10ED953190098D94A /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2C65ED12160952F2005A33E8 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Japanese; path = Japanese.lproj/PowerSelectWindow.xib; sourceTree = "<group>"; };
 		2C65ED3B16095457005A33E8 /* Japanese */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Japanese; path = Japanese.lproj/PowerSelectWindow.strings; sourceTree = "<group>"; };
 		2C717DA80BFB079400A8929B /* HelpSetup.plist */ = {isa = PBXFileReference; explicitFileType = text.plist; fileEncoding = 4; path = HelpSetup.plist; sourceTree = "<group>"; };
 		2C75ECC517A80C6600D647BA /* PowerSelect-1024.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "PowerSelect-1024.icns"; sourceTree = "<group>"; };
 		2C75ECED17A8992A00D647BA /* PowerSelect.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = PowerSelect.icns; sourceTree = "<group>"; };
 		2C814F9A0BFACD0B00814390 /* DonationReminder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DonationReminder.framework; path = ../DonationReminder.framework; sourceTree = SOURCE_ROOT; };
 		2C814FBC0BFACF8C00814390 /* UserDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 2147483649; lastKnownFileType = text.plist.xml; path = UserDefaults.plist; sourceTree = "<group>"; };
-		2C91CF6F14DB906E00588379 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Japanese; path = Japanese.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		2C91CF7814DB990100588379 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Japanese; path = Japanese.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2C91CF7914DB991E00588379 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Japanese; path = Japanese.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2CB0C9F40F1A17640091C640 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = ../Sparkle.framework; sourceTree = SOURCE_ROOT; };
 		2CC01CD60F1B006A003DF3C8 /* PowerSelect-Retina.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "PowerSelect-Retina.icns"; sourceTree = "<group>"; };
 		2CE044DF16007531006F2C10 /* OSAKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSAKit.framework; path = /System/Library/Frameworks/OSAKit.framework; sourceTree = "<absolute>"; };
-		2CE04519160077B4006F2C10 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/PowerSelectWindow.xib; sourceTree = "<group>"; };
 		2CE04523160079BC006F2C10 /* PowerSelectWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PowerSelectWindowController.h; sourceTree = "<group>"; };
 		2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PowerSelectWindowController.m; sourceTree = "<group>"; };
 		2CE045F01601771C006F2C10 /* InsertionLocator.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = InsertionLocator.applescript; sourceTree = "<group>"; };
@@ -315,6 +315,7 @@
 				German,
 				en,
 				ja,
+				Base,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* Application */;
 			projectDirPath = "";
@@ -459,8 +460,8 @@
 		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				29B97319FDCFA39411CA2CEA /* English */,
-				2C91CF6F14DB906E00588379 /* Japanese */,
+				2C16FE7E1C7619F0000A40D0 /* Base */,
+				2C16FE811C761A1E000A40D0 /* ja */,
 			);
 			name = MainMenu.nib;
 			sourceTree = "<group>";
@@ -520,8 +521,8 @@
 		2CE0451C160077D6006F2C10 /* PowerSelectWindow.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2CE04519160077B4006F2C10 /* English */,
-				2C65ED12160952F2005A33E8 /* Japanese */,
+				2C16FE7F1C7619F0000A40D0 /* Base */,
+				2C16FE801C761A0E000A40D0 /* ja */,
 			);
 			name = PowerSelectWindow.xib;
 			sourceTree = "<group>";
