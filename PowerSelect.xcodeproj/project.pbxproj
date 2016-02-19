@@ -82,13 +82,10 @@
 		2C16FE791C7608A6000A40D0 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		2C16FE7F1C7619F0000A40D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PowerSelectWindow.xib; sourceTree = "<group>"; };
 		2C16FE831C761BAD000A40D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		2C179B76179D692900D0C234 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; lineEnding = 0; name = English; path = English.lproj/ServicesMenu.strings; sourceTree = "<group>"; };
 		2C2371EA097F28A800693050 /* Info-PowerSelect.plist */ = {isa = PBXFileReference; explicitFileType = text.plist; fileEncoding = 4; path = "Info-PowerSelect.plist"; sourceTree = "<group>"; };
 		2C2371EB097F28A900693050 /* PowerSelect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerSelect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C3DB66F0BE1C51900FD7D6E /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 2147483649; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		2C3DB6700BE1C51900FD7D6E /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 2147483649; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
-		2C4A6D9E097F6BAC00D4AF6B /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; lineEnding = 0; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C5453A10ED953190098D94A /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2C717DA80BFB079400A8929B /* HelpSetup.plist */ = {isa = PBXFileReference; explicitFileType = text.plist; fileEncoding = 4; path = HelpSetup.plist; sourceTree = "<group>"; };
 		2C75ECC517A80C6600D647BA /* PowerSelect-1024.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "PowerSelect-1024.icns"; sourceTree = "<group>"; };
 		2C75ECED17A8992A00D647BA /* PowerSelect.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = PowerSelect.icns; sourceTree = "<group>"; };
@@ -106,6 +103,9 @@
 		2C8D089C1C76DD80008583A6 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
 		2C8D08A11C76DED8008583A6 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file; name = ja; path = ja.lproj/GUIScriptingChecker_Localizable.strings; sourceTree = "<group>"; };
 		2C8D08A31C76DF20008583A6 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = en; path = en.lproj/GUIScriptingChecker_Localizable.strings; sourceTree = "<group>"; };
+		2C8D08A41C76E2CB008583A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C8D08A51C76E2D3008583A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2C8D08A61C76E2E1008583A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ServicesMenu.strings; sourceTree = "<group>"; };
 		2CC01CD60F1B006A003DF3C8 /* PowerSelect-Retina.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "PowerSelect-Retina.icns"; sourceTree = "<group>"; };
 		2CE044DF16007531006F2C10 /* OSAKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSAKit.framework; path = /System/Library/Frameworks/OSAKit.framework; sourceTree = "<absolute>"; };
 		2CE04523160079BC006F2C10 /* PowerSelectWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PowerSelectWindowController.h; sourceTree = "<group>"; };
@@ -456,8 +456,8 @@
 		2C179B84179D694200D0C234 /* ServicesMenu.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2C179B76179D692900D0C234 /* English */,
 				2C8D08841C761E0B008583A6 /* ja */,
+				2C8D08A61C76E2E1008583A6 /* en */,
 			);
 			name = ServicesMenu.strings;
 			sourceTree = "<group>";
@@ -465,8 +465,8 @@
 		2C4A6D9D097F6BAB00D4AF6B /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2C4A6D9E097F6BAC00D4AF6B /* English */,
 				2C8D08821C761DE8008583A6 /* ja */,
+				2C8D08A41C76E2CB008583A6 /* en */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -474,8 +474,8 @@
 		2C5453A50ED9532B0098D94A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2C5453A10ED953190098D94A /* English */,
 				2C8D08831C761DF8008583A6 /* ja */,
+				2C8D08A51C76E2D3008583A6 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
