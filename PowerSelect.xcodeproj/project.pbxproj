@@ -104,8 +104,8 @@
 		2C8D08991C76DC84008583A6 /* SystemEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemEvents.h; sourceTree = "<group>"; };
 		2C8D089A1C76DC84008583A6 /* SystemPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemPreferences.h; sourceTree = "<group>"; };
 		2C8D089C1C76DD80008583A6 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
-		2C8D08A11C76DED8008583A6 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file; name = ja; path = ja.lproj/GUIScriptingChecker_Localizable.strings; sourceTree = "<group>"; };
-		2C8D08A31C76DF20008583A6 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = en; path = en.lproj/GUIScriptingChecker_Localizable.strings; sourceTree = "<group>"; };
+		2C8D08A11C76DED8008583A6 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/GUIScriptingChecker_Localizable.strings; sourceTree = "<group>"; };
+		2C8D08A31C76DF20008583A6 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/GUIScriptingChecker_Localizable.strings; sourceTree = "<group>"; };
 		2C8D08A41C76E2CB008583A6 /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2C8D08A51C76E2D3008583A6 /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2C8D08A61C76E2E1008583A6 /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ServicesMenu.strings; sourceTree = "<group>"; };
@@ -318,6 +318,9 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
 			buildConfigurationList = 2C2371B5097F25A400693050 /* Build configuration list for PBXProject "PowerSelect" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -495,7 +498,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPYRIGHT = "Copyright 1998-2016, Tetsuro KURITA";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_VERSION = 2.5;
 				SDKROOT = macosx10.8;
 			};
 			name = Debug;
@@ -504,7 +509,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPYRIGHT = "Copyright 1998-2016, Tetsuro KURITA";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_VERSION = 2.5;
 				SDKROOT = macosx10.8;
 			};
 			name = Release;
@@ -513,7 +520,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPYRIGHT = "Copyright 1998-2016, Tetsuro KURITA";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_VERSION = 2.5;
 				SDKROOT = macosx10.8;
 			};
 			name = Default;
@@ -522,8 +531,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
@@ -531,7 +541,6 @@
 					"\"$(SRCROOT)\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				HEADER_SEARCH_PATHS = "";
@@ -555,14 +564,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
 					"\"$(SRCROOT)\"",
 				);
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Info-PowerSelect.plist";
 				INSTALL_PATH = /Applications;
@@ -584,7 +593,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CURRENT_PROJECT_VERSION = 13;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 14;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
