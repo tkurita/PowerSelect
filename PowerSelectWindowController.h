@@ -8,12 +8,7 @@
 
 
 @interface PowerSelectWindowController : NSWindowController {
-	NSString *searchText;
-	NSString *searchLocation;
-	NSMutableArray *searchResult;
-	NSThread *searchThread;
 	BOOL isFound;
-	unsigned int modeIndex;
 	IBOutlet id progressIndicator;
 	IBOutlet id candidateDrawer;
 	IBOutlet id candidateTable;

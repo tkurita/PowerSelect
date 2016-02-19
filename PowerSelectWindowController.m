@@ -3,16 +3,10 @@
 
 @implementation PowerSelectWindowController
 
-@synthesize searchText;
-@synthesize searchLocation;
-@synthesize modeIndex;
-@synthesize searchThread;
-@synthesize searchResult;
-
 - (IBAction) cancelAction:(id)sender
 {
-	if (searchThread && [searchThread isExecuting]) {
-		[searchThread cancel];
+	if (_searchThread && [_searchThread isExecuting]) {
+		[_searchThread cancel];
 	} else {
 		[self close];
 	}
@@ -20,7 +14,7 @@
 
 - (void)clickableBoxDoubleClicked:(id)sender
 {
-	[[NSWorkspace sharedWorkspace] openFile:searchLocation];
+	[[NSWorkspace sharedWorkspace] openFile:_searchLocation];
 }
 
 - (IBAction)performSelectWithoutClosing:(id)sender
@@ -49,7 +43,7 @@
 - (SEL)searchMethod
 {
 	SEL search_method;
-	switch (modeIndex) {
+	switch (_modeIndex) {
 		case 0:
 			search_method = @selector(nameContain:);
 			break;
@@ -80,7 +74,7 @@
 	[candidateTableScrollView setNextKeyView:searchComboBox];
 	CGFloat row_height = [candidateTable rowHeight];
 	NSSize spacing = [candidateTable intercellSpacing];
-	CGFloat table_height = (row_height + spacing.height) * ([searchResult count] +1);
+	CGFloat table_height = (row_height + spacing.height) * ([_searchResult count] +1);
 	NSRect view_rect = [candidateTableScrollView visibleRect];
 	CGFloat scroll_view_height = view_rect.size.height;
 	CGFloat height_diff = table_height - scroll_view_height;
@@ -124,16 +118,16 @@
 	SEL selector = [self searchMethod];
 	NSFileManager *file_manager = [NSFileManager new];
 	NSWorkspace *workspace = [NSWorkspace sharedWorkspace];
-	NSDirectoryEnumerator *enumerator = [file_manager enumeratorAtPath:searchLocation];
+	NSDirectoryEnumerator *enumerator = [file_manager enumeratorAtPath:_searchLocation];
 	NSString *item_name;
 	isFound = NO;
 	while (item_name = [enumerator nextObject]) {
-		if ([searchThread isCancelled]) {
+		if ([_searchThread isCancelled]) {
 			goto bail;
 		}
-		BOOL matched = [(NSNumber *)[item_name performSelector:selector withObject:searchText] boolValue];
+		BOOL matched = [(NSNumber *)[item_name performSelector:selector withObject:_searchText] boolValue];
 		if (matched) {
-			NSString *matched_item = [searchLocation stringByAppendingPathComponent:item_name];
+			NSString *matched_item = [_searchLocation stringByAppendingPathComponent:item_name];
 			if ([matched_item isVisible]) {
 				NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithObject:matched_item 
 																			   forKey:@"path"];
@@ -182,7 +176,7 @@ bail:
 							  object:self] autorelease];
 
 	self.searchResult = [NSMutableArray arrayWithCapacity:1];
-	[searchThread start];
+	[_searchThread start];
 	
 	if ([candidateDrawer state] ==  NSDrawerClosedState) {
 		[candidateDrawer open];
@@ -199,11 +193,11 @@ bail:
 
 - (void)dealloc
 {
-	[searchText release];
-	[searchLocation release];
-	[searchResult release];
+	[_searchLocation release];
+	[_searchResult release];
 	[_locator release];
-	[searchThread release];
+	[_searchText release];
+    [_searchThread release];
 	[super dealloc];
 }
 
@@ -214,10 +208,10 @@ bail:
 	
 	unsigned int hist_max = [user_defaults integerForKey:@"HistoryMax"];
 	
-	if ((searchText != nil) && (![searchText isEqualToString:@""])) {
-		if (![searchtext_history containsObject:searchText]) {
+	if ((_searchText != nil) && (![_searchText isEqualToString:@""])) {
+		if (![searchtext_history containsObject:_searchText]) {
 			searchtext_history = [searchtext_history mutableCopy];
-			[searchtext_history insertObject:searchText atIndex:0];
+			[searchtext_history insertObject:_searchText atIndex:0];
 			if ([searchtext_history count] > hist_max) {
 				[searchtext_history removeLastObject];
 			}
@@ -229,8 +223,8 @@ bail:
 - (void)windowWillClose:(NSNotification*)notification
 {	
 	NSUserDefaults *user_defaults = [NSUserDefaults standardUserDefaults];
-	[user_defaults setObject:searchText forKey:@"SearchText"];
-	[user_defaults setInteger:modeIndex	forKey:@"ModePopup"];
+	[user_defaults setObject:_searchText forKey:@"SearchText"];
+	[user_defaults setInteger:_modeIndex	forKey:@"ModePopup"];
 	[self saveHistory];
 	[user_defaults synchronize];
 	[self autorelease];
