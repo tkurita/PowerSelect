@@ -131,12 +131,12 @@
 			if ([matched_item isVisible]) {
 				NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithObject:matched_item 
 																			   forKey:@"path"];
-				[dict setObject:[workspace iconForFile:matched_item] forKey:@"icon"];
+				dict[@"icon"] = [workspace iconForFile:matched_item];
 				NSString *a_kind;
 				LSCopyKindStringForURL((CFURLRef)[NSURL fileURLWithPath:matched_item], 
 									   (CFStringRef *)&a_kind);
-				[dict setObject:a_kind forKey:@"kind"];
-				[dict setObject:[file_manager displayNameAtPath:matched_item] forKey:@"name"];
+				dict[@"kind"] = a_kind;
+				dict[@"name"] = [file_manager displayNameAtPath:matched_item];
 				[searchResultController performSelectorOnMainThread:@selector(addObject:)
 														 withObject:dict waitUntilDone:NO];
 				isFound = YES;

@@ -9,32 +9,32 @@
 
 - (NSNumber *)nameContain:(NSString *)containedText
 {
-	return [NSNumber numberWithBool:[self contain:containedText options:CMPARE_OPTIONS]];
+	return @([self contain:containedText options:CMPARE_OPTIONS]);
 }
 
 - (NSNumber *)nameNotContain:(NSString *)containedText
 {
-	return [NSNumber numberWithBool:![self contain:containedText options:CMPARE_OPTIONS]];
+	return @((BOOL)![self contain:containedText options:CMPARE_OPTIONS]);
 }
 
 - (NSNumber *)nameHasPrefix:(NSString *)text
 {
-	return [NSNumber numberWithBool:[self hasPrefix:text options:CMPARE_OPTIONS]];
+	return @([self hasPrefix:text options:CMPARE_OPTIONS]);
 }
 
 - (NSNumber *)nameNotHasPrefix:(NSString *)text
 {
-	return [NSNumber numberWithBool:![self hasPrefix:text options:CMPARE_OPTIONS]];
+	return @((BOOL)![self hasPrefix:text options:CMPARE_OPTIONS]);
 }
 
 - (NSNumber *)nameHasSuffix:(NSString *)text
 {
-	return [NSNumber numberWithBool:[self hasSuffix:text options:CMPARE_OPTIONS]];
+	return @([self hasSuffix:text options:CMPARE_OPTIONS]);
 }
 
 - (NSNumber *)nameNotHasSuffix:(NSString *)text
 {
-	return [NSNumber numberWithBool:![self hasSuffix:text options:CMPARE_OPTIONS]];
+	return @((BOOL)![self hasSuffix:text options:CMPARE_OPTIONS]);
 }
 @end
 
