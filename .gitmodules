@@ -7,3 +7,6 @@
 [submodule "StringExtra"]
 	path = StringExtra
 	url = http://github.com/tkurita/StringExtra.git
+[submodule "GUIScriptingChecker"]
+	path = GUIScriptingChecker
+	url = https://github.com/tkurita/GUIScriptingChecker.git

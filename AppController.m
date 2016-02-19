@@ -3,6 +3,7 @@
 #import "StringExtra.h"
 #import <OSAKit/OSAScript.h>
 #import "PowerSelectWindowController.h"
+#import "GUIScriptingChecker/GUIScriptingChecker.h"
 
 #define CMPARE_OPTIONS NSCaseInsensitiveSearch
 @implementation NSString (PowerSelectExtra)
@@ -75,54 +76,16 @@ OSAScript* loadScript(NSString *script_name)
 	return scpt;
 }
 
-BOOL checkGUIScripting()
-{
-	NSDictionary *err_info = nil;
-	OSAScript *scpt = loadScript(@"CheckGUIScripting");
-	if (!scpt) return NO;
-	
-	NSAppleEventDescriptor *result_desc = [scpt executeAndReturnError:&err_info];
-	if (err_info) {
-		showError(err_info);
-		if (scpt) [scpt release];
-	}
-	DescType result_type = [result_desc descriptorType];
-	
-	return result_type == 'true';
-}
-
 - (void)applicationWillFinishLaunching:(NSNotification *)aNotification
 {
 #if useLog
 	NSLog(@"start applicationWillFinishLaunching");
 #endif	
-	
-	if (!checkGUIScripting()) {
-		[NSApp terminate:self];
-		return;
-	}
-		
-		
-	/* checking checking UI Elements Scripting ... */
-	/*
-	if (!AXAPIEnabled()) {
-		[NSApp activateIgnoringOtherApps:YES];
-		int ret = NSRunAlertPanel(NSLocalizedString(@"disableUIScripting", ""), @"", 
-							NSLocalizedString(@"Launch System Preferences", ""),
-							NSLocalizedString(@"Cancel",""), @"");
-		switch (ret)
-        {
-            case NSAlertDefaultReturn:
-                [[NSWorkspace sharedWorkspace] openFile:@"/System/Library/PreferencePanes/UniversalAccessPref.prefPane"];
-                break;
-			default:
-                break;
-        }
-        
-		[NSApp terminate:self];
-		return;
+    if (! [GUIScriptingChecker check]) {
+       [NSApp terminate:self];
+        return;
     }
-	*/
+    
 	NSString *defaultsPlistPath = [[NSBundle mainBundle] pathForResource:@"UserDefaults" ofType:@"plist"];
 	NSDictionary *defautlsDict = [NSDictionary dictionaryWithContentsOfFile:defaultsPlistPath];
 	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
