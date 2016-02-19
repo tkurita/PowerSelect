@@ -10,3 +10,6 @@
 [submodule "GUIScriptingChecker"]
 	path = GUIScriptingChecker
 	url = https://github.com/tkurita/GUIScriptingChecker.git
+[submodule "LibraryScripts/InsertionLocator.scptd"]
+	path = LibraryScripts/InsertionLocator.scptd
+	url = https://github.com/tkurita/InsertionLocator.scptd.git
