@@ -1,18 +1,13 @@
 #import "PowerSelectWindowController.h"
 #import "PathExtra.h"
 
-extern OSAScript* loadScript(NSString *script_name);
-extern void showError(NSDictionary *err_info);
-
 @implementation PowerSelectWindowController
 
 @synthesize searchText;
 @synthesize searchLocation;
-@synthesize locator;
 @synthesize modeIndex;
 @synthesize searchThread;
 @synthesize searchResult;
-
 
 - (IBAction) cancelAction:(id)sender
 {
@@ -31,38 +26,23 @@ extern void showError(NSDictionary *err_info);
 - (IBAction)performSelectWithoutClosing:(id)sender
 {
 	NSArray *array = [searchResultController valueForKeyPath:@"selectedObjects.path"];
-	NSDictionary *error_info = nil;
-	NSArray *args = [NSArray arrayWithObject:array];
-	[locator executeHandlerWithName:@"select_in_finder" arguments:args error:&error_info];
-	if (error_info) {
-		showError(error_info);
-	}		
+    [_locator selectInFinder:array];
 }
 
 - (IBAction)performSelect:(id)sender
 {
 	NSArray *array = [searchResultController valueForKeyPath:@"selectedObjects.path"];
-	NSDictionary *error_info = nil;
-	NSArray *args = [NSArray arrayWithObject:array];
-	[locator executeHandlerWithName:@"select_in_finder" arguments:args error:&error_info];
-	if (error_info) {
-		showError(error_info);
-	} else {
-		[self close];
-	}
+    if ([_locator selectInFinder:array]) {
+        [self close];
+    }
 }
 
 - (IBAction)performSelectAll:(id)sender
 {
 	NSArray *array = [searchResultController valueForKeyPath:@"arrangedObjects.path"];
-	NSDictionary *error_info = nil;
-	NSArray *args = [NSArray arrayWithObject:array];
-	[locator executeHandlerWithName:@"select_in_finder" arguments:args error:&error_info];
-	if (error_info) {
-		showError(error_info);
-	} else {
-		[self close];
-	}
+    if ([_locator selectInFinder:array]) {
+        [self close];
+    }
 }
 
 
@@ -194,38 +174,10 @@ bail:
 {
 	[progressIndicator setHidden:NO];
 	[progressIndicator startAnimation:self];
-	
-	static OSAScript *insertionLocatorScript = nil;
-	if (!insertionLocatorScript) {
-		insertionLocatorScript = loadScript(@"InsertionLocator");
-		if (!insertionLocatorScript) goto error;
-	}
-	
-	NSDictionary *error_info = nil;
-	NSAppleEventDescriptor *result_desc = [insertionLocatorScript executeAndReturnError:&error_info];
-	if (error_info) {
-		showError(error_info);
-		goto error;
-	}
-	OSAScript *locator_script = [[OSAScript alloc] initWithCompiledData:[result_desc data] 
-																  error:&error_info];
-	if (error_info) {
-		showError(error_info);
-		goto error;
-	}	
-	self.locator = locator_script;
-	result_desc = [locator executeHandlerWithName:@"insertion_path" arguments:nil
-											error:&error_info];
-	DescType desc_type = [result_desc descriptorType];
-	if (desc_type == 'type') {
-		if ([result_desc typeCodeValue] == 'msng') {
-			goto error;
-		}
-	}
-	
-	NSString *path = [result_desc stringValue];
-
-	self.searchLocation = path;
+    self.locator = [findInsertionLocation makeLocator];
+    if (!(self.searchLocation = [_locator insertionPath])) {
+        goto error;
+    }
 	self.searchThread = [[[NSThread alloc] initWithTarget:self selector:@selector(searchInThread:)
 							  object:self] autorelease];
 
@@ -250,7 +202,7 @@ bail:
 	[searchText release];
 	[searchLocation release];
 	[searchResult release];
-	[locator release];
+	[_locator release];
 	[searchThread release];
 	[super dealloc];
 }

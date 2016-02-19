@@ -1,11 +1,16 @@
 #import <Cocoa/Cocoa.h>
-#import <OSAKit/OSAScript.h>
+
+@interface FindInsertionLocation : NSObject
+- (FindInsertionLocation *)makeLocator;
+- (NSString *)insertionPath;
+- (BOOL)selectInFinder:(NSArray *)array;
+@end
+
 
 @interface PowerSelectWindowController : NSWindowController {
 	NSString *searchText;
 	NSString *searchLocation;
 	NSMutableArray *searchResult;
-	OSAScript *locator;
 	NSThread *searchThread;
 	BOOL isFound;
 	unsigned int modeIndex;
@@ -17,11 +22,12 @@
 	IBOutlet id selectAllButton;
 	IBOutlet id selectButton;
 	IBOutlet id searchResultController;
+    IBOutlet id findInsertionLocation;
 }
 
 @property(retain) NSString *searchText;
 @property(retain) NSString *searchLocation;
-@property(retain) OSAScript *locator;
+@property(retain) FindInsertionLocation *locator;
 @property(retain) NSThread *searchThread;
 @property(retain) NSMutableArray *searchResult;
 @property(assign) unsigned int modeIndex;

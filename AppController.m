@@ -1,7 +1,6 @@
 #import "AppController.h"
 #import "DonationReminder/DonationReminder.h"
 #import "StringExtra.h"
-#import <OSAKit/OSAScript.h>
 #import "PowerSelectWindowController.h"
 #import "GUIScriptingChecker/GUIScriptingChecker.h"
 
@@ -44,36 +43,6 @@
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication
 {
 	return YES;
-}
-
-
-void showError(NSDictionary *err_info)
-{
-	NSLog(@"Error : %@", [err_info description]);
-	NSLog(@"%@", err_info);
-	[NSApp activateIgnoringOtherApps:YES];
-	NSRunAlertPanel(nil, [err_info objectForKey:OSAScriptErrorMessage], 
-					@"OK", nil, nil);	
-}
-
-OSAScript* loadScript(NSString *script_name)
-{
-	NSDictionary *err_info = nil;
-	NSString *path = [[NSBundle mainBundle] pathForResource:script_name
-													 ofType:@"scpt" inDirectory:@"Scripts"];
-	
-	OSAScript *scpt = [[OSAScript alloc] initWithContentsOfURL:
-					   [NSURL fileURLWithPath:path] error:&err_info];
-	
-	if (err_info) {
-		showError(err_info);
-		if (scpt) {
-			[scpt release];
-			scpt = nil;
-		}
-	}
-	
-	return scpt;
 }
 
 - (void)applicationWillFinishLaunching:(NSNotification *)aNotification

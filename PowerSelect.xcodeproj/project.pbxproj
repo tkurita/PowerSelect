@@ -29,7 +29,10 @@
 		2C8D089B1C76DC85008583A6 /* GUIScriptingChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8D08981C76DC84008583A6 /* GUIScriptingChecker.m */; };
 		2C8D089D1C76DD80008583A6 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8D089C1C76DD80008583A6 /* ScriptingBridge.framework */; };
 		2C8D08A01C76DED8008583A6 /* GUIScriptingChecker_Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C8D08A21C76DED8008583A6 /* GUIScriptingChecker_Localizable.strings */; };
-		2CE044E016007531006F2C10 /* OSAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE044DF16007531006F2C10 /* OSAKit.framework */; };
+		2C8D08A81C76E952008583A6 /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8D08A71C76E952008583A6 /* AppleScriptObjC.framework */; };
+		2C8D08AC1C77015A008583A6 /* InsertionLocator.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 2C8D08AB1C77015A008583A6 /* InsertionLocator.applescript */; };
+		2C8D08AD1C770FBB008583A6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C16FE821C761BAD000A40D0 /* MainMenu.xib */; };
+		2C8D08AE1C770FD2008583A6 /* PowerSelectWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0451C160077D6006F2C10 /* PowerSelectWindow.xib */; };
 		2CE04525160079BC006F2C10 /* PowerSelectWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */; };
 		2CEDCE5416040C0F00D42997 /* ClickableBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEDCE5316040C0F00D42997 /* ClickableBox.m */; };
 		2CF038F310A25517007707C2 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2CF038F210A25517007707C2 /* Credits.rtf */; };
@@ -106,11 +109,11 @@
 		2C8D08A41C76E2CB008583A6 /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2C8D08A51C76E2D3008583A6 /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2C8D08A61C76E2E1008583A6 /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ServicesMenu.strings; sourceTree = "<group>"; };
+		2C8D08A71C76E952008583A6 /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
+		2C8D08AB1C77015A008583A6 /* InsertionLocator.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = InsertionLocator.applescript; sourceTree = "<group>"; };
 		2CC01CD60F1B006A003DF3C8 /* PowerSelect-Retina.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "PowerSelect-Retina.icns"; sourceTree = "<group>"; };
-		2CE044DF16007531006F2C10 /* OSAKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSAKit.framework; path = /System/Library/Frameworks/OSAKit.framework; sourceTree = "<absolute>"; };
 		2CE04523160079BC006F2C10 /* PowerSelectWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PowerSelectWindowController.h; sourceTree = "<group>"; };
 		2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PowerSelectWindowController.m; sourceTree = "<group>"; };
-		2CE045F01601771C006F2C10 /* InsertionLocator.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = InsertionLocator.applescript; sourceTree = "<group>"; };
 		2CEDCE5216040C0F00D42997 /* ClickableBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickableBox.h; sourceTree = "<group>"; };
 		2CEDCE5316040C0F00D42997 /* ClickableBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickableBox.m; sourceTree = "<group>"; };
 		2CF038F210A25517007707C2 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
@@ -123,10 +126,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C8D08A81C76E952008583A6 /* AppleScriptObjC.framework in Frameworks */,
 				2C8D089D1C76DD80008583A6 /* ScriptingBridge.framework in Frameworks */,
 				2C16FE781C76089B000A40D0 /* DonationReminder.framework in Frameworks */,
 				2C2371E2097F28A800693050 /* Cocoa.framework in Frameworks */,
-				2CE044E016007531006F2C10 /* OSAKit.framework in Frameworks */,
 				2C16FE7A1C7608A6000A40D0 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +140,7 @@
 		080E96DDFE201D6D7F000001 /* Scripts */ = {
 			isa = PBXGroup;
 			children = (
-				2CE045F01601771C006F2C10 /* InsertionLocator.applescript */,
+				2C8D08AB1C77015A008583A6 /* InsertionLocator.applescript */,
 			);
 			name = Scripts;
 			sourceTree = "<group>";
@@ -146,7 +149,6 @@
 			isa = PBXGroup;
 			children = (
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
-				2CE044DF16007531006F2C10 /* OSAKit.framework */,
 			);
 			name = "Linked Frameworks";
 			sourceTree = "<group>";
@@ -219,6 +221,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2C8D08A71C76E952008583A6 /* AppleScriptObjC.framework */,
 				2C8D089C1C76DD80008583A6 /* ScriptingBridge.framework */,
 				2C16FE791C7608A6000A40D0 /* Sparkle.framework */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
@@ -297,7 +300,6 @@
 				2C2371DF097F28A800693050 /* Sources */,
 				2C2371E1097F28A800693050 /* Frameworks */,
 				2C814FA50BFACD2B00814390 /* CopyFiles */,
-				2C68D3EC160380FE00711D73 /* ShellScript */,
 				2C2371E4097F28A800693050 /* ShellScript */,
 			);
 			buildRules = (
@@ -372,6 +374,8 @@
 				2C16FE6D1C76080C000A40D0 /* PathExtra_Localizable.strings in Resources */,
 				2C8D08871C761FA7008583A6 /* dsa_pub.pem in Resources */,
 				2C8D08A01C76DED8008583A6 /* GUIScriptingChecker_Localizable.strings in Resources */,
+				2C8D08AD1C770FBB008583A6 /* MainMenu.xib in Resources */,
+				2C8D08AE1C770FD2008583A6 /* PowerSelectWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,21 +396,6 @@
 			shellPath = /bin/sh;
 			shellScript = "if [ \"$BUILD_STYLE\" = 'Release' ]; then\ncd $BUILT_PRODUCTS_DIR\nSetupHelpBook $FULL_PRODUCT_NAME\nfi\n";
 		};
-		2C68D3EC160380FE00711D73 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/InsertionLocator.applescript",
-			);
-			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(SCRIPTS_FOLDER_PATH)/InsertionLocator.scpt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "mkdir -p \"${BUILT_PRODUCTS_DIR}/${SCRIPTS_FOLDER_PATH}\"\nosacompile -d -o ${SCRIPT_OUTPUT_FILE_0} ${SCRIPT_INPUT_FILE_0}\n";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -421,6 +410,7 @@
 				2C16FE6E1C76080C000A40D0 /* PathExtra.m in Sources */,
 				2C16FE6F1C76080C000A40D0 /* StringExtra.m in Sources */,
 				2C8D089B1C76DC85008583A6 /* GUIScriptingChecker.m in Sources */,
+				2C8D08AC1C77015A008583A6 /* InsertionLocator.applescript in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,9 +537,8 @@
 				INFOPLIST_FILE = "Info-PowerSelect.plist";
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "";
-				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = PowerSelect;
-				SECTORDER_FLAGS = "";
+				VALID_ARCHS = x86_64;
 				VERSIONING_SYSTEM = "apple-generic";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -575,9 +564,8 @@
 				INFOPLIST_FILE = "Info-PowerSelect.plist";
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "";
-				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = PowerSelect;
-				SECTORDER_FLAGS = "";
+				VALID_ARCHS = x86_64;
 				VERSIONING_SYSTEM = "apple-generic";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -602,9 +590,8 @@
 				INFOPLIST_FILE = "Info-PowerSelect.plist";
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "";
-				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = PowerSelect;
-				SECTORDER_FLAGS = "";
+				VALID_ARCHS = x86_64;
 				VERSIONING_SYSTEM = "apple-generic";
 				WARNING_CFLAGS = (
 					"-Wmost",
