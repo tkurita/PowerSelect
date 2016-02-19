@@ -103,9 +103,9 @@
 		2C8D089C1C76DD80008583A6 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
 		2C8D08A11C76DED8008583A6 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file; name = ja; path = ja.lproj/GUIScriptingChecker_Localizable.strings; sourceTree = "<group>"; };
 		2C8D08A31C76DF20008583A6 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = en; path = en.lproj/GUIScriptingChecker_Localizable.strings; sourceTree = "<group>"; };
-		2C8D08A41C76E2CB008583A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C8D08A51C76E2D3008583A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2C8D08A61C76E2E1008583A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ServicesMenu.strings; sourceTree = "<group>"; };
+		2C8D08A41C76E2CB008583A6 /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C8D08A51C76E2D3008583A6 /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2C8D08A61C76E2E1008583A6 /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ServicesMenu.strings; sourceTree = "<group>"; };
 		2CC01CD60F1B006A003DF3C8 /* PowerSelect-Retina.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "PowerSelect-Retina.icns"; sourceTree = "<group>"; };
 		2CE044DF16007531006F2C10 /* OSAKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSAKit.framework; path = /System/Library/Frameworks/OSAKit.framework; sourceTree = "<absolute>"; };
 		2CE04523160079BC006F2C10 /* PowerSelectWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PowerSelectWindowController.h; sourceTree = "<group>"; };
