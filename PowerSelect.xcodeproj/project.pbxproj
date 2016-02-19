@@ -521,6 +521,7 @@
 		2C2371E6097F28A800693050 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 13;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -553,6 +554,7 @@
 		2C2371E7097F28A800693050 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 13;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -581,6 +583,7 @@
 		2C2371E9097F28A800693050 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CURRENT_PROJECT_VERSION = 13;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

@@ -114,47 +114,52 @@
 
 - (void)searchInThread:(id)sender
 {
-	NSAutoreleasePool *pool = [NSAutoreleasePool new];
-	SEL selector = [self searchMethod];
-	NSFileManager *file_manager = [NSFileManager new];
-	NSWorkspace *workspace = [NSWorkspace sharedWorkspace];
-	NSDirectoryEnumerator *enumerator = [file_manager enumeratorAtPath:_searchLocation];
-	NSString *item_name;
-	isFound = NO;
-	while (item_name = [enumerator nextObject]) {
-		if ([_searchThread isCancelled]) {
-			goto bail;
-		}
-		BOOL matched = [(NSNumber *)[item_name performSelector:selector withObject:_searchText] boolValue];
-		if (matched) {
-			NSString *matched_item = [_searchLocation stringByAppendingPathComponent:item_name];
-			if ([matched_item isVisible]) {
-				NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithObject:matched_item 
-																			   forKey:@"path"];
-				dict[@"icon"] = [workspace iconForFile:matched_item];
-				NSString *a_kind;
-				LSCopyKindStringForURL((CFURLRef)[NSURL fileURLWithPath:matched_item], 
-									   (CFStringRef *)&a_kind);
-				dict[@"kind"] = a_kind;
-				dict[@"name"] = [file_manager displayNameAtPath:matched_item];
-				[searchResultController performSelectorOnMainThread:@selector(addObject:)
-														 withObject:dict waitUntilDone:NO];
-				isFound = YES;
+	@autoreleasepool {
+		SEL selector = [self searchMethod];
+		NSFileManager *file_manager = [NSFileManager new];
+		NSWorkspace *workspace = [NSWorkspace sharedWorkspace];
+		NSDirectoryEnumerator *enumerator = [file_manager enumeratorAtPath:_searchLocation];
+		NSString *item_name;
+		isFound = NO;
+		while (item_name = [enumerator nextObject]) {
+			if ([_searchThread isCancelled]) {
+				goto bail;
 			}
+			BOOL matched = [(NSNumber *)[item_name performSelector:selector withObject:_searchText] boolValue];
+			if (matched) {
+				NSString *matched_item = [_searchLocation stringByAppendingPathComponent:item_name];
+				if ([matched_item isVisible]) {
+					NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithObject:matched_item 
+																				   forKey:@"path"];
+					dict[@"icon"] = [workspace iconForFile:matched_item];
+                NSError *err = nil;
+					NSString *a_kind;
+                [[NSURL fileURLWithPath:matched_item] getResourceValue:&a_kind
+                                                                forKey:NSURLLocalizedTypeDescriptionKey
+                                                                 error:&err];
+                if (err) {
+                    NSLog(@"%@" ,err);
+                } else {
+                    dict[@"kind"] = a_kind;
+                }
+					dict[@"name"] = [file_manager displayNameAtPath:matched_item];
+					[searchResultController performSelectorOnMainThread:@selector(addObject:)
+															 withObject:dict waitUntilDone:NO];
+					isFound = YES;
+				}
+			}
+			[enumerator skipDescendents];
 		}
-		[enumerator skipDescendents];
-	}
-	
-	if (!isFound) {
-		NSString *message = NSLocalizedString(@"NoItemsFound",@"");
-		NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithObject:message forKey:@"name"];
-		[searchResultController addObject:dict];		
-	}
+		
+		if (!isFound) {
+			NSString *message = NSLocalizedString(@"NoItemsFound",@"");
+			NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithObject:message forKey:@"name"];
+			[searchResultController addObject:dict];		
+		}
 bail:
-	[self performSelectorOnMainThread:@selector(searchThreadDidEnd:)
-						   withObject:nil waitUntilDone:NO];
-	[file_manager release];
-	[pool release];
+		[self performSelectorOnMainThread:@selector(searchThreadDidEnd:)
+							   withObject:nil waitUntilDone:NO];
+	}
 }
 
 /*
@@ -172,8 +177,8 @@ bail:
     if (!(self.searchLocation = [_locator insertionPath])) {
         goto error;
     }
-	self.searchThread = [[[NSThread alloc] initWithTarget:self selector:@selector(searchInThread:)
-							  object:self] autorelease];
+	self.searchThread = [[NSThread alloc] initWithTarget:self selector:@selector(searchInThread:)
+							  object:self];
 
 	self.searchResult = [NSMutableArray arrayWithCapacity:1];
 	[_searchThread start];
@@ -191,15 +196,6 @@ bail:
 	return;
 }
 
-- (void)dealloc
-{
-	[_searchLocation release];
-	[_searchResult release];
-	[_locator release];
-	[_searchText release];
-    [_searchThread release];
-	[super dealloc];
-}
 
 - (void)saveHistory
 {
@@ -227,7 +223,6 @@ bail:
 	[user_defaults setInteger:_modeIndex	forKey:@"ModePopup"];
 	[self saveHistory];
 	[user_defaults synchronize];
-	[self autorelease];
 }
 
 - (void)awakeFromNib

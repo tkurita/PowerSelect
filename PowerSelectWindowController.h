@@ -20,11 +20,11 @@
     IBOutlet id findInsertionLocation;
 }
 
-@property(retain) NSString *searchText;
-@property(retain) NSString *searchLocation;
-@property(retain) FindInsertionLocation *locator;
-@property(retain) NSThread *searchThread;
-@property(retain) NSMutableArray *searchResult;
+@property(strong) NSString *searchText;
+@property(strong) NSString *searchLocation;
+@property(strong) FindInsertionLocation *locator;
+@property(strong) NSThread *searchThread;
+@property(strong) NSMutableArray *searchResult;
 @property(assign) unsigned int modeIndex;
 
 - (IBAction)performSearch:(id)sender;
