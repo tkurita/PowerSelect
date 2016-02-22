@@ -11,7 +11,7 @@
 	<key>CFBundleHelpBookFolder</key>
 	<string>PowerSelectHelp</string>
 	<key>CFBundleIconFile</key>
-	<string>PowerSelect</string>
+	<string>PowerSelect-Retina</string>
 	<key>CFBundleIdentifier</key>
 	<string>PowerSelect</string>
 	<key>CFBundleInfoDictionaryVersion</key>
