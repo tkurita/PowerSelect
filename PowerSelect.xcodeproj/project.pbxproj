@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C1283E21C7B7A3A001D139B /* PowerSelectHelp in Resources */ = {isa = PBXBuildFile; fileRef = 2C1283E11C7B7A3A001D139B /* PowerSelectHelp */; };
 		2C16FE6D1C76080C000A40D0 /* PathExtra_Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C16FE651C76080C000A40D0 /* PathExtra_Localizable.strings */; };
 		2C16FE6E1C76080C000A40D0 /* PathExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C16FE691C76080C000A40D0 /* PathExtra.m */; };
 		2C16FE6F1C76080C000A40D0 /* StringExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C16FE6C1C76080C000A40D0 /* StringExtra.m */; };
@@ -75,6 +76,7 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2C1283E11C7B7A3A001D139B /* PowerSelectHelp */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PowerSelectHelp; sourceTree = "<group>"; };
 		2C16FE661C76080C000A40D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/PathExtra_Localizable.strings; sourceTree = "<group>"; };
 		2C16FE671C76080C000A40D0 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/PathExtra_Localizable.strings; sourceTree = "<group>"; };
 		2C16FE681C76080C000A40D0 /* PathExtra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathExtra.h; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2C1283E11C7B7A3A001D139B /* PowerSelectHelp */,
 				2C8D08861C761FA7008583A6 /* dsa_pub.pem */,
 				2C75ECC517A80C6600D647BA /* PowerSelect-1024.icns */,
 				2CF038F210A25517007707C2 /* Credits.rtf */,
@@ -379,6 +382,7 @@
 				2C8D08A01C76DED8008583A6 /* GUIScriptingChecker_Localizable.strings in Resources */,
 				2C8D08AD1C770FBB008583A6 /* MainMenu.xib in Resources */,
 				2C8D08AE1C770FD2008583A6 /* PowerSelectWindow.xib in Resources */,
+				2C1283E21C7B7A3A001D139B /* PowerSelectHelp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +401,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
-			shellScript = "if [ \"$BUILD_STYLE\" = 'Release' ]; then\ncd $BUILT_PRODUCTS_DIR\nSetupHelpBook $FULL_PRODUCT_NAME\nfi\n";
+			shellScript = "if [ ! \"$CONFIGURATION\" = 'Release' ]; then\necho \"HelpBook setup script will run only with Release configuration\";\nexit 0\nfi\n\ncd \"$BUILT_PRODUCTS_DIR\"\nSetupHelpBook \"$FULL_PRODUCT_NAME\"\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
