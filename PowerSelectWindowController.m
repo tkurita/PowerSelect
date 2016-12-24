@@ -1,5 +1,6 @@
 #import "PowerSelectWindowController.h"
 #import "PathExtra.h"
+#import "AppController.h"
 
 @implementation PowerSelectWindowController
 
@@ -202,7 +203,7 @@ bail:
 	NSUserDefaults *user_defaults = [NSUserDefaults standardUserDefaults];
 	NSMutableArray *searchtext_history = [user_defaults objectForKey:@"SearchTextHistory"];
 	
-	unsigned int hist_max = [user_defaults integerForKey:@"HistoryMax"];
+	NSInteger hist_max = [user_defaults integerForKey:@"HistoryMax"];
 	
 	if ((_searchText != nil) && (![_searchText isEqualToString:@""])) {
 		if (![searchtext_history containsObject:_searchText]) {

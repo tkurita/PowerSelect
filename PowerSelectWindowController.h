@@ -25,7 +25,7 @@
 @property(strong) FindInsertionLocation *locator;
 @property(strong) NSThread *searchThread;
 @property(strong) NSMutableArray *searchResult;
-@property(assign) unsigned int modeIndex;
+@property(assign) NSInteger modeIndex;
 
 - (IBAction)performSearch:(id)sender;
 - (IBAction)performSelect:(id)sender;
