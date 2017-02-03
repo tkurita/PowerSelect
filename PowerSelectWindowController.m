@@ -75,7 +75,8 @@
 	[candidateTableScrollView setNextKeyView:searchComboBox];
 	CGFloat row_height = [candidateTable rowHeight];
 	NSSize spacing = [candidateTable intercellSpacing];
-	CGFloat table_height = (row_height + spacing.height) * ([_searchResult count] +1);
+    NSRect header_rect = [[candidateTable headerView] frame];
+	CGFloat table_height = (row_height + spacing.height) * [_searchResult count] + spacing.height + header_rect.size.height;
 	NSRect view_rect = [candidateTableScrollView visibleRect];
 	CGFloat scroll_view_height = view_rect.size.height;
 	CGFloat height_diff = table_height - scroll_view_height;
