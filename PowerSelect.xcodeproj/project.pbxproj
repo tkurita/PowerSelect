@@ -37,7 +37,6 @@
 		2CE04525160079BC006F2C10 /* PowerSelectWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */; };
 		2CEDCE5416040C0F00D42997 /* ClickableBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEDCE5316040C0F00D42997 /* ClickableBox.m */; };
 		2CF038F310A25517007707C2 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2CF038F210A25517007707C2 /* Credits.rtf */; };
-		2CFF0AB30BCFD8CF00374FBA /* FolderIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CFF0AB20BCFD8CF00374FBA /* FolderIcon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,7 +118,6 @@
 		2CEDCE5216040C0F00D42997 /* ClickableBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickableBox.h; sourceTree = "<group>"; };
 		2CEDCE5316040C0F00D42997 /* ClickableBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickableBox.m; sourceTree = "<group>"; };
 		2CF038F210A25517007707C2 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
-		2CFF0AB20BCFD8CF00374FBA /* FolderIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FolderIcon.png; sourceTree = "<group>"; };
 		2CFF0AD60BCFDF4C00374FBA /* History.rd */ = {isa = PBXFileReference; fileEncoding = 2147483649; lastKnownFileType = text; name = History.rd; path = ../History.rd; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -208,7 +206,6 @@
 				2CF038F210A25517007707C2 /* Credits.rtf */,
 				2CC01CD60F1B006A003DF3C8 /* PowerSelect-Retina.icns */,
 				2C717DA80BFB079400A8929B /* HelpSetup.plist */,
-				2CFF0AB20BCFD8CF00374FBA /* FolderIcon.png */,
 				2C814FBC0BFACF8C00814390 /* UserDefaults.plist */,
 				2C2371EA097F28A800693050 /* Info-PowerSelect.plist */,
 				2C75ECED17A8992A00D647BA /* PowerSelect.icns */,
@@ -374,7 +371,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C4A6D9F097F6BAC00D4AF6B /* Localizable.strings in Resources */,
-				2CFF0AB30BCFD8CF00374FBA /* FolderIcon.png in Resources */,
 				2C814FBD0BFACF8C00814390 /* UserDefaults.plist in Resources */,
 				2C717DA90BFB079400A8929B /* HelpSetup.plist in Resources */,
 				2C5453A60ED9532B0098D94A /* InfoPlist.strings in Resources */,
@@ -517,7 +513,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPYRIGHT = "Copyright 1998-2017, Tetsuro KURITA";
+				COPYRIGHT = "Copyright 1998-2018, Tetsuro KURITA";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -529,7 +525,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_VERSION = 2.5.1;
+				PRODUCT_VERSION = 2.5.2;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -547,7 +543,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPYRIGHT = "Copyright 1998-2017, Tetsuro KURITA";
+				COPYRIGHT = "Copyright 1998-2018, Tetsuro KURITA";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -557,7 +553,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_VERSION = 2.5.1;
+				PRODUCT_VERSION = 2.5.2;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -575,7 +571,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPYRIGHT = "Copyright 1998-2017, Tetsuro KURITA";
+				COPYRIGHT = "Copyright 1998-2018, Tetsuro KURITA";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -585,7 +581,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_VERSION = 2.5.1;
+				PRODUCT_VERSION = 2.5.2;
 				SDKROOT = macosx;
 			};
 			name = Default;
