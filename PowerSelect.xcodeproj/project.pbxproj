@@ -12,9 +12,7 @@
 		2C16FE6E1C76080C000A40D0 /* PathExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C16FE691C76080C000A40D0 /* PathExtra.m */; };
 		2C16FE6F1C76080C000A40D0 /* StringExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C16FE6C1C76080C000A40D0 /* StringExtra.m */; };
 		2C16FE781C76089B000A40D0 /* DonationReminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C16FE751C760886000A40D0 /* DonationReminder.framework */; };
-		2C16FE7A1C7608A6000A40D0 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C16FE791C7608A6000A40D0 /* Sparkle.framework */; };
 		2C16FE7B1C7608BE000A40D0 /* DonationReminder.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C16FE751C760886000A40D0 /* DonationReminder.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		2C16FE7C1C7608C1000A40D0 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C16FE791C7608A6000A40D0 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		2C179B85179D694200D0C234 /* ServicesMenu.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C179B84179D694200D0C234 /* ServicesMenu.strings */; };
 		2C2371E0097F28A800693050 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		2C2371E2097F28A800693050 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -37,6 +35,7 @@
 		2CE04525160079BC006F2C10 /* PowerSelectWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE04524160079BC006F2C10 /* PowerSelectWindowController.m */; };
 		2CEDCE5416040C0F00D42997 /* ClickableBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEDCE5316040C0F00D42997 /* ClickableBox.m */; };
 		2CF038F310A25517007707C2 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2CF038F210A25517007707C2 /* Credits.rtf */; };
+		EB7C3CC6D41010191DD72DBB /* libPods-PowerSelect.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03757BD09D5B5ECC8429ECB2 /* libPods-PowerSelect.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,14 +63,16 @@
 			dstSubfolderSpec = 10;
 			files = (
 				2C16FE7B1C7608BE000A40D0 /* DonationReminder.framework in CopyFiles */,
-				2C16FE7C1C7608C1000A40D0 /* Sparkle.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		03757BD09D5B5ECC8429ECB2 /* libPods-PowerSelect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PowerSelect.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		2586B4E3AC149101F7B71E32 /* Pods-PowerSelect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PowerSelect.release.xcconfig"; path = "Pods/Target Support Files/Pods-PowerSelect/Pods-PowerSelect.release.xcconfig"; sourceTree = "<group>"; };
+		259B68E14AF566AB2DF67772 /* Pods-PowerSelect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PowerSelect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PowerSelect/Pods-PowerSelect.debug.xcconfig"; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -83,13 +84,13 @@
 		2C16FE6B1C76080C000A40D0 /* StringExtra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringExtra.h; sourceTree = "<group>"; };
 		2C16FE6C1C76080C000A40D0 /* StringExtra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringExtra.m; sourceTree = "<group>"; };
 		2C16FE701C760885000A40D0 /* DonationReminder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DonationReminder.xcodeproj; path = DonationReminder/DonationReminder.xcodeproj; sourceTree = "<group>"; };
-		2C16FE791C7608A6000A40D0 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		2C16FE7F1C7619F0000A40D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PowerSelectWindow.xib; sourceTree = "<group>"; };
 		2C16FE831C761BAD000A40D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2C2371EA097F28A800693050 /* Info-PowerSelect.plist */ = {isa = PBXFileReference; explicitFileType = text.plist; fileEncoding = 4; path = "Info-PowerSelect.plist"; sourceTree = "<group>"; };
 		2C2371EB097F28A900693050 /* PowerSelect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerSelect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C3DB66F0BE1C51900FD7D6E /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 2147483649; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		2C3DB6700BE1C51900FD7D6E /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 2147483649; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		2C63C196215A17A100982E74 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		2C717DA80BFB079400A8929B /* HelpSetup.plist */ = {isa = PBXFileReference; explicitFileType = text.plist; fileEncoding = 4; path = HelpSetup.plist; sourceTree = "<group>"; };
 		2C75ECC517A80C6600D647BA /* PowerSelect-1024.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "PowerSelect-1024.icns"; sourceTree = "<group>"; };
 		2C75ECED17A8992A00D647BA /* PowerSelect.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = PowerSelect.icns; sourceTree = "<group>"; };
@@ -119,6 +120,7 @@
 		2CEDCE5316040C0F00D42997 /* ClickableBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickableBox.m; sourceTree = "<group>"; };
 		2CF038F210A25517007707C2 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		2CFF0AD60BCFDF4C00374FBA /* History.rd */ = {isa = PBXFileReference; fileEncoding = 2147483649; lastKnownFileType = text; name = History.rd; path = ../History.rd; sourceTree = SOURCE_ROOT; };
+		E9C34A6E2F910C29CF5A3A37 /* Pods-PowerSelect.default.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PowerSelect.default.xcconfig"; path = "Pods/Target Support Files/Pods-PowerSelect/Pods-PowerSelect.default.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +132,7 @@
 				2C8D089D1C76DD80008583A6 /* ScriptingBridge.framework in Frameworks */,
 				2C16FE781C76089B000A40D0 /* DonationReminder.framework in Frameworks */,
 				2C2371E2097F28A800693050 /* Cocoa.framework in Frameworks */,
-				2C16FE7A1C7608A6000A40D0 /* Sparkle.framework in Frameworks */,
+				EB7C3CC6D41010191DD72DBB /* libPods-PowerSelect.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				2CFF0AD60BCFDF4C00374FBA /* History.rd */,
+				2C63C196215A17A100982E74 /* Makefile */,
 				2C8D08961C76DC84008583A6 /* GUIScriptingChecker */,
 				2C16FE641C76080C000A40D0 /* PathExtra */,
 				2C16FE6A1C76080C000A40D0 /* StringExtra */,
@@ -185,6 +188,7 @@
 				2C91CDFD14DACCC500588379 /* CocoaLib */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				2C16FE701C760885000A40D0 /* DonationReminder.xcodeproj */,
+				5389C41E7B4673D9CF434C15 /* Pods */,
 			);
 			name = Application;
 			sourceTree = "<group>";
@@ -223,9 +227,9 @@
 			children = (
 				2C8D08A71C76E952008583A6 /* AppleScriptObjC.framework */,
 				2C8D089C1C76DD80008583A6 /* ScriptingBridge.framework */,
-				2C16FE791C7608A6000A40D0 /* Sparkle.framework */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+				03757BD09D5B5ECC8429ECB2 /* libPods-PowerSelect.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -289,6 +293,16 @@
 			name = Classes;
 			sourceTree = "<group>";
 		};
+		5389C41E7B4673D9CF434C15 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				259B68E14AF566AB2DF67772 /* Pods-PowerSelect.debug.xcconfig */,
+				2586B4E3AC149101F7B71E32 /* Pods-PowerSelect.release.xcconfig */,
+				E9C34A6E2F910C29CF5A3A37 /* Pods-PowerSelect.default.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -296,11 +310,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C2371E5097F28A800693050 /* Build configuration list for PBXNativeTarget "PowerSelect" */;
 			buildPhases = (
+				9E499D7237FF7C908FFB165C /* [CP] Check Pods Manifest.lock */,
 				2C2371DC097F28A800693050 /* Resources */,
 				2C2371DF097F28A800693050 /* Sources */,
 				2C2371E1097F28A800693050 /* Frameworks */,
 				2C814FA50BFACD2B00814390 /* CopyFiles */,
 				2C2371E4097F28A800693050 /* ShellScript */,
+				69B5EF12243D631AF9B23B58 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -341,6 +357,7 @@
 				Base,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* Application */;
+			productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;
 			projectDirPath = "";
 			projectReferences = (
 				{
@@ -404,6 +421,44 @@
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "if [ ! \"$CONFIGURATION\" = 'Release' ]; then\necho \"HelpBook setup script will run only with Release configuration\";\nexit 0\nfi\n\ncd \"$BUILT_PRODUCTS_DIR\"\nSetupHelpBook \"$FULL_PRODUCT_NAME\"\n\n";
+		};
+		69B5EF12243D631AF9B23B58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PowerSelect/Pods-PowerSelect-frameworks.sh",
+				"${PODS_ROOT}/Sparkle/Sparkle.framework",
+				"${PODS_ROOT}/Sparkle/Sparkle.framework.dSYM",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sparkle.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/Sparkle.framework.dSYM",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PowerSelect/Pods-PowerSelect-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E499D7237FF7C908FFB165C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PowerSelect-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -588,6 +643,7 @@
 		};
 		2C2371E6097F28A800693050 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 259B68E14AF566AB2DF67772 /* Pods-PowerSelect.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
@@ -624,6 +680,7 @@
 		};
 		2C2371E7097F28A800693050 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2586B4E3AC149101F7B71E32 /* Pods-PowerSelect.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
@@ -656,6 +713,7 @@
 		};
 		2C2371E9097F28A800693050 /* Default */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9C34A6E2F910C29CF5A3A37 /* Pods-PowerSelect.default.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
