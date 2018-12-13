@@ -87,8 +87,8 @@
 		2C16FE831C761BAD000A40D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2C2371EA097F28A800693050 /* Info-PowerSelect.plist */ = {isa = PBXFileReference; explicitFileType = text.plist; fileEncoding = 4; path = "Info-PowerSelect.plist"; sourceTree = "<group>"; };
 		2C2371EB097F28A900693050 /* PowerSelect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerSelect.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C3DB66F0BE1C51900FD7D6E /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 2147483649; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
-		2C3DB6700BE1C51900FD7D6E /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 2147483649; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		2C3DB66F0BE1C51900FD7D6E /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		2C3DB6700BE1C51900FD7D6E /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
 		2C63C196215A17A100982E74 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		2C717DA80BFB079400A8929B /* HelpSetup.plist */ = {isa = PBXFileReference; explicitFileType = text.plist; fileEncoding = 4; path = HelpSetup.plist; sourceTree = "<group>"; };
 		2C75ECC517A80C6600D647BA /* PowerSelect-1024.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "PowerSelect-1024.icns"; sourceTree = "<group>"; };

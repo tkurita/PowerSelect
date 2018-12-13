@@ -117,9 +117,9 @@
 	NSString *pboard_string;
     NSArray *types;
 	
-    types = [pboard types]; // ƒy[ƒXƒgƒ{[ƒh“à‚Ìƒf[ƒ^Œ^
+    types = [pboard types]; // ãƒšãƒ¼ã‚¹ãƒˆãƒœãƒ¼ãƒ‰å†…ã®ãƒ‡ãƒ¼ã‚¿å‹
 	
-    if (![types containsObject:NSStringPboardType] // NSStringPboardType‚Å‚È‚¢
+    if (![types containsObject:NSStringPboardType] // NSStringPboardTypeã§ãªã„
         || !(pboard_string = [pboard stringForType:NSStringPboardType])) { 
         *error = NSLocalizedString(@"Error: Pasteboard doesn't contain a string.",
 								   @"Pasteboard couldn't give string.");
