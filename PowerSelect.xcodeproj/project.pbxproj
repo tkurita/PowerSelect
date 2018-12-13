@@ -667,7 +667,7 @@
 				INFOPLIST_FILE = "Info-PowerSelect.plist";
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = PowerSelect;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.script-factory.PowerSelect";
 				PRODUCT_NAME = PowerSelect;
 				SDKROOT = macosx;
 				VALID_ARCHS = x86_64;
@@ -700,7 +700,7 @@
 				INFOPLIST_FILE = "Info-PowerSelect.plist";
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = PowerSelect;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.script-factory.PowerSelect";
 				PRODUCT_NAME = PowerSelect;
 				SDKROOT = macosx;
 				VALID_ARCHS = x86_64;
@@ -733,7 +733,7 @@
 				INFOPLIST_FILE = "Info-PowerSelect.plist";
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = PowerSelect;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.script-factory.PowerSelect";
 				PRODUCT_NAME = PowerSelect;
 				SDKROOT = macosx;
 				VALID_ARCHS = x86_64;
