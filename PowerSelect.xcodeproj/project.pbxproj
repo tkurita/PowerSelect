@@ -353,6 +353,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
+				English,
 				French,
 				German,
 				en,
@@ -652,7 +653,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = N3YK2F43T4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -667,6 +668,7 @@
 				INFOPLIST_FILE = "Info-PowerSelect.plist";
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "";
+				MARKETING_VERSION = 2.5.3b;
 				PRODUCT_BUNDLE_IDENTIFIER = "net.script-factory.PowerSelect";
 				PRODUCT_NAME = PowerSelect;
 				SDKROOT = macosx;
@@ -689,7 +691,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = N3YK2F43T4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -700,6 +702,7 @@
 				INFOPLIST_FILE = "Info-PowerSelect.plist";
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "";
+				MARKETING_VERSION = 2.5.3b;
 				PRODUCT_BUNDLE_IDENTIFIER = "net.script-factory.PowerSelect";
 				PRODUCT_NAME = PowerSelect;
 				SDKROOT = macosx;
@@ -721,7 +724,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = N3YK2F43T4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -733,6 +736,7 @@
 				INFOPLIST_FILE = "Info-PowerSelect.plist";
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "";
+				MARKETING_VERSION = 2.5.3b;
 				PRODUCT_BUNDLE_IDENTIFIER = "net.script-factory.PowerSelect";
 				PRODUCT_NAME = PowerSelect;
 				SDKROOT = macosx;

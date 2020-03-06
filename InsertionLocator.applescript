@@ -1,9 +1,9 @@
 script FindInsertionLocation
     property parent : class "NSObject"
     
-    property InsertionLocator : module
-    property XList : module
-    property loader : boot (module loader of application (get "PowerSelectLib")) for me
+    property InsertionLocator : "@module"
+    property XList : "@module"
+    property loader :  application (get "PowerSelectLib")'s loader()'s setup(me)
 
     on awakeFromNib()
         --log "awakedFromNib in FindInsertionLocation"
