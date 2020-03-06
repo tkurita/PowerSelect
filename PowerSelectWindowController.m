@@ -1,5 +1,5 @@
 #import "PowerSelectWindowController.h"
-#import "PathExtra.h"
+#import "PathExtra/PathExtra.h"
 #import "AppController.h"
 
 @implementation PowerSelectWindowController
@@ -40,34 +40,33 @@
     }
 }
 
+typedef BOOL (^SearchHandler)(NSString *, NSString *);
 
-- (SEL)searchMethod
+- (SearchHandler)obtainSearchHandler
 {
-	SEL search_method;
-	switch (_modeIndex) {
-		case 0:
-			search_method = @selector(nameContain:);
-			break;
-		case 1:
-			search_method = @selector(nameNotContain:);
-			break;
-		case 3:
-			search_method = @selector(nameHasPrefix:);
-			break;
-		case 4:
-			search_method = @selector(nameNotHasPrefix:);
-			break;
-		case 6:
-			search_method = @selector(nameHasSuffix:);
-			break;
-		case 7:
-			search_method = @selector(nameNotHasSuffix:);
-			break;
-		default:
-			search_method = @selector(nameNotContain:);
-			break;
-	}
-	return search_method;
+    switch (_modeIndex) {
+        case 0:
+            return ^BOOL (NSString *target, NSString *search_text){
+                    return [[target nameContain:search_text] boolValue];};
+        case 1:
+            return ^BOOL (NSString *target, NSString *search_text){
+                    return [[target nameNotContain:search_text] boolValue];};
+        case 3:
+            return ^BOOL (NSString *target, NSString *search_text){
+                    return [[target nameHasPrefix:search_text] boolValue];};
+        case 4:
+            return ^BOOL (NSString *target, NSString *search_text){
+                    return [[target nameNotHasPrefix:search_text] boolValue];};
+        case 6:
+            return ^BOOL (NSString *target, NSString *search_text){
+                    return [[target nameHasSuffix:search_text] boolValue];};
+        case 7:
+            return ^BOOL (NSString *target, NSString *search_text){
+                    return [[target nameNotHasSuffix:search_text] boolValue];};
+        default:
+            return ^BOOL (NSString *target, NSString *search_text){
+                    return [[target nameNotContain:search_text] boolValue];};
+    }
 }
 
 - (void)setupDrawer
@@ -117,7 +116,7 @@
 - (void)searchInThread:(id)sender
 {
 	@autoreleasepool {
-		SEL selector = [self searchMethod];
+        SearchHandler search_handler = [self obtainSearchHandler];
 		NSFileManager *file_manager = [NSFileManager new];
 		NSWorkspace *workspace = [NSWorkspace sharedWorkspace];
 		NSDirectoryEnumerator *enumerator = [file_manager enumeratorAtPath:_searchLocation];
@@ -127,8 +126,8 @@
 			if ([_searchThread isCancelled]) {
 				goto bail;
 			}
-			BOOL matched = [(NSNumber *)[item_name performSelector:selector withObject:_searchText] boolValue];
-			if (matched) {
+            BOOL matched = search_handler(item_name, _searchText);
+            if (matched) {
 				NSString *matched_item = [_searchLocation stringByAppendingPathComponent:item_name];
 				if ([matched_item isVisible]) {
 					NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithObject:matched_item 
