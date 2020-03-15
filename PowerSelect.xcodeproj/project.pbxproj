@@ -676,17 +676,13 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 					"\"$(SRCROOT)\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Info-PowerSelect.plist";
 				INSTALL_PATH = /Applications;
-				LIBRARY_SEARCH_PATHS = "";
 				MARKETING_VERSION = 2.5.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "net.script-factory.PowerSelect";
 				PRODUCT_NAME = PowerSelect;
@@ -715,13 +711,10 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
 					"\"$(SRCROOT)\"",
 				);
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Info-PowerSelect.plist";
 				INSTALL_PATH = /Applications;
-				LIBRARY_SEARCH_PATHS = "";
 				MARKETING_VERSION = 2.5.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "net.script-factory.PowerSelect";
 				PRODUCT_NAME = PowerSelect;
@@ -749,14 +742,10 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 					"\"$(SRCROOT)\"",
 				);
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Info-PowerSelect.plist";
 				INSTALL_PATH = /Applications;
-				LIBRARY_SEARCH_PATHS = "";
 				MARKETING_VERSION = 2.5.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "net.script-factory.PowerSelect";
 				PRODUCT_NAME = PowerSelect;
