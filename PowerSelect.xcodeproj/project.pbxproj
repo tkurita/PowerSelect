@@ -185,7 +185,6 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
-				2C91CDFD14DACCC500588379 /* CocoaLib */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				2C16FE701C760885000A40D0 /* DonationReminder.xcodeproj */,
 				5389C41E7B4673D9CF434C15 /* Pods */,
@@ -271,13 +270,6 @@
 				2C8D08A21C76DED8008583A6 /* GUIScriptingChecker_Localizable.strings */,
 			);
 			path = GUIScriptingChecker;
-			sourceTree = "<group>";
-		};
-		2C91CDFD14DACCC500588379 /* CocoaLib */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CocoaLib;
 			sourceTree = "<group>";
 		};
 		2CE0445116002C8E006F2C10 /* Classes */ = {
@@ -695,7 +687,7 @@
 				INFOPLIST_FILE = "Info-PowerSelect.plist";
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "";
-				MARKETING_VERSION = 2.5.3b;
+				MARKETING_VERSION = 2.5.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "net.script-factory.PowerSelect";
 				PRODUCT_NAME = PowerSelect;
 				SDKROOT = macosx;
@@ -730,7 +722,7 @@
 				INFOPLIST_FILE = "Info-PowerSelect.plist";
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "";
-				MARKETING_VERSION = 2.5.3b;
+				MARKETING_VERSION = 2.5.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "net.script-factory.PowerSelect";
 				PRODUCT_NAME = PowerSelect;
 				SDKROOT = macosx;
@@ -765,7 +757,7 @@
 				INFOPLIST_FILE = "Info-PowerSelect.plist";
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "";
-				MARKETING_VERSION = 2.5.3b;
+				MARKETING_VERSION = 2.5.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "net.script-factory.PowerSelect";
 				PRODUCT_NAME = PowerSelect;
 				SDKROOT = macosx;
