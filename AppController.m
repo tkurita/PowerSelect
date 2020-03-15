@@ -1,6 +1,6 @@
 #import "AppController.h"
 #import "DonationReminder/DonationReminder.h"
-#import "StringExtra.h"
+#import "StringExtra/StringExtra.h"
 #import "PowerSelectWindowController.h"
 #import "GUIScriptingChecker/GUIScriptingChecker.h"
 
