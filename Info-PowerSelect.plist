@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>PowerSelect</string>
 	<key>CFBundleGetInfoString</key>
-	<string>${PRODUCT_VERSION} ${COPYRIGHT}</string>
+	<string>$(MARKETING_VERSION) ${COPYRIGHT}</string>
 	<key>CFBundleHelpBookFolder</key>
 	<string>PowerSelectHelp</string>
 	<key>CFBundleHelpBookName</key>
@@ -27,7 +27,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>18</string>
+	<string>19</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.utilities</string>
 	<key>NSAppTransportSecurity</key>

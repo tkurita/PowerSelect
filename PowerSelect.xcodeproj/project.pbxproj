@@ -112,6 +112,7 @@
 		2C8D08A61C76E2E1008583A6 /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ServicesMenu.strings; sourceTree = "<group>"; };
 		2C8D08A71C76E952008583A6 /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
 		2C8D08AB1C77015A008583A6 /* InsertionLocator.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = InsertionLocator.applescript; sourceTree = "<group>"; };
+		2C9BB116241DDE2600323F19 /* PowerSelect.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PowerSelect.entitlements; sourceTree = "<group>"; };
 		2CA64AFC215A42F7009B7AC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/PathExtra_Localizable.strings; sourceTree = "<group>"; };
 		2CC01CD60F1B006A003DF3C8 /* PowerSelect-Retina.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "PowerSelect-Retina.icns"; sourceTree = "<group>"; };
 		2CE04523160079BC006F2C10 /* PowerSelectWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PowerSelectWindowController.h; sourceTree = "<group>"; };
@@ -175,6 +176,7 @@
 		29B97314FDCFA39411CA2CEA /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				2C9BB116241DDE2600323F19 /* PowerSelect.entitlements */,
 				2CFF0AD60BCFDF4C00374FBA /* History.rd */,
 				2C63C196215A17A100982E74 /* Makefile */,
 				2C8D08961C76DC84008583A6 /* GUIScriptingChecker */,
@@ -309,6 +311,7 @@
 				2C814FA50BFACD2B00814390 /* CopyFiles */,
 				2C2371E4097F28A800693050 /* ShellScript */,
 				69B5EF12243D631AF9B23B58 /* [CP] Embed Pods Frameworks */,
+				2C9BB11A241DDEFE00323F19 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -330,7 +333,6 @@
 				LastUpgradeCheck = 1130;
 				TargetAttributes = {
 					2C2371D6097F28A800693050 = {
-						DevelopmentTeam = N3YK2F43T4;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
@@ -414,8 +416,26 @@
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
-			shellPath = /bin/sh;
+			shellPath = "/bin/zsh -l";
 			shellScript = "if [ ! \"$CONFIGURATION\" = 'Release' ]; then\necho \"HelpBook setup script will run only with Release configuration\";\nexit 0\nfi\n\ncd \"$BUILT_PRODUCTS_DIR\"\nSetupHelpBook \"$FULL_PRODUCT_NAME\"\n\n";
+		};
+		2C9BB11A241DDEFE00323F19 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "codesign --verbose --force --deep -o runtime \\\n--sign \"${EXPANDED_CODE_SIGN_IDENTITY_NAME}\" \\\n\"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Contents/Frameworks/Sparkle.framework/Versions/A/Resources/AutoUpdate.app\"\n";
+			showEnvVarsInLog = 0;
 		};
 		69B5EF12243D631AF9B23B58 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -572,7 +592,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPYRIGHT = "Copyright 1998-2018, Tetsuro KURITA";
+				COPYRIGHT = "Copyright 1998-2020, Kurita Tetsuro";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -584,7 +604,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_VERSION = 2.5.2;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -611,7 +630,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPYRIGHT = "Copyright 1998-2018, Tetsuro KURITA";
+				COPYRIGHT = "Copyright 1998-2020, Kurita Tetsuro";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -621,7 +640,6 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_VERSION = 2.5.2;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -648,7 +666,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPYRIGHT = "Copyright 1998-2018, Tetsuro KURITA";
+				COPYRIGHT = "Copyright 1998-2020, Kurita Tetsuro";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -658,7 +676,6 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_VERSION = 2.5.2;
 				SDKROOT = macosx;
 			};
 			name = Default;
@@ -668,11 +685,12 @@
 			baseConfigurationReference = 259B68E14AF566AB2DF67772 /* Pods-PowerSelect.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = PowerSelect.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 18;
-				DEVELOPMENT_TEAM = N3YK2F43T4;
+				CURRENT_PROJECT_VERSION = 19;
+				DEVELOPMENT_TEAM = 5VBC6385DN;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -703,11 +721,12 @@
 			baseConfigurationReference = 2586B4E3AC149101F7B71E32 /* Pods-PowerSelect.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = PowerSelect.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 18;
-				DEVELOPMENT_TEAM = N3YK2F43T4;
+				CURRENT_PROJECT_VERSION = 19;
+				DEVELOPMENT_TEAM = 5VBC6385DN;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -735,10 +754,11 @@
 			baseConfigurationReference = E9C34A6E2F910C29CF5A3A37 /* Pods-PowerSelect.default.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = PowerSelect.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 18;
-				DEVELOPMENT_TEAM = N3YK2F43T4;
+				CURRENT_PROJECT_VERSION = 19;
+				DEVELOPMENT_TEAM = 5VBC6385DN;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
